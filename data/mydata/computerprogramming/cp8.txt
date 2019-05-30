@@ -1,0 +1,172 @@
+How do I print my name 1000 times in Java without looping?
+Different solutions have been proposed:
+
+Recursion: Using a function that calls itself with a decrementing parameter counting the times it still has to call itself
+Nested functions: Using functions that call subfunctions an arbitrary amount of times so that the product of all of them equals 1000 (for example 10*10*10)
+String concatenation: Creating a string of 1000 identical characters and using the replace function on them, for example through
+Conversing a just initialized char array[1000] to String, knowing that it initializes with “\0” for each character
+Using the replace function multiple times on its result, similar to the nested function approach
+Using Collections.nCopies()
+Using Arrays.parallelSetAll()
+Using IntStream.mapToObj().forEach()
+Semantics: Understanding the task as needing to print “my name 1000 times in Java without looping”
+Scheduling
+Using the loop abilities of the console, just running the file 1000 times
+Letting a class constructors print and then creating 1000 objects of this class. This uses the java-specifity that an array of such objects gets initialized directly at the declaration of the array.
+Using GoTo Statements (not possible in Java)
+Just writing the statement 1000 times (using copy&paste)
+The usefulness of this question has been questioned multiple times, since without explicit reasons there is no need not to use loops. 
+On the other hand it has been argued that this can be a good excercise for the very specific times when looping is not a good approach.
+In order to try and avoid all possible reactions along the lines of “oh but that’s cheating”, I’d like to offer a solution with the following properties:
+
+No loops.
+No recursion.
+Reasonably readable and concise; not just copy&paste.
+Do the work by hand: no standard library calls that internally use loops to duplicate the string somehow.
+Here it is.
+
+public class Names {
+ 
+    public void p1000() { p300(); p300(); p300(); p100(); }
+    public void p300()  { p100(); p100(); p100();         }
+    public void p100()  { p30();  p30();  p30();  p10();  }
+    public void p30()   { p10();  p10();  p10();          }
+    public void p10()   { p3();   p3();   p3();   p1();   }
+    public void p3()    { p1();   p1();   p1();           }
+    public void p1()    { System.out.println("Shreyash"); }
+    
+    public static void main(String [] args) {
+		new Names().p1000();
+    }
+    
+}
+Edit: on account of all the upvotes, here is an alternative using string concatenation, for those of you who don’t like function calls. (I personally prefer the previous program because it uses less memory, and can be used to repeat anything, not just outputting strings.)
+
+public class Names {
+    public static void main(String [] args) {
+		String s1    = "Shreyash\n";
+		String s3    = s1   +   s1 +   s1;
+		String s10   = s3   +   s3 +   s3  + s1;
+		String s30   = s10  +  s10 +  s10;
+		String s100  = s30  +  s30 +  s30  + s10;
+		String s300  = s100 + s100 + s100;
+		String s1000 = s300 + s300 + s300  + s100;
+		System.out.print(s1000);
+    }   
+}
+Edit 2:
+
+I also have a shorter solution, which I included before and which I think is cute - but it violates the fourth constraint. I included this earlier, but then added the fourth constraint because without it, many solutions like this are possible, and even more so in other languages like Python.
+
+public class Names {
+    public static void main(String [] args) {
+		System.out.print(String.format("%01000d",0).replace("0","Shreyash\n"));
+	}
+}
+While the question itself might not sound very useful, it could be if you think of the Halting Problem[1].
+
+This would by no means be true in a looping construct like the following:
+
+repeat 1000 times { System.out.println("my name"); }
+But traditional looping constructs don’t have a guarantee that the loop will ever stop. And, thus, it’s not possible for the machine to tell you if your program will ever finish—although you might guess that they will, eventually.
+
+For general programming, this is usually an annoyance, and sometimes very useful. Infinite loops are a very common thing in many programs—intentionally or not. For more restricted forms of programming, “not terminating” and “not terminating in reasonable time” are really bad things to happen. So, it makes sense to exclude general looping and recursion from those languages—that is, there are cases where you want your language to not be Turing Complete[2].
+
+BPF (Berkeley Packet Filter)[3] is a good example of when you wouldn’t want a language to have loops (or general recursion). But package description, configuration files, programs running on the blockchain, and other things that may run in places where “someone or something hogging all of the computer resources for themselves” could be a really bad thing would all benefit from languages where programs are guaranteed to terminate—and terminate in reasonable time.
+
+Again, loops in the form of the previous example are guaranteed to always terminate, and you can analyse the cost of running the program, so your language could have those. Java doesn’t, but you could write a static checker that only allows compiling/running programs that have provably-terminating loops. The following should be allowed (and the compiler could even unroll the entire loop at compile time):
+
+for (int i = 0; i < 1000; i++) {
+  System.out.println("my name");
+}
+You can also allow some restricted forms of recursion that can be proven. This is what total functional programming[4] does. And you could apply this to Java. For example, we could use Skolem’s idea of primitive recursion[5]:
+
+class Nat {}
+ 
+class Zero extends Nat {
+  recurse<A>(
+    Supplier<A> ifZero, 
+    BiFunction<Nat, Supplier<A>, A> ifSucc
+  ) {
+    return ifZero.get();
+  }
+}
+ 
+class Successor extends Nat {
+  Nat predecessor;
+  Successor(Nat n) {
+    this.predecessor = n;
+  }
+  recurse<A>(
+    Supplier<A> ifZero, 
+    BiFunction<Nat, Supplier<A>, A> ifSucc
+  ) {
+    Supplier<A> y = () -> 
+      this.predecessor.recurse(ifZero, ifSucc);
+ 
+    return ifSucc.apply(this.predecessor, y);
+  }
+}
+Now, if we extend the Java language with those classes, and make it so that primitives like “3” are sugar for “new Successor(new Successor(new Successor(new Zero())))”, we could write this program like:
+
+(1000).recurse(
+  () -> { /* nothing to do when we're done */ },
+  (_, next) -> {
+    System.out.println("my name");
+    next.get();
+  }
+);
+Again, this is proven to terminate. There’s no way of ever writing any recursive operation that does not terminate while using “recurse”.
+
+The final, and most restricted form, is just forbidding all looping and recursion constructs in the language, and providing language primitives for everything your language needs to do. In Java 11, this would be String::repeat[6]:
+
+System.out.println("my name\n".repeat(1000));
+This, too, is guaranteed to always terminate, particularly because the type “int” does not accept a value like “Infinity”.
+
+Footnotes
+You can’t do that. And the reason is explained below.
+
+First such an exercises are given to recognize other forms of loop instead they contribute to further confusion about loops.
+
+What is a loop?
+
+In computer programming, a loop is a sequence of instructions that is continually repeated until a certain condition is reached. Typically, a certain process is done, such as getting an item of data and changing it, and then some condition is checked such as whether a counter has reached a prescribed number.
+
+Repeating Statement (answered by someone):
+
+System.out.println(“Shreyash”);
+System.out.println(“Shreyash”);
+System.out.println(“Shreyash”);
+(repeat 1000 times in total)
+What are you doing here? Repeating System.out.println(“Shreyash”); a 1000 times i.e. looping
+
+Recursive method (answered by someone):
+
+void print( String text, int countdown ) {
+ if ( countdown != 0 ){
+ print(text, countdown-1);
+ System.out.println( text );
+ }
+}
+and then calling this recursive method from main function:
+
+print("Shreyash", 1000);
+What are you doing here? Repeating function i.e. looping
+
+Repeating methods arbitrary times (answered by someone):
+
+public class Names {
+public void p1000() { p300(); p300(); p300(); p100(); }
+public void p300() { p100(); p100(); p100(); }
+public void p100() { p30(); p30(); p30(); p10(); }
+public void p30() { p10(); p10(); p10(); }
+public void p10() { p3(); p3(); p3(); p1(); }
+public void p3() { p1(); p1(); p1(); }
+public void p1() { System.out.println("Shreyash"); }
+public static void main(String [] args) {
+new Names().p1000();
+}
+}
+What are you doing here? Repeating methods arbitrary times.
+
+So you can see that the only way to print name 1000 times is to repeat statement/method and this repetition (in any fashion) is known as looping.

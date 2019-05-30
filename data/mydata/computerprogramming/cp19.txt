@@ -1,0 +1,180 @@
+Can you explain to non-programmers the most amazing thing you've seen a programmer do?
+As a (mostly) non-programmer I did a quick software hack with amazing repercussions plus an unforgettable “drop the mic” moment. Imagine standing in front of a room full of nuclear physicists: stunned to silence, bug eyed and jaws dropped, seeing their entire industry evolve in that single moment.
+
+Background: Ontario’s nuclear reactors (~1988) relied on a massive (in house) software program that simulated reactor behavior to optimize fuel consumption (it’s possible for a utility to spend more $$ on fuel than is earned by the generated electricity… very bad).
+
+This software was running on a midsize IBM mainframe, shared by ~5 nuclear plants with remote 3270 (text only) terminal access.
+
+
+Sample screenshot of a IBM 3270 remote terminal (Source: http://3270.bgp.nu)
+
+Simulations consumed 100% of mainframe CPU for hours, or even days if greater accuracy was required (using more historical data). Once finished, the results included a series of data “maps” with various values (such as temperature) for each core control rod, similar to the picture below.
+
+
+Sample mapping of control rod metrics (Source: allthingsnuclear.com)
+
+Engagement: I was the system engineer for a sales team trying to convince Ontario Hydro to use Sun workstations. First we ported the simulation FORTRAN code from IBM to Sun UNIX (an arduous and almost-amazing accomplishment in itself). We tested the results and the performance, and achieved about 80% of the speed of the mainframe. We pitched Sun workstations for all 5 sites at about the same cost as a 15% CPU upgrade to the central mainframe.
+
+Although the simulations took a bit longer, each site could run them anytime they liked, for as long as they liked. We had a good value proposition, but faced some bureaucratic and political opposition (plus some questionable interference from the incumbent vendor). Eventually we got a chance to present our solution to the Nuclear Engineers who used the software.
+
+Hack: During preparations for the big presentation, I was looking for ways to increase the “WOW” factor. I had done “some” C programming in (and after) college but I was no longer a programmer by trade, and I knew nothing about windows or graphics. Fortunately, I found the Sun source code for a simple graphics program called “string art” which was used as a screen saver back in the day.
+
+
+Sample output, similar to stringart. Source: http://pinterest.com
+
+Having no idea (or care) how it worked, I stripped out all of the code, except 2 core graphics library calls; one for initialization, and one that would draw a line starting at point x, ending at point y, with width z, text “string”, and color r, g, b. Then I opened a result map, read all of the data and assigned colors to each data point (pure blue lowest, pure green middle, pure red highest, and proportional values between). Here is a modern example of a similar colorization technique.
+
+
+Sample graphic visualization using RGB colormap. Source: ScienceDirect
+
+The actual output looked more like the image below (similar shape, number values in each data point), but had the subtle gradients (i.e. 100s of different colors) as seen in the picture above.
+
+
+Sample visualization of nuclear core metrics. Source: sciencedirect.com
+
+Repercussions: After almost an hour of Sun business/marketing crap, and me talking about hardware speeds and decentralization, we finally got to the demonstration. The simulation itself, was like watching paint dry: nothing to see. When it finished, I showed them the usual text result maps, then I ran my cheesy graphics program.
+
+This is kid stuff today, but at the time… holy crap. These nuclear physicists had never seen a graphical visualization of this data… ever. “Blown away” does not do justice to the moment. Expressions ranged from awe to joy, with some incredulity and disbelief thrown in. I saw the sales rep look at the district manager, then they both looked at me and smiled. We all knew what just happened, and what was going to happen. Done deal.
+
+As part of the deal, a “real” programmer threw away my code and did it right (almost three months work vs. my weekend hack). About a year later, Ontario Hydro purchased their 100th Sun workstation/server (~$5M of hardware). Sure, I was happy about scoring a big deal for my company, but knocking the socks off of all those scientists was a personal bucket list item.
+Programming languages are finicky beasts.
+
+Misplace a comma and 10,000 lines of code don't compile. Misplace a semi-colon in a C++ header file and watch the fun as the error appears in five other files. Miscode some STL code and read the most inscrutable and cryptic error messages ever.
+
+Most of us use the first compile of an update as a syntax check. Did our brackets match? Do all functions have the right number and type of arguments?
+
+Run make and see what happens -- all except for a handful of super human programmers.
+
+The single most productive developer I've ever seen was a freak of nature. He would read the spec for a class and go to work. For ten minutes, he would sit motionless at the keyboard, hand at the home position, not moving a muscle. Then suddenly, his keyboard would come to life with 30 minutes of nonstop clicking as he typed in one file, then another, then another and another and finally another. Effortlessly he switched from file to file from the keyboard. Then another 10 minutes of motionless silence Wham, he went into a fury of typing for another half an hour.
+
+His entire workday was like that.
+
+How many compiles did he do in a day?
+
+One. The last thing he did before he left was to check for an incredibly rare event: a syntax error from his keyboard. Then he checked in his code and went home.
+
+How many compile errors did I see him make?
+
+Zero, Nada, Zilch.
+
+That is amazing.
+I’m going to describe something I once did, not to toot my own horn, but rather because I found it amazing that it worked, and others might appreciate it. In addition, I think it might be a fun challenge for me to explain it in lay terms. Of course, it might end up being so long and convoluted that no one cares. I guess we will see…
+
+Some years ago, in a previous gig, I was working with our system administrator to move some code from one machine to another.
+
+Programmers typically use a version control system (VCS), which is a piece of software that enables programmers (or anyone in the company, depending on how it’s set up) to keep track of changes to their codebase. Every time a programmer makes changes that they want others to see, they commit the code to the VCS. (Committing simply involves the programmer telling the VCS that they want this code to part of the codebase.)
+
+The particular VCS that we were using is called Subversion (programmers like puns) and Subversion requires a central server, that is, a machine which stores the codebase.
+
+On occasion, one needs to migrate the codebase (typically called a repository) from one machine to another–that is, one wants to use a different server (for example, the machine which is currently the server may be replaced with a better machine). In order to do this, one cannot copy the repository directly from one machine to another–this is in part due to the fact that Subversion stores the repository in a format that is unreadable to humans.
+
+Therefore, instead of copying directly, we use an administrative tool which dumps the repository–that is, it makes a human-readable version of the repository which can be copied to the new machine, and then the reverse process is applied–we use the administrative tool to restore the repository on the new machine from the human-readable version that was copied over. It sounds like a lot of work, but in fact, it’s a fairly straightforward process for anyone familiar with the administrative tools.
+
+But in this instance, it didn’t work. We kept getting an error when trying to restore the repository on the new machine. The error won’t make sense until I add one more bit of information–the repository doesn’t just store the code (and all of the changes to the code), but it also stores bits of information such as the name of the programmer who made the changes, the date/time of the change, and so forth. It also stores things called properties, which are like annotations. Subversion has a bunch of built-in properties, but users are allowed to create their own properties as well.
+
+Here’s where the chaos came in. The problem is, our company had been using our own property which we named svn:mergeinfo, and this is really a no-no since user-defined properties should never begin with svn:–that’s reserved for Subversion’s built-in properties. We created this property with version 1.4 of Subversion and had no problems. But Subversion 1.5 added a built-in property named–you guessed it–svn:mergeinfo.
+
+The machine to which we were migrating the code was running Subversion 1.5, so during the restore process, i.e., when the human-readable version of the repository was being converted to the machine-readable version, the administrative tool kept saying that svn:mergeinfo was corrupt. Of course it was, because we put our own information in it, and that wasn’t what Subversion was expecting to see.
+
+So the first thing I tried was to change all instances of the svn:mergeinfo property in the human-readable dump to something else like ourmergeinfo, so that it would not conflict with svn:mergeinfo. But that failed because the restore process calculates what is known as a checksum–a number which is calculated from all of the characters in the human-readable file and is used to verify its integrity, i.e., to verify that nothing had changed in it during the transfer of data.
+
+Using a checksum meant that I couldn’t change the characters in the human-readable file, but I wondered if I could change their ordering. So I changed every instance of svn:mergeinfo to svn:remgeinfo. That is, I swapped the position of the ‘m’ and ‘r’ characters, and IT WORKED!
+At the risk of appearing egocentric (I’m not) I would just like to recount a little story about a programming achievement of mine from a few years ago. Shit…I’ve just realized it was 20 years ago!
+
+I was contracting as a database developer at IBM Global Services in London. There was a fair amount of programming code to write. In 5 years I think I wrote about 1,200 pages of code. I loved it. I'd always been a bit of a compulsive database writer, and here I was at IBM, a self-taught programmer (thanks Clive Sinclair and your fantastic ZX Spectrum).
+
+One day a guy I knew at IBM turned up at my desk. He had a disc with a spreadsheet on. Can you help me, he asked. I've got a data problem here for a report that I'm writing…. and the problem is the spreadsheet was written entirely wrongly and I can't get the data into the right format. But I desperately need to have this data in the way I want for the report. I've spoken with three separate programmers at IBM and they all tell me the same thing: this simply cannot be done. It’s impossible.
+
+I'll have a look I said…. but if three programmers have told you it's impossible then…. it might well be impossible. So I had a look at the data and he explained the problem to me. Sure enough, it was an immensely complex problem.
+
+But the thing is about working with data all the time is that you develop an intuition for what is possible with data and what is not. And there was something telling me in the back of my mind what this guy wanted was in some way possible and that I might be able to find a way to do it.
+
+The other strange thing about working with data is it you develop some sort of “Second Sight” for seeing data structures and manipulating them. I sat back in my chair. I closed my eyes for a moment. In my mind's eye, the spreadsheet data spun, whirled, pivoted and slowly assembled itself into exactly the structure needed for this guy’s report.
+
+I had it.
+
+I opened my eyes and said to the guy: this can be done. Really? he asked. Honestly? You can do this? I think so, I said, but I'll need some time. How much time do you need? he asked. I said: give me an hour. You're telling me you can do this in one hour??? he scoffed.
+
+I think so, I said, with the traditional programmer’s caution of never promising or guaranteeing anything, and certainly not within any agreed timescale. Ever. The other thing it’s important never, ever to do as a programmer is to leave comments in your code, documenting how it works. That’s an open invitation for your bosses to fire you and replace you with some cheap snotty-nosed kid who can maintain your code because you’ve so thoughtfully left comments in it telling them how it works.
+
+But I digress. I went to work. Three data transforms, four self-iterating queries, about 50 lines of code and one hour later, I had the data in exactly the way the guy wanted it.
+
+He was overjoyed. I was God that day. A genuine programming god, because the guy went round telling everybody that’s exactly what I was. Deification at IBM. It doesn’t get much better.
+This may be amazing to non-programmers but most programmers will recognize the facepalm moment. Also, bear in mind that most seasoned professional software developers work pretty hard to not have to do amazing things. Doing something amazing usually means that somebody screwed up and caused an emergency of some sort.
+
+The company’s main product was a telco-grade (meaning really big and diverse) network performance monitoring system. It included over 2 million lines of C++ code split into about a dozen different executables (programs). One key executable was automatically restarted fairly often (it was unstable, but that’s not important to this tale). The code was 15 years old and none of the people who wrote it were still with the company.
+
+The problem was that in production it took nearly half an hour for the program to restart and that blocked the rest of the system. So we had to find ways of speeding up that program’s start-up. We were pretty sure the best place to look was in the part of the initialization that initialized a lot of information about the individual network links being monitored.
+
+We did not have the resources to redesign the initialization section so we were looking for any ways to improve the existing code’s performance. After a few days of the whole team reading the very old code looking for ways to improve it, a buddy of mine on the team noticed something just a little odd about one function, let’s call it keyroutine. One of the parameters was a large and complicated data structure that held most of the information. The call to the routine looked something like (this is not real code, but more readable for non-programmers):
+
+function keyroutine(const datastructure largeparameter, …);
+The … is there to indicate that other variables were also passed, but they don’t matter here. The const datastructure part means that the parameter, named  largeparameter and of data type datastructure was not going to be modified by keyroutine.
+
+Now, keyroutine was not itself very complicated, it just took largeparameter and the other parameters and filled in the internal description of the network link. Execution should be very fast for this.
+
+Unfortunately, keyroutine was called inside a loop that was inside another loop. My own hasty analysis suggested that keyroutine would be called somewhere between ten million and a hundred million times, depending on the configuration of the system. Calling a function is normally not “expensive” in terms of run-time and even that large number of calls shouldn’t have been a problem since keyroutine itself ran very fast. But my buddy, a very good programmer, noticed one key issue. He changed keyroutine by one character, to
+
+function keyroutine(const datastructure &largeparameter, …);
+After that change, the program took only about five minutes to initialize! Problem solved! Yea!
+
+Non-programmers will, understandably, wonder why that one character change made such a huge difference. The answer is that in the first case (no &), largeparameter would be copied by the call to keyroutine and the copy deleted when keyroutine returned. In the second case, largeparameter was just a reference to the original data structure and references are small and very, very fast.
+
+The moral of this little story is that there is a difference between mediocre developers, who can write code that mostly works correctly (but not efficiently), and really good developers who, in the same or less time, write code that is both correct and efficient.
+
+Thus endeth today’s lesson for non-technical managers.
+I have written the implementation for RSYNC algorithm for file synchronization among two systems for just only exchanging the changed bytes(file differences after updation of file at n end) and reconstructing the file at receiving end, eventually bringing the data of both files in same state at both the ends.
+
+For non coders - Let me explain the RSYNC algorithm in simpler terms and it's utility.
+
+The rsync algorithm:
+
+Andrew Tridgell and Paul Mackerras's 1996 paper (http://cs.anu.edu.au/techreports... the rsync algorithm is a masterpiece.
+
+The algorithm is a masterpiece, and the paper is a masterpiece. In 5 clear and readable pages, the authors describe a brilliant and elegant algorithm which combines difference computation, cryptography, and network communications to provide a remote file update service.
+
+Here's how the paper starts:
+
+Imagine you have two files, A and B, and you wish to update B to be the same as A. The obvious method is to copy A onto B COMPLETELY.
+
+Now imagine that the two files are on machines connected by a slow communications link, for example a dial up IP link(Like today's 2G or GPRS type very slow network and you have to make changes to be copied from one place and automatically synchronized at another place )**.
+
+Now , add one more case to it , suppose - If A is large, copying A onto B will be slow. To make it faster you could compress A before sending it, but that will usually only gain a factor of 2 to 4.
+
+Now, add one more case and assume that - A and B are quite similar, perhaps both derived from the same original file.
+
+The challenge is - To really speed things up you would need to take advantage of this similarity.
+
+The solution seems at best is - A common method is to send just the differences between A and B down the link and then use this list of differences to reconstruct the file.
+
+But - The problem is that the normal methods for creating a set of differences between two files rely on being able to read both files. Thus they require that both files are available beforehand at one end of the link. If they are not both available on the same machine, these algorithms cannot be used (once you had copied the file over, you wouldn't need the differences).
+
+This is the problem that rsync addresses.
+
+This part is bit technical - That - How RSYNC solves it.
+
+Determining which files to send
+
+By default rsync determines which files differ between the sending and receiving systems by checking the modification time and size of each file. If time or size is different between the systems, it transfers the file from the sending to the receiving system. As this only requires reading file directory information, it is quick, but it will miss unusual modifications which change neither.
+
+Rsync performs a slower but comprehensive check if invoked with --checksum. This forces a full checksum comparison on every file present on both systems. Barring rare checksum collisions, this avoids the risk of missing changed files at the cost of reading every file present on both systems.
+
+Determining which parts of a file have changed
+
+The recipient splits its copy of the file into chunks and computes two checksums for each chunk: the MD5 hash, and a weaker but easier to compute 'rolling checksum'.
+
+It sends these checksums to the sender.
+
+The sender quickly computes the rolling checksum for each chunk in its version of the file; if they differ, it must be sent. If they're the same, the sender uses the more computationally expensive MD5 hash to verify the chunks are the same.
+
+The sender then sends the recipient those parts of its file that did not match, along with information on where to merge these blocks into the recipient's version. This makes the copies identical. There is a small probability that differences between chunks in the sender and recipient are not detected, and thus remain uncorrected. With 128 bits from MD5 plus 32 bits from the rolling checksum, the probability is on the order of 2−(128+32) = 2−160.
+
+The rolling checksum used in rsync is based on Mark Adler's adler-32 checksum, which is used in zlib, and is itself based on Fletcher's checksum.
+
+If the sender's and recipient's versions of the file have many sections in common, the utility needs to transfer relatively little data to synchronize the files. If typical data compression algorithms are used, files that are similar when uncompressed may be very different when compressed, and thus the entire file will need to be transferred. Some compression programs, such as gzip, provide a special "rsyncable" mode which allows these files to be efficiently rsynced, by ensuring that local changes in the uncompressed file yield only local changes in the compressed file.
+
+Rsync supports other key features that aid significantly in data transfers or backup. They include compression and decompression of data block by block using zlib, and support for protocols such as ssh and stunnel.
+
+This algorithm has been used in many of cloud based file difference synchronization utilities.
+
+

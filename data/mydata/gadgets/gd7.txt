@@ -1,0 +1,92 @@
+This Tool Finds Every Promo Code On The Internet – And It's Too Good
+This Tool Finds Every Promo Code On The Internet  – And It's Too Good
+These days, all our purchases are pretty much made online. Why put on shoes and go down to the store when you could just buy what you need from the comfort of your couch (and more importantly, 2 meters away from the fridge)? No lines, no crowds, no hassle. If you can relate, you're going to love this shopping tool— it'll get you the best deals online and save your hard-earned cash.
+
+The secret? Honey.
+
+If you don't already know, Honey is a free browser app that automatically scans the Internet for every working promo code while you're shopping online. Then at checkout, it magically applies the best deal to your cart!
+
+This is how easy it was for me to save ₹600 on Snapdeal:
+
+Snapdeals2-demo-600
+
+₹600 saved? Not bad, considering it took zero effort.
+
+Here's how it works: First, add Honey to your browser for free. You'll see a little "h" button appear in your toolbar.
+
+flipkart-h-button
+
+When you're about to buy something online, you literally just click that button and the total price instantly drops if Honey finds a deal for you. It's really that easy.
+
+Sometimes, Honey will even find exclusive promo codes that aren’t normally available to the public. (Hello, friends and family sales!)
+
+ClearTrip-Scroll-Codes
+
+You can use this handy tool at all your favorite stores like Cleartrip, Flipkart, Domino's, MakeMyTrip, and Snapdeal.
+
+Do yourself a favor and get it now so the next time you're buying online, you're ready to go. Your future self will thank you.
+
+How do I buy a phone in India on EMI without a credit card?
+There are now a number of options for buying a phone on EMI if you don’t have a credit card.
+
+The best and fastest solutions are on-line and are allow you to set up an EMI with your PAN or Aadhaar number, ID and bank details. They will usually ask for a small down-payment and then you make the monthly repayments through your bank account.
+
+One example of this “Cardless EMI” is ZestMoney (http://zestmoney.in/) which is very flexible and lets you choose the term (from 2–12 months) plus pre-pay early any time without penalty.
+
+Other companies offering this solution focus exclusively on Students so have a look at these (Slice, Quicklo) if you are a student.
+
+(full disclosure - I work for ZestMoney)
+What does Google know about me?
+Did you know that unlike searching on DuckDuckGo, when you search on Google, they keep your search history forever? That means they know every search you’ve ever done on Google. That alone is pretty scary, but it’s just the shallow end of the very deep pool of data that they try to collect on people.
+
+What most people don’t realize is that even if you don’t use any Google products directly, they’re still trying to track as much as they can about you. Google trackers have been found on 75% of the top million websites. This means they're also trying to track most everywhere you go on the internet, trying to slurp up your browsing history!
+
+Most people also don’t know that Google runs most of the ads you see across the internet and in apps – you know those ones that follow you around everywhere? Yup, that’s Google, too. They aren’t really a search company anymore – they’re a tracking company. They are tracking as much as they can for these annoying and intrusive ads, including recording every time you see them, where you saw them, if you clicked on them, etc.
+
+But even that’s not all…
+
+If You Use Google Products
+
+If you do use Google products, they try to track even more. In addition to tracking everything you’ve ever searched for on Google (e.g. “weird rash”), Google also tracks every video you’ve ever watched on YouTube. Many people actually don’t know that Google owns YouTube; now you know.
+
+And if you use Android (yeah, Google owns that too), then Google is also usually tracking:
+
+Every place you’ve been via Google Location Services.
+How often you use your apps, when you use them, where you use them, and whom you use them to interact with. (This is just excessive by any measure.)
+All of your text messages, which unlike on iOS, are not encrypted by default.
+Your photos (even in some cases the ones you’ve deleted).
+If you use Gmail, they of course also have all your e-mail messages. If you use Google Calendar, they know all your schedule. There’s a pattern here: For all Google products (Hangouts, Music, Drive, etc.), you can expect the same level of tracking: that is, pretty much anything they can track, they will.
+
+Oh, and if you use Google Home, they also store a live recording of every command you’ve (or anyone else) has ever said to your device! Yes, you heard that right (err… they heard it) – you can check out all the recordings on your Google activity page.
+
+Essentially, if you allow them to, they’ll track pretty close to, well, everything you do on the Internet. In fact, even if you tell them to stop tracking you, Google has been known to not really listen, for example with location history.
+
+You Become the Product
+
+Why does Google want all of your information anyway? Simple: as stated, Google isn’t a search company anymore, they’re a tracking company. All of these data points allow Google to build a pretty robust profile about you. In some ways, by keeping such close tabs on everything you do, they, at least in some ways, may know you better than you know yourself.
+
+And Google uses your personal profile to sell ads, not only on their search engine, but also on over three million other websites and apps. Every time you visit one of these sites or apps, Google is following you around with hyper-targeted ads.
+
+It’s exploitative. By allowing Google to collect all this info, you are allowing hundreds of thousands of advertisers to bid on serving you ads based on your sensitive personal data. Everyone involved is profiting from your information, except you. You are the product.
+
+It doesn’t have to be this way. It is entirely possible for a web-based business to be profitable without making you the product – since 2014, DuckDuckGo has been profitable without storing or sharing any personal information on people at all. You can read more about our business model here.
+
+The Myth of “Nothing to Hide”
+
+Some may argue that they have “nothing to hide,” so they are not concerned with the amount of information Google has collected and stored on them, but that argument is fundamentally flawed for many reasons.
+
+Everyone has information they want to keep private: Do you close the door when you go to the bathroom? Privacy is about control over your personal information. You don’t want it in the hands of everyone, and certainly don’t want people profiting on it without your consent or participation.
+
+In addition, privacy is essential to democratic institutions like voting and everyday situations such as getting medical care and performing financial transactions. Without it, there can be significant harms.
+
+On an individual level, lack of privacy leads to putting you into a filter bubble, getting manipulated by ads, discrimination, fraud, and identity theft. On a societal level, it can lead to deepened polarization and societal manipulation like we’ve unfortunately been seeing multiply in recent years.
+
+You Can Live Google Free
+
+Basically, Google tries to track too much. It’s creepy and simply just more information than one company should have on anyone.
+
+Thankfully, there are many good ways to reduce your Google footprint, even close to zero! If you are ready to live without Google, we have recommendations for services to replace their suite of products, as well as instructions for clearing your Google search history. It might feel like you are trapped in the Google-verse, but it is possible to break free.
+
+For starters, just switching the search engine for all your searches goes a long way. After all, you share your most intimate questions with your search engine; at the very least, shouldn’t those be kept private? If you switch to the DuckDuckGo app and extension you will not only make your searches anonymous, but also block Google’s most widespread and invasive trackers as you navigate the web.
+
+If you’re unfamiliar with DuckDuckGo, we are an Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs. We operate a search engine alternative to Google at http://duckduckgo.com, and offer a mobile app and desktop browser extension to protect you from Google, Facebook and other trackers, no matter where you go on the Internet.

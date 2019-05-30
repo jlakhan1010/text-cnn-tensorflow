@@ -1,0 +1,213 @@
+What are some computer tricks that a CS student must know?
+1.Change windows password without knowing the existing password : We all know that to change password in windows we need to enter the existing password and then we can proceed to enter the new password.However there is a trick to change password without knowing the existing password. This trick comes handy when the system is logged in and we have forgotten the password or to pull a prank on your friend(do it at your own risk)
+
+Step 1: Right click on computer and select manage
+
+
+Step 2: click on Local users and Groups and click on users. On the right pane you will see list of users.
+
+
+step 3: Right click on any user whose password you want to change and click on set password:
+
+
+step 4: click on proceed(Don’t worry about the message)
+
+
+step 5: Enter the new password
+
+
+step 6: Click on ok and your password will change. You can even use the same method to change HOMEGROUP password.
+
+(NOTE: This trick works on WIN 7, 8 , 8.1 ,10)
+
+2.Block websites on your computer or someone else’s computer :
+
+Press WIN+R
+
+and type this %windir%\system32\drivers\etc
+
+
+or navigate to C:\Windows\System32\drivers\etc
+
+and now you will see the hosts file
+
+
+Now open notepad from start menu by typing notepad and running it as an administrator.
+
+Open the hosts file by navigating to C:\Windows\System32\drivers\etc.
+
+
+Now if you want to block site say facebook and google then type these lines(Marked in red rectangle)
+
+
+The next time you open google or facebook it will not open.(Note:This trick will work if your browser is not open.If your browser is open close the browser and restart it.)
+
+Using this property you can do website redirecting . For example if someone wants to open facebook but you want them to be redirected to google. First we need to know the ip address of Google . To do that open cmd and type tracert google.com in cmd and note down the ip address of Google as shown in the pic
+
+
+Now Google ip address is 216.58.220.46 . hence I will be typing this in notepad
+
+
+Now the next time you try to open facebook you will be redirected to google.
+
+To unblock websites open the hosts file in notepad and delete those lines
+
+For linux users :
+
+Open terminal and type these lines,
+
+First create a backup of the hosts file given below :
+
+sudo cp /etc/hosts /etc/hosts.bak
+Suppose you want to block google website then type this
+
+sudo sh -c 'echo "0.0.0.0 http://google.com">>/etc/hosts'
+or type this
+
+sudo sh -c 'echo "127.0.0.1 http://google.com">>/etc/hosts'
+Just replace google with any other website to block that website
+
+To unblock websites type this
+
+sudo cat /etc/hosts.bak>/etc/hosts
+3.Boost your broadband speed: While the broadband speed depends on several factors including the external factors like speed provided by the ISP , hardware used etc. We can certainly improve the internal factor through a technique known as TCP optimisation. Windows 7 and above has the ability to automatically change its own TCP Window auto-tuning behavior to a more conservative state regardless of any user settings. Now we can change the tcp parameters to increase throughput .
+
+Open cmd in administrator mode and type this
+
+netsh int tcp show global and press enter
+
+
+Now we are going to change some TCP global parameters . Open notepad and type these commands
+
+cd\
+
+netsh int tcp show global
+
+netsh int tcp set global chimney=enabled
+
+netsh int tcp set heuristics disabled
+
+netsh int tcp set global autotuninglevel=normal
+
+netsh int tcp set global congestionprovider=ctcp
+
+Now save the file as say Speedbooster.bat
+
+
+Run the Speedbooster.bat in administrator mode
+
+
+You will notice substantial increase of speed of about 30–35%.
+
+Now to reset tcp global parameters to default values Type these in notepad
+
+cd\
+
+netsh int tcp show global
+
+netsh int tcp set global chimney=default
+
+netsh int tcp set heuristics enabled
+
+netsh int tcp set global congestionprovider=none
+
+and save it as say Reset.bat to reset the TCP global parameters to their respective default values. Run it as an administrator.
+
+To know more on TCP tweaking click on the link Windows 8, 10, 2012 Server TCP/IP Tweaks
+
+4.C program to print the map of India: This obfuscated piece of code prints the map of India.
+
+#include <stdio.h>
+ main(){ int a,b,c;int count = 1; for (b = c = 10; a = "- FIGURE?, UMKC,XYZHello Folks,\
+TFy!QJu ROo TNn(ROo)SLq SLq ULo+\
+UHs UJq TNn*RPn/QPbEWS_JSWQAIJO^\
+NBELPeHBFHT}TnALVlBLOFAkHFOuFETp\
+HCStHAUFAgcEAelclcn^r^r\\tZvYxXy\
+T|S~Pn SPm SOn TNn ULo0ULo#ULo-W\
+Hq!WFs XDt!"[b+++21]; )
+for(; a-- >64 ; ) putchar ( ++c=='Z' ? c = c/ 9:33^b&1); return 0; }
+Copy and save the file as say p1.c . On running it in console by typing
+
+gcc p1.c
+./a.exe
+in powershell and in linux instead of ./a.exe replacing it with ./a.out we get the following output
+1st Trick-Disable access to USB ports
+
+1. Click on Start.
+2. Click on Run. If you cannot find RUN, type it in the search box.
+3. Type "regedit" without quotes. This will launch the Registry Editor.
+4. Navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\usbstor.
+5. In the work area, double click on Start.
+6. In the Value Data box, enter 4.
+7. Click on OK.
+8. Close Registry Editor and refresh your desktop.
+Now your USB ports are disabled hence people can't take out data without your permission
+9. To re-enable access to your USB ports, enter 3 in the Value Data box in Step 6.
+
+
+​2nd Trick- Reveal saved password on a browser
+
+1. Open the page where you want to reveal password
+2. Right click and select inspect element
+
+
+​
+
+3. Press Ctrl+F and a search bar will appear at bottom. Search for "input" there.
+4. Search until you find this line
+"<input type=”password” class=”inputtext” name=”pass” id=”pass” tabindex=”2″>"
+
+
+​
+
+5. Double click on "password" and change it to "text". Boom... now you can see the password
+
+
+​3rd Trick- Create a harmless virus to continuously eject CD/DVD drives
+
+1. Open notepad and copy the code given below:
+
+Set oWMP = CreateObject("WMPlayer.OCX.7")
+Set colCDROMs = oWMP.cdromCollection
+do
+if colCDROMs.Count >= 1 then
+For i = 0 to colCDROMs.Count - 1
+colCDROMs.Item(i).Eject
+Next
+For i = 0 to colCDROMs.Count - 1
+colCDROMs.Item(i).Eject
+Next
+End If
+wscript.sleep 5000
+loop
+
+2. Save the file with any name you want and the extention .vbs (eg. Virus.vbs)
+3. Double click to open the above file and your small virus will continuously eject all your connected Optical drives even if you put them back in, it will pop them out again.
+
+P.S- To close the above virus trick, open task manager and close the wscript.exe process.
+
+4th Trick- Make your own personal diary
+
+1. Open Notepad and type ".LOG" and press enter.(type LOG in capital letter)
+2. Save it and close.
+3. Now whenever you open that file current date and time will automatically added before your note.
+
+
+​
+
+5th Trick- Make your own keyboard disco
+
+1. Open notepad and copy the code given below:
+
+Set wshShell =wscript.CreateObject("WScript.Shell")
+do
+wscript.sleep 100
+wshshell.sendkeys "{CAPSLOCK}"
+wshshell.sendkeys "{NUMLOCK}"
+wshshell.sendkeys "{SCROLLLOCK}"
+loop
+
+2. Save the file with any name you want and the extention .vbs (eg. dance.vbs)
+3. Double click to open the above file and your keyboard LED lights will make your own disco.
+
+P.S- To close the above virus trick, open task manager and close the wscript.exe process.

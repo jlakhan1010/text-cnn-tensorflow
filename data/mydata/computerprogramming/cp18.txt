@@ -1,0 +1,54 @@
+Do you notice a difference in developers with degrees in computer science and those without?
+Yes. Yes. Yes.
+
+I’ve had a lot of experience here. I have been full time in the field for 27 years now with two degrees in Computer Science and another Computer Engineering from NCSU. Just adding this for reference.
+
+The people without the degree are code jockeys. They don’t have the depth to question things. They remember highlights and don’t know WHY they “know” the rules.
+
+For example they don’t have the depth to understand DB transactions and performance typically. Also on data structures they can give the right answer about when to use a hash table and why BUT they haven’t IMPLEMENTED one (one of my assignments was to implement a hash table of B-trees). This is like knowing the Pythagorean theorem “a^2 + b^2 = c^2” vs being able to DERIVE that formula. It’s rote memory vs depth of knowledge.
+
+I saw a lot of this when I worked as an in house contractor for a recruiting company. I saw the resumes. I saw the results.
+I’ve also been assigned to fix projects broken by offshore Egyptian teams. I did so well on the first, they assigned me to the next project they did which was a 3 year and running 50 million spent and over engineered disaster like the first was. We ended up firing all the architects (on shore but can’t code a watch) which saved 2 million a year and guess who rewrote their 3 year code in 5 months? Me and one other dude. Yea. True.
+
+I could go on and on but I’ve seen resumes from India that day they did hair coloring and got a 5 month degree and are trying to work beside me. That’s insane. It costs WAY WAY WAY more than to do it right the first time. I hate rescue projects.
+
+The industry seems to have switched in the last 5 or 7 years. Lots of problems to fix from the cheap labor.
+Contrary to popular opinion, a computer science degree has very little to do with effectiveness in software development in a business environment. In fact some times such a degree can be an impediment. Many years ago I was assisting with staffing and computer science graduates would be automatically moved to the bottom of the heap as they thought they were “trained” but in many cases required more re-education than other graduates.
+
+For a while US companies held to the fallacy that “trained” graduates of universities and other establishments (Chubb, ITT etc.) could be thrown into the workforce effectively. As this has resulted over the years in very low grade staff, many companies are now running in-house training or working with consulting companies to prepare candidates.
+
+It has been my experience that the primary talents needed for business software development are an ability to break problems into logical steps and an ability to learn and understand the client’s business needs. Programmers with these talents often have degrees apparently unrelated majors or only a high school education (in Europe).
+There are really three categories here, and folks are mushing the other two together.
+
+The real categories are: 1) has a CS degree; 2) mostly self-taught programmer who skipped or left college to get a paying job; 3) has a non-CS academic degree but is working in CS.
+
+There are definitely differences between the types, but remember that the amount of variation within each type is huge, and any individual will have only a 50% or so chance of matching expectations for their category. All generalizations are wrong, including this one.
+
+That said, the CS major is usually better theoretically grounded in coding and design, and has usually been exposed to a broader variety of categories of coding. They generally have a larger mental toolkit of approaches to their solutions. However, a common failing is a lack of practical knowledge, either about the problem space they’re working in or about how to document and write maintainable code instead of theoretically interesting code.
+
+By comparison, the self-taught programmer is often a “code monkey” - fast and competent on the practical elements of writing code and getting it running, weak on the theoretical background that would let them understand difficult problems or structure large applications. Depending on their individual background, they tend to be either moderately clueless on the business side or deeply knowledgeable about their single primary area, but generally don’t have as much breadth on that side.
+
+The developer with a non-CS degree has, in my experience, been either the best or worst of the class. Many of the best developers I know have had degrees in physics or other engineering disciplines, and have unrivalled interdisciplinary skills. On the other hand, domain experts that have started coding because “that’s the easy part” have produced some of the most appallingly bad work output I’ve ever heard of. The common thread is better depth at the non-code side of problem solving, coupling a trade-off of weaker theoretical knowledge of the CS-side problems with better theoretical knowledge of domain-side problems.
+
+So in the end, I’ve met and worked with a lot of developers, and the three categories are kind of averages over a lot of individuals. Any given individual has at best a 50–50 chance of meeting the category stereotype, but the ones that don’t meet the stereotype are scattered all over the map so the that’s still the most common outcome. But it’s no better than a general indicator, definitely not something to use as a red line on a hiring decision.
+A “degree” is a sheet of paper…
+
+I’ve seen people graduate with a CS degree who have no business being part of a software development team. Think of these as your “ingest/regurgitate” folks that graduated with decent or good grades.
+
+I’ve also seen people who have no degree, but are brilliant software architects. They tend to be the ones that read and “absorb” knowledge — including knowledge about software algorithms, best practices, industry norms, business domains, etc.
+
+A person’s capacity to learn without being taught is what makes them successful in any technical field. A degree does not guarantee that, nor does the lack of one preclude it.
+It will depend on the content of the degree course, and the individual. Often a CS degree (or Software Engineering degree) will provide a broad theoretical background that helps underpin the coding activities that are more visible.
+
+This can result in writing more robust or higher performance code - or it could facilitate faster learning of new technologies.
+
+Over time job experience and self learning will contribute a lot more to someone’s ability than a degree. But it’s probably the best way to explore the topic and bring some experience to your first few jobs.]
+Yes.
+
+Developers with formal training have been exposed to different topics — they’ll have some grasp of the finer points of software architecture, operating systems, networking, compilers, and algorithms.
+
+Developers with more informal training may be able to churn out more code more quickly but might miss some of the background to get certain things working well. They think more in code, less big picture.
+
+A degree alone doesn’t necessarily mean the developer has got enough battle scars to deal with production code, nor does not having a degree mean that a developer can’t cope with “advanced topics”.
+
+Each group has their strengths.

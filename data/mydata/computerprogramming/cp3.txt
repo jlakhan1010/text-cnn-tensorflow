@@ -1,0 +1,323 @@
+What is one random thing you know about a computer that most people don’t?
+I'm not sure how legal this is, so don't tell anyone.
+
+So in freshman or sophomore year of high school (year 9 or 10), I got banned from using the computer lab for doing this. But, I learned some valuable lessons.
+
+Lesson 1: Most people know that on Windows, if you press the Shift key 5 times, the computer emits an ear-bleeding screech, then displays the following window:
+
+
+This window is Sticky Keys, an accessibility feature that lets you press and release keys like Ctrl, Alt, Shift instead of holding them down to make inputting key combos easier.
+
+What happens when you press Shift 5 times is Windows will try to find an executable file named sethc.exe in the System32 folder and run it.
+
+Remember that.
+
+Lesson 2: Another really useful feature on Windows machines is they have a recovery mode you can enter before the computer boots up all the way. Usually you have to either hold down F2, press enter 10 times, do a backflip, to the right now y'all, one hop this time, and it will enter recovery mode. This is mainly for trying to restore Windows to a previous version, or recovering information if the computer breaks.
+
+Remember that, too.
+
+Lesson 3: When you use Windows, even if you don't have to enter a password, you are signed in as a user. Each user has specific access rights and privileges. For example, Administrators usually have more access to system files and settings than regular users do.
+
+Ok, so here's where I got in trouble.
+
+I'd come into the computer lab during lunch to dink around, play flash games, etc. because I didn't have a computer at home. Eventually, I got my hands on a flash drive that I downloaded games like Goat Simulator and Gmod and the like during lunch breaks. The problem was: I was a student, and the student accounts on the computers were not able to run programs directly off of removable media. So, in order to play my games, I'd have to copy the files over to the computer and run them from there. The other problem was: the school computers had Deep Freeze installed on them, so I'd have to copy them back if I wanted to save my progress.
+
+That copying/pasting took way too long.
+
+So I thought, I'd be able to play for longer if I didn't have to copy and paste the games back and forth every day.
+
+But Deep Freeze will revert any changes made to specified drives on the computer whenever they're rebooted, which happened automatically every night. So I could either disable the automatic rebooting and risk some dumb kid turning my computer off accidentally, or I could disable Deep Freeze.
+
+*cracks knuckles*
+
+I tried deleting the program files for it, but it wouldn't let me. I did some research, and this is where I learned Lesson 3. So I made myself the owner of the Deep Freeze folders, then deleted them.
+
+Nice.
+
+Except, when I went back to school the next day, it was back.
+
+This is where I learned Lesson 2. It was a bit more difficult on the school computers, but I was able to get the computer I was on into recovery mode. Since the “user” that accesses system files in recovery mode is technically the computer itself, it had permission to make any changes it wants. I tried deleting Deep Freeze from here, hoping it wouldn't be reinstalled the next day. Sadly, it was.
+
+…
+
+Now I did not come to this next conclusion on my own (I think I followed some long-lost YouTube tutorial). But I did figure out how to implement it in this specific situation.
+
+When the computer is in recovery mode, since it's mostly there in case of emergency, most Windows features are stripped away (like the basic file explorer), and you're basically left with nothing but a command line. But a command line is a very powerful tool, if you know the commands.
+
+Since I didn't have a file explorer, and trying to open one just opened another command line, I opened notepad. Then, I pressed “File”, then hit “Open”.
+
+Boom. File explorer. But what good is a file explorer, you ask?
+
+To which I reply: don't you remember Lesson 1?
+
+With the computer under the assumption that I was trying to open a text file, I navigated to the System32 folder and located sethc.exe, and renamed it to something else (I think it was sethcq.exe or something). Then I found the command line exe (cmd.exe).
+
+Ctrl+C, Ctrl+V.
+
+I now had cmd.exe and cmd (2).exe. I renamed cmd (2).exe to sethc.exe.
+
+Now we're cooking with grease.
+
+I rebooted the computer, and since Deep Freeze didn't see anything wrong, nothing was reverted. On the login screen for the computer, before I was even logged in, I press Shift 5 times, and a command line comes up.
+
+Success!
+
+Using that command line, I made myself a full admin and gave myself full rights to everything. Then I deleted Deep Freeze.
+
+Next day, it's back on.
+
+I came to find out that there was a program running on a network drive that would reinstall Deep Freeze if it was uninstalled. I didn't even have permission to give myself permission to edit those files, so it seemed like I was stuck. I was an admin on this computer, but I didn't have the login for the network drive.
+
+Then it hit me: the computer has to be connected to the network drive in order for the network drive to make any changes. I couldn't disconnect the drive from the computer, but what if I disconnected the computer from the drive?
+
+I still didn't have the login for the drive, so what I did is (and keep in mind, I've been doing all this in chunks of 45 minute lunch breaks) I downloaded a full, clean .iso of Windows, burned it to my flash drive (which meant I had to delete all my games, rip. But it's for the greater good), and booted the computer from the flash drive instead of the hard drive. I reinstalled Windows on the hard drive, and voila!
+
+The teacher came out, and I was instantly banned from the computer lab.
+
+Lesson 4: don't get caught :P
+
+Edit: obligatory “wow that's a lot of upvotes and views”
+
+So a lot of the comments suggest I should've just installed my own OS on the flash drive, and they're right. I just didn't think of doing that. The problem I was trying to solve at that point had changed from “how do I play games on the school computer” to “how do I delete Deep Freeze.”
+My school computer administrators installed an extension on our chromebooks. GoGuardian. *cue ominous music*
+
+Before this horrible event, the only thing blocking us from .io and buzzfeed, etc. was chrominium m. There’s a neat little trick you can do there- at chrome://inspect, chrominium m had an inspect option. Type in window.close() into the console, and the entire extension would shut down. FREEDOM!
+
+Until I restarted my chromebook one day. It updated… And I couldn’t do this trick anymore. WHY? JUST WHY?
+
+I did a little investigation on GoGuardian. Tailor-made to torture students with chromebooks. I tried finding out a way to get into the school administrators’ accounts. No luck. chrome://extensions? Nope. It was force-installed with no way (that I know of) of deleting it.
+
+Now, during lessons I realised that students would go to boredbutton.com, which is somehow not blocked. And in bored button, you could play games (that are usually blocked) within the bored button frame. So I went to inspect the HTML code.
+
+<iframe src="https://somethingjusttrynamaketh..." style="height: 594px;"></iframe>
+
+Wait… HOLD UP.
+
+I changed the link to my wix site that I made a while ago out of boredom.
+
+And it linked right there. But the url on the top was still boredbutton.com!
+
+I changed the link to slither.io. A few clicks (enabling “unsafe” scripts) and it popped up on the screen! Adrenaline running through my veins now, I started the game. (Sidenote: I’m horrible at it) I promptly forgot that I was at an Econs lecture, I mean, I was just a snake in a land of glittering lights, right?
+
+Nope. I got booked. 2 demerit points, eh.
+
+A few friends found out about it, and were all like “Smartass!” ;) Made me feel like a genius (obviously geniuses don’t edit code not written by them and take credit for it, oops).
+
+
+I was sitting in my chemistry class. Staring at my teacher’s primitive google site, falling asleep to the drone of- I don’t know, I wasn’t paying any attention. I was thinking about what would happen (to my freedom, mainly) if boredbutton became blocked.
+
+Ctrl+shift+i, and out popped the inspect menu. I deleted everything in the body, leaving only one div where I pasted
+
+<iframe src="https://somethingjusttrynamakethislooklikealegitwebsite.com" style="height: 594px;"></iframe>
+A tiny version of the site popped up. I toyed around with the height and added a width.
+
+And.
+
+It worked! I could actually play .io games on the stupid chemistry website!
+
+(Sidenote 2: I love chemistry, but this teacher was going wayyy too slow)
+
+Thanks for reading! This was my final code:
+
+<iframe src="https://somethingjusttrynamakethislooklikealegitwebsite.com" style="height: 690px; width: 1370px;"></iframe>
+The credits to the code still go to bored button though. Also, I don’t know how known this is (I didn’t do any research), so if it is, tell me. I’ll move this answer to another question, maybe. (If you want to use this code, just note that some sites don’t work with it, I don’t know why.)
+
+P.S. Thanks for all the upvotes! Almost 200 *le gasp*
+
+P.P.S WHAT THE- 560! UPVOTES! This is by far my most upvoted answer. Thanks!
+
+P.P.P.S. Okay, when I wrote this answer I DID NOT expect to get, what the heck, 1k upvotes. Thank you SO MUCH for upvoting. Addressing some comments, I now know that iframe src is a basic HTML element, but at the time I literally thought it was so cool (and I still do now). To others, thanks for giving tips/ information/ other ways to break the school system.
+1.Autofill in Word and Excel:
+
+You can type the expression
+
+=rand()
+
+and hit enter, in Microsoft word to get a bunch of default text without any typing.
+
+
+You can even pass any arguments between such as “=rand(1,2)” which gives 1 Paragraph and 2 sentences. You can even try other similar functions such as
+
+=lorem()
+
+and
+
+=rand.old()
+
+to get lorem ipsum text and quick brown fox pangram respectively.
+
+The same works with excel also, when you type in,
+
+=rand()
+
+in any cell in excel, it fills the cell with a random decimal number between 0 to 1.
+
+You can choose range to fill by entering top and bottom values in
+
+=randbetween(bottom, top)
+
+Ex: Just type in “=randbetween(60, 99)” to get a random value between 60, 99.
+
+To fill the remaining cells with other random values in the range just drag the cursor at the end of the cell.
+
+
+2. Make google do a barrel roll:
+
+You can make google do a barrel roll by simply searching
+
+“Do a barrel roll"
+
+in Google.
+
+
+If you're feeling lucky, try other similar tricks mentioned here.
+
+3.Searching a file format in Google:
+
+Let's say you want only links associated with particular format. You can search them by adding
+
+“filetype:file_format”
+
+to your search term. You have to type in the file format you need.
+
+Ex: If you want to find links that have pdf extension + the name google in it. You can find them by searching “google filetype:pdf”
+
+
+4. Open Uninstall wizard from run:
+
+You can open uninstall wizard from run without going to Control panel by just typing
+
+“appwiz.cpl”
+
+in run and hit enter.
+
+5. Using Alt Unicode shortcuts:
+
+To quickly type the fractions such as 1/4, 1/2, 3/4 you can use unicode shortcuts such as
+
+“Alt+0188″
+
+“Alt+0189″
+
+“Alt+0190″
+
+respectively. The other similar unicodes for rarely used symbols can be found here.
+
+6. Change display direction:
+
+You can change direction of your display by simply pressing
+
+Ctrl + Alt + Arrow
+
+Ex: Typing “Ctrl+Alt+→” changes your display from landscape to portrait mode.
+
+
+7. Change video playback speed:
+
+If you are using KM Player you can actually, increase/decrease your video playback speed by simply pressing
+
+“Ctrl+ + ”
+
+“Ctrl+ - ”
+
+
+To change to normal speed again, press
+
+“Ctrl+ * ”
+
+Just try it anytime, it's so much fun...
+
+8. Shutdown Timer:
+
+You can manually shutdown your computer within Run or DOS prompt by simply typing
+
+“shutdown -s"
+
+You can even add time condition like
+
+“shutdown -s -t 600"
+
+which shuts down the computer after 10 minutes (600 seconds)
+
+
+Use “shutdown -a" to abort
+
+9. Open programs pinned to taskbar :
+
+You can run programs pinned to taskbar by pressing their number with Windows key
+
+Ex: In the taskbar like this
+
+
+you can open chrome, by simply pressing
+
+“ Windows Key + 4 ”
+
+since Chrome is the 4th program/icon in the taskbar.
+
+10. Some common shortcuts:
+
+For Windows Explorer:
+
+Ctrl+Shift+N → Create new folder
+
+F2 → Rename
+
+Shift+Del → Permanently delete a file/folder
+
+Alt+Enter → View Properties
+
+Ctrl+Shift+Esc → Open Task Manager
+
+Windows+E → Open Explorer
+
+Alt+Space+C → Close current window
+
+Alt+F4 → Close current window
+
+For Browser:
+
+Alt+D → Address bar
+
+Ctrl+N → New Window
+
+Ctrl+Shift + N → New Incognito Window
+
+Ctrl+T → Open New Tab
+
+Ctrl+Tab → Toggle between Tabs
+
+Ctrl+Number → Switch to the numbered tab (Ex: Ctrl+2 → Switch to 2nd tab)
+
+Ctrl+F4 → Close current tab
+
+Ctrl+Shift+T → Reopen recently closed tab
+
+Ctrl+Left_Click → Open link in a New Tab
+
+Ctrl+H → History
+
+F11 → Full Screen Browsing
+
+Ctrl+Enter → Adds “www." at start and “.com" at the end of the word you type in address bar
+
+Ex: You can simply type “google" in address bar and hit “Ctrl+Enter” and bam! You'll see the address changing to “www.google.com”
+
+Hit Upvote if you've learnt anything new, Thanks for reading!!
+When you delete a file, it’s not actually removed from your hard drive.
+
+So you have a Word document that is not of use to you anymore. You right click it, click delete, and it’s moved to the Recycle Bin. You then right-click the Recycle Bin, and empty it. Is the file really gone?
+
+No. While the file may no longer be able to be accessed through the operating system, it’s still on your hard drive.
+
+When you empty the Recycle Bin, Windows removes the file’s pointer and marks the sectors that contain the file as free space. The files still exist on the hard drive, they’re just not visible anymore. However, file recovery programs can scan your hard drive to recover the deleted files. Until Windows writes over the sector containing the deleted file, the file is still recoverable. If a file is partially written over, then file recovery programs can only recover a part of the data.
+
+Computers don’t immediately write over deleted files because it is a lot faster to just remove a pointer and mark the sectors as available. Imagine if you just deleted a 100GB file. If Windows were to write over it, it would take more or less 10 minutes, because that’s typically how long it takes to write 100GB on a high-speed mechanical drive. You would notice degraded performance while the write is happening.
+
+There are some “file-shredding” programs that will write over your data with zeros to prevent file recovery programs from recovering the files. You will often find government agencies using these programs, as their documents are extremely sensitive. In macOS, when using Disk Utility to erase a disk, you have the option to write over the disk’s data under ‘Security Options.’ However, nothing’s perfect, and some really good file-recovery programs (like those that the FBI has access to) could recover the files, even with a 7-pass wipe.
+
+
+
+macOS also had a ‘Secure Empty Trash’ function, which overwrote the data one time, but the feature was removed in El Capitan because it had trouble writing over data on SSDs.
+
+So be sure to use a file shredder when you need to delete something sensitive. If it’s extremely dangerous, you’re better off destroying the drive. (Thanks, Nathan!)

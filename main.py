@@ -16,12 +16,6 @@ import utils
 def experiment_fn(run_config, params):
 
     model = Model()
-    print("\n\n\n from experiment function")
-    print("model fn = ", model.model_fn)
-    print("train model directory = ",Config.train.model_dir)
-    print("Params = ",params)
-    print("run config = ",run_config)
-
     estimator = tf.estimator.Estimator(
             model_fn=model.model_fn,
             model_dir=Config.train.model_dir,
@@ -79,10 +73,6 @@ def main(mode):
     run_config = tf.contrib.learn.RunConfig(
             model_dir=Config.train.model_dir,
             save_checkpoints_steps=Config.train.save_checkpoints_steps)
-    print("\n\n Experiment Function = ", experiment_fn)
-    print("Run Config = ", run_config)
-    print("Mode = ",mode)
-    print("params = ",params,"\n\n")
     tf.contrib.learn.learn_runner.run(
         experiment_fn=experiment_fn,
         run_config=run_config,
@@ -93,24 +83,14 @@ def main(mode):
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(
-                        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--config', type=str, default='config',
-                        help='config file name')
-    parser.add_argument('--mode', type=str, default='train',
-                        help='Mode (train/test/train_and_evaluate)')
-    args = parser.parse_args()
-
     tf.logging.set_verbosity(logging.INFO)
     # Print Config setting
-    Config(args.config)
-    print("Config : ", Config)
+    Config('kaggle_movie_review')
     if Config.get("description", None):
         print("Config Description")
         for key, value in Config.description.items():
             print(f" - {key}: {value}")
 
     # After terminated Notification to Slack
-    atexit.register(utils.send_message_to_slack, config_name=args.config)
-    print("\n\n mode = ",args.mode,"\n\n")
-    main(args.mode)
+    atexit.register(utils.send_message_to_slack, config_name='kaggle_movie_review')
+    main('train_and_evaluate')

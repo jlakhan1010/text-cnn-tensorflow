@@ -1,0 +1,138 @@
+What should you never say to a programmer?
+“2 weeks? I can do it in 1 day”
+
+I worked at a startup. The newly hired VP of Engineering was meeting with me and my colleague (J). J did not give a damn about politics. And he liked me. The VP asks me how long to do a CRITICAL project. He explains the whole thing. I think it through (some of it verbally), break it into chunks and add it up and say 2 weeks. He turns to J and asks “How long will it take you?” I am pissed at this but don’t say anything. J says “2 weeks” (nothing more, nothing less).
+
+VP: “2 weeks? I can do it in 1 day.”
+
+J (raises one eyebrow): “Really?”
+
+VP nods.
+
+J: “Prove it”
+
+VP is pissed, royally pissed. Raising his voice to halfway between a scream and a shout, says “YOU want ME to PROVE to you that I can do it?”
+
+J (cool as a cucumber): “Yeah”
+
+VP (totally losing his cool): “YOU ARE FUCKING FIRED.” And leads him away to HR person’s room. Comes back.
+
+VP: “1 week?”
+
+Me: “No. I am resigning” . Walk over to HR’s room.
+
+By the end of the week, 3 more people have resigned. 2 were on vacation and when they came into work on the following Monday, they saw that J was not there and resigned. The engineering team went from 18 to 11 in less than 1 week.
+
+Funnily enough, two of my acquaintances got job offers from the company about a month after this event. Both asked for my opinion and I said “I resigned without a job in hand. What do you think that means?” One declined the job. The other accepted and after 1 week, tendered his resignation.
+
+EDIT: Small world strikes again! An ex-colleague and I were discussing something and he said “Hey! Have you heard of company XYZ?” Turns out he was pinged by a recruiter for VP of Engineering position at this startup. I showed him this answer. He took me out for lunch as a thank you. :)
+Just met my friend Kiran after a long time. After some initial random conversation.
+
+Kiran: What is your job profile?
+
+Me (excitedly): I design electronic circuits and write some low-level programs for them.
+
+K: So you are a low-level programmer?
+
+Me: Yeah.
+
+K: My cousin is also a programmer. But, I think he is smarter than you.
+
+Me (confused and thinking that he must be a good programmer): Oh great! It would be nice to meet him. But, why do you think he is smarter?
+
+K: Although still in school, he is a high-level programmer.
+
+Me: . . . . .
+
+
+P.S.: Low-level programmer is a Machine level programmer which is Not at all EASY profile.
+
+Low level programming languages can interact directly with the hardware, while high level ones don't have such direct and easy access to the hardware.
+Oh I have a bunch of these.
+
+Just hate it when people come to me with these questions ..
+
+Why do you look up google for answers? Did you not go to grad school to learn all this shit ?
+Why do you need additional monitors ? Is the laptop screen not sufficient for you?
+Why do you need to upgrade the RAM on your laptop?
+Why do you need a white board next to you?
+You keep your monitor vertical? That’s bullshit!
+How can you concentrate on your coding when you are listening to songs on your headphone?
+Why do you use tabs instead of spaces?
+Why are your glasses always thick and black?
+Why don’t you wear formal office clothes to work?
+Why do software developers get paid so much more than me while I also work with computers?
+How come you’re leaving to work late today?
+Why don’t you follow strict office timing?
+Why are you playing ping pong during work?
+Why do you always have coffee on your desk?
+#1 - “Your code sucks!”
+
+We know that already. Tell us which lines, so we can go and fix it.
+
+#2 - “Is it possible to add this feature?”
+
+The answer is always “yes” because it is technically possible to add any feature. The more practical question would be “Is it possible to integrate this feature without hurting the performance, while keeping the app stable and in a reasonable amount of time?”
+
+#3 - “It is not working”
+
+Very similar to #1. Try to be as clear as possible.
+
+#4 - “Can I also learn programming?”
+
+The answer is always “yes”, as long as you have a computer and an internet connection. The more practical question would be “How/Where should I start learning?”
+
+#5 - “Why aren’t you writing code?”
+
+If we are not writing code, it doesn’t mean we are not working. We are probably trying to figure out the best way to implement some functionality. In fact, sometimes all I do at work is to delete code.
+
+Once you understand programmers, they are actually nice, interesting, and cool. Okay, let’s be honest. Once you understand programmers, you become one.
+
+Cheers!!!
+So Mark Zuckerberg came to Nigeria and a lot of people wouldn't shut up about it while he was around.
+
+My cousin, his wife, and I were together in the living room. I have forgotten how we found ourselves talking about the Facebook founder and CEO.
+
+The conversation went as follows:
+
+Cousin: You know that the Facebook guy is in the country right?
+
+Me: Yup
+
+He was silent. So, I figured the silence meant I should tell them a little about him. Without paying so much attention to what I was saying, I started talking.
+
+Me: Yup, he is in his early 30s or so, and he founded the company in his 20s and yes! he had to drop out of Harvard to focus on his business… blah, blah…
+
+I thought that’d be the end of the conversation. So I continued minding my business until I heard his voice again.
+
+Cousin: But, you are a programmer too, right?
+
+I wasn’t sure where this was going but I was sure I wasn’t gonna like it.
+
+Me: Yes.
+
+Cousin: And you are in your 20s too…
+
+Now, I knew where he was taking this and I was getting really irritated.
+
+Me: Yes.
+
+Cousin: So, why haven’t you built something like Facebook yet?
+
+My cousin is a lot older than I am and I have a lot of respect for the man. After looping through all the responses I had in my head, none were respectful.
+
+I decided to just smile and shut up.
+
+NEVER ASK A PROGRAMMER WHY HE HASN’T BUILT SOMETHING LIKE GOOGLE, FACEBOOK, TWITTER or QUORA YET!
+Programmer to Programmer
+
+If you need to ask another programmer for help, make sure you have debugged the s**t out of it (stack trace, watches, breakpoints, pen and paper/whiteboard). Or at the very least, used some primitive form of debugging (looking at you programming students). Not hard to put the occasional print line to see what a value is/should be. This gets worse when people expect help with a logic error by explaining what the problem is. I don’t want the problem explained to me - I want to see the code, see the problem happen, and know what is meant to happen. Nothing worse than people asking for help on a discussion board or through instant message by not sharing their code, or at least the code block involved.
+‘C/C++ is too difficult/hard’. I hear this a lot, especially from university graduates where Java is the dominant programming language used to teach students. My university (University of Technology Sydney) is bad for this. Only ONE compulsory subject for the programming major is C++, and this must be done after completing two Java subjects. I am a firm believer in a programmer being somewhat competent in C/C++, even if they choose to use another one as their main. Hearing a programmer complain about C/C++ because they don’t understand what a pointer is, or why we use them. Ugh. Sure they are complex languages, but that is no reason to ignore them completely or belittle anyone who likes them (yes, that does happen - ‘But [insert language] is so much better.’).
+Non-Programmer to Programmer
+
+Any typical hardware question. Seriously, I SUCK at hardware! I needed help making sure all my PC components were compatible to build. I am currently shopping for a monitor and have no idea what to look for, what is good, or what I actually want!
+‘Why isn’t my Internet working?’
+‘Can you hack {something]?’
+“We should make a game.” - not all programming is making games. Not all programmers want to make games.
+“Get some sun” - too much sun exposure can cause skin cancer. I’d rather do my programming.
+‘All you do is sit at your computer all day’ I hear this a lot. Especially from family. Or I hear the opposite, ‘stop pacing’. Sometimes the movements of walking around on the spot helps me think, or walking to the whiteboard etc. Having to sit at the computer all day is fairly explanatory.

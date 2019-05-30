@@ -34,25 +34,6 @@ def clean_str(string):
     string = re.sub(r"\s{2,}", " ", string)
     return string.strip().lower()
 
-def load_data_and_labels(positive_data_file, negative_data_file):
-    """
-    Loads MR polarity data from files, splits the data into words and generates labels.
-    Returns split sentences and labels.
-    """
-    # Load data from files
-    positive_examples = list(open(positive_data_file, "rb").readlines())
-    positive_examples = [s.strip() for s in positive_examples]
-    negative_examples = list(open(negative_data_file, "rb").readlines())
-    negative_examples = [s.strip() for s in negative_examples]
-    # Split by words
-    x_text = positive_examples + negative_examples
-    x_text = [clean_str(sent) for sent in x_text]
-    # Generate labels
-    positive_labels = ['1' for _ in positive_examples]
-    negative_labels = ['0' for _ in negative_examples]
-    y = positive_labels + negative_labels
-    return x_text, y
-
 def prepare_raw_data():
     print('Preparing raw data into train set and test set ...')
     raw_data_path = os.path.join(Config.data.base_path, Config.data.raw_data_path)
@@ -334,13 +315,7 @@ def make_batch(data, buffer_size=10000, batch_size=64, scope="train"):
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(
-                        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--config', type=str, default='config',
-                        help='config file name')
-    args = parser.parse_args()
-
-    Config(args.config)
+    Config('kaggle_movie_review')
 
     prepare_raw_data()
     process_data()

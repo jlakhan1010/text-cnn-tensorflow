@@ -1,0 +1,48 @@
+WhatsApp vulnerability allowed hackers to monitor voice calls via spyware
+WhatsApp discovered the vulnerability earlier this week and has issued a security advisory asking its users to update the app. The loophole allowed attackers simply to call a user and install the surveillance software even if the call was not picked up.
+A vulnerability in the messaging app WhatsApp let attackers install spyware on the users’ phone, reported BBC News. It remains unknown how many WhatsApp users were affected. The Facebook-owned company discovered the vulnerability and issued a security advisory earlier this week, asking its users to update the app.
+
+
+Advertising
+“A buffer overflow vulnerability in WhatsApp VOIP stack allowed remote code execution via specially crafted series of SRTCP packets sent to a target phone number,” WhatsApp said. The company has rolled out a fix, though it is unclear how many users were affected. WhatsApp said in a statement to BBC that the attack targeted a “select number” of users.
+
+According to a Financial Times report, which first reported that the bug has was installed by a private Israeli security firm NSO Group, used its software Pegasus. It was able to take advantage of WhatsApp’s voice call feature to infect the phones.
+
+The loophole allowed attackers simply to call a user and install the surveillance software even if the call was not picked up. According to FT, the call would sometimes not even show up in a user’s call log.
+
+
+Kim Zetter
+✔
+@KimZetter
+ WhatsApp discovered in early May that attackers were using zero day exploit developed by NSO Group that installed malware on a user's iPhone or Android phone simply by calling them. Target did not have to answer phone to be infected, and calls often disappeared from call logs
+
+Financial Times
+✔
+@FT
+WhatsApp voice calls used to inject Israeli spyware https://on.ft.com/2VAssxX 
+
+The issue seems to affect Android prior to version 2.19.134 and WhatsApp Business for Android prior to version 2.19.44. For iOS, WhatsApp prior to version 2.19.51 and WhatsApp Business prior to version 2.19.51 seems to have been affected. WhatsApp for Windows Phone prior to version 2.18.348, and WhatsApp for Tizen prior to version 2.18.15 devices have been advised to update the app as well.
+
+OnePlus 7, OnePlus 7 Pro India Launch LIVE Updates: OnePlus 7 launch livestream starts at 8:15 pm
+OnePlus 7, OnePlus 7 Pro Price in India, Specifications, Features, India Launch Live Streaming Updates: OnePlus 7 and OnePlus 7 Pro are scheduled to launch today in simultaneous launch events in New York, London and Bengaluru.
+OnePlus 7, OnePlus 7 Pro Price in India, Specifications, Features Launch Live Updates: OnePlus 7 and OnePlus 7 Pro are all set to make their debut in a global launch event today. The main event will take place in New York with simultaneous satellite events in London and Bengaluru at 8:15 pm IST (Indian Standard Time). While the OnePlus 7 will be an upgrade to the OnePlus 6T, the OnePlus 7 Pro will offer more premium features to take on the likes of iPhone XS, Galaxy S10+ and P30 Pro.
+
+The OnePlus 7 Pro has been leaked to cost Rs 49,999 for the 6GB RAM/128GB storage variant, Rs 52,999 for the 8GB RAM/256GB storage variant and Rs 57,999 for the 12GB RAM/256GB storage variant. OnePlus has confirmed a number of features for the OnePlus 7 Pro including a superior screen with HDR10+ support. The flagship will reportedly feature a 6.67-inch OLED bezel-less screen with 90Hz refresh rate without any notch.
+
+The phone has been confirmed to feature a triple camera setup on the back and the leaks suggest the camera combination will include a 48MP primary sensor clubbed with an 8MP telephoto lens with 3x optical zoom and a 16MP ultra wide angle. OnePlus 7 Pro sports a popup selfie camera and it is powered by a Snapdragon 855 processor.
+
+The non-Pro variant of the OnePlus flagship is expected to have a notched display and a dual rear camera setup carrying a 48MP primary sensor. While OnePlus has shared a number of teasers for the OnePlus 7 Pro, not much has been revealed about the OnePlus 7.
+
+
+LIVE BLOG
+OnePlus 7, OnePlus 7 Pro Price in India, Specifications, Features Launch Live Updates:
+ 
+09:26 (IST)
+14 May 2019
+OnePlus 7, OnePlus 7 Pro launch: How to watch livestream
+
+OnePlus is set to pull back the curtain on the OnePlus 7 and OnePlus 7 Pro today. The new phones will be launched in New York York today with simultaneous launch events in London and Bengaluru. The timing for the launch in India is 8:15 pm. The livestream can be watched on the OnePlus website-- www.oneplus.com.
+
+OnePlus is launching OnePlus 7 alongside OnePlus 7 Pro in a global launch event today. The main event will take place in New York with simultaneous satellite events in London and Bengaluru at 8:15 pm IST (Indian Standard Time). While the OnePlus 7 will be an upgrade to the OnePlus 6T, the OnePlus 7 Pro will offer more premium features to take on the likes of iPhone XS, Galaxy S10+ and P30 Pro, among other smartphones.
+
+OnePlus 7 Pro reportedly features a 6.67-inch OLED bezel-less screen with 90Hz refresh rate and HDR10+ support. The phone has has been confirmed to feature a triple camera setup on the back and the leaks suggest it to include a 48MP primary sensor, an 8MP telephoto lens with 3x optical zoom and a 16MP ultra wide angle. OnePlus 7 Pro sports a popup selfie camera. Both the OnePlus 7 Pro and OnePlus 7 are reported to be powered by Snapdragon 855 processor. The non-Pro variant of the OnePlus flagship is expected to have a notched display and a dual rear camera setup carrying a 48MP primary sensor.

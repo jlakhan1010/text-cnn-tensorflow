@@ -1,0 +1,152 @@
+Have you ever seen code so bad it made you laugh?
+It was our 1st-year final computer lab exams in our college and we were given some programs to execute. Anybody failing to code would be given an F in the subject. My friend Aditya who was sitting beside me didn’t have much knowledge about coding since he was from a biology background in class 12.
+
+After settling down, we were given two sets of questions.
+
+
+Aditya was given the first code to execute while I was confident in solving the second. I was all pumped to get a full grade and didn’t pay any attention to my struggling friend.
+
+After 1 hour the teacher started to evaluate on the basis of output. The rules were straight. If the output is correct one would get full marks and failing to show the right output would result in partial marking. I started panicking since I couldn’t code for the right output.
+
+This was my code and output.
+
+int main()
+{
+    int i,j,p=5;
+    for(i=0;i<5;i++)
+    {
+        if(p==1)
+            cout<<"#"<<endl;
+        else
+        {
+        for(j=p;j>0;j--)
+        cout<<"*";
+        }
+    cout<<endl;
+    if(i<2)
+    p=p-2;
+    else
+    p=p+2;
+    }
+return 0;
+}
+
+I was awarded partial marking for my code but my friend confidently showed his output to the teacher. To my surprise, the teacher had a look at his output and awarded him full marks.
+
+“How did you execute the program all by yourself?”
+
+“I developed a logic for the pattern and then coded accordingly” said my friend confidently.
+
+I was curious about how he could code a logic better than me without even knowing the basics.
+
+int main()
+{
+cout<<"  *  "<<endl;
+cout<<" *** "<<endl;
+cout<<"*****"<<endl;
+cout<<" ### "<<endl;
+cout<<"  #  "<<endl;
+    }
+All I could do was laugh at his code and my LUCK!
+
+EDIT:- Aditya has left coding after 1st year and defuses bombs full-time.
+This was exactly 5 months back. Early morning, my manager told me I had to edit some feature in a report generation.
+
+The issue was there was a doc file being generated on a server and then it was being replicated using a cron job at a particular time across different servers. Everything worked fine for many days until suddenly my manager told me that it wasn’t working on a particular morning. And since the original file was faulty, all files were faulty too.
+
+I started digging into the code. It was in python (I do not write python proficiently) I can read, make changes, refactor up to a particular level but I do not write python.
+
+This code looked like an 18-year-old kid had a mid-life crisis, was waterboarded, thrown into solitary confinement for months, mentally tortured with abuse, pulled out of the hell hole and made to write the python script.
+
+The next moment, I called my manager and told him to assign the issue to someone else on the infrastructure team. It was beyond readable for me and investing time to read it would be losing my mental sanity. My manager understood the issue but insisted that we had to take over and fix it. I had to oblige and told him that it would be better for me to re-write the entire thing with proper documentation since there was none.
+
+I also asked my manager to get into contact with the person who wrote it. Guess what? An 18-year-old intern had written it. The same guy had been given access to the production system and was blatantly doing whatever he liked.
+
+I asked my manager if I could contact him (Not to abuse but to ask what exactly he had done) so that I could fix the chaos and also learn why he did what he did to avoid issues in future.
+
+Rather than calling him on phone, he walked into the office the next day. I asked him some questions and finally asked him what made him write the code the way he had written it. He said he looked up a github profile of a programmer and copied the code.
+
+Now even I wanted to see this guy who had posted this shitty code on github and gladly asked the intern to open this guy’s profile.
+
+Guess whose profile he opened? MINE.
+
+Backstory: I was learning python 1 year back and seeing how its functions and api’s worked. I had nothing on my github related to python so I started committing garbage code and had never bothered to look at it again since I didn’t think anyone would use it. I just wanted to make my profile timeline GREEN. I had a facepalm and deleted the entire repository.
+
+Never commit shitty code because someday you might have to edit it yourself and you won’t understand jack shit of what you have written.
+
+Out of all the code in the world, this guy had to copy mine for this task.
+
+DivyendraPatil - Overview - my github (There's nothing much there)
+
+Reference: Using the CSV module in Python
+tant to know that I am on record for saying JavaScript is Evil!
+
+Mark Flory's answer to Which is the most unpleasant programming language that you have written in?
+
+There was a guy I worked with named Joe. Joe was an assistant programmer, which is what they called juniors at this company. Joe hated that title, so naturally we started calling him the assistant to the programmers. He did not like that either. Joe was an easy target because he was an entry-level programmer who thought he was way better than that and I really believe it made it difficult for him to get any better than that. Having talked to him recently even he admits he was entirely too high strung.
+
+He was also afraid of butterflies and screamed so high when one landed on him that nearby dogs started barking. How can you not make fun of that?
+
+Joe also loved JavaScript. It was something he was quite passionate at and it got to the point where the rest of the team started calling it JoevaScript. Joe’s love of JoevaScript was so legend that I would not be surprised if even now, some eight years later they are still calling it that there.
+
+And like I said, my belief is JavaScript is Evil:
+
+
+A lot of the work we did at this company we called building glorified spreadsheets. Joe was given the task of building a glorified spreadsheet as a web page. It was a report of financial data grouped together and then summed, pretty simple stuff really.
+
+But he was taking forever to get it done. One day he finally he called me over and asked for me to help him with some JoevaScript he was having trouble with. His summing of columns was not coming out correctly. I remember first discussing and the arguing with him about how the summing should be done either in the database (my preference) or on the server side, not in the client using JoevaScript. I am not sure he ever came to agree with me but he finally just did it, and lo and behold it was a lot easier.
+
+Joe leaves. Not because we teased him relentlessly but because that job occasionally required him to do Access and he hated it (and really who doesn’t). He then went to another company which promptly put him on a job doing Access. The legend of Joe continues.
+
+Meanwhile the users of the webpage started complaining about how it seemed to be getting slower. I went to look at it and was slow, but slow in a weird way. It did not take any amount of time to create the web page on the server side but it took forever for it to show up in the browser. It was showing a significant amount of data but it was still disproportionately slower than it should be.
+
+So I knew it was something in JoevaScript and searching through it did not take me long to find it. When the page was loading there was a function that looped through every element on the page, and there were a lot probably hundreds of thousands of them. Then for every element on the page, it looped through every element on the page again. So, hundreds of thousands times hundreds of thousands. Billions.
+
+It was like he was knocking on the door of every house in the city, introduce himself to the owner Bob, then go to every other house in the city and tell them he just met Bob (including Bob’s). Then he would walk right next door to Nora’s house and do it all again. Hi, Bob remember me, I just met Nora next door, nice to see you again, I am going to go tell the rest of the city I met Nora see you again in a few milliseconds when I meet Jake.
+
+And the end result of all this looping is…it did absolutely nothing. That’s the part that made me laugh. It was a big huge delay loop and my only guess as to why it was there is because of Joe.
+
+Joe had most likely been using this loop to make his summations and when I told him to do it in the database he had just taken out the summing part (which had not really worked anyway). Even doing it in JoevaScript this was a horribly unnecessary way to do it but leaving the code behind was a tragic mistake.
+
+A tragic mistake that made me look like a genius when I was able to make the page significantly faster in almost no time.
+
+All because of a boy and his love of JavaScript.
+I once shared an office with a young guy who was doing his master’s thesis on a biologically inspired “growing artificial neural network.” My thesis had been in the same field, so even though I was not his official supervisor, I was unofficially assigned to help him.
+
+This guy was always bragging about his skills and accomplishments. In particular, he claimed he was a great programmer. “Okay,” I thought, “this I gotta see.” As a C++ snob myself, I snorted derisively when I saw that he was writing it in Java. Ha! What a loser!
+
+Anyway, his simulation consisted of a handful of neurones that moved along chemical gradients and searched for other neurones to link up to. Pretty standard stuff.
+
+But it was the method he used for searching for nearby neurones that blew my mind.
+
+He rendered the neurones on screen as small green circles. Then, when he wanted to search for the closest neighbour to neurone i, he would render a black circle at that point, thereby clearing the green pixels. Then, from that point, he sampled the surrounding area by testing pixels in ever increasing circles, starting at 0 and increasing the radius by 1 until a green pixel was found. The number of samples around the loop was fixed, so it was sampling in growing spokes. In order not to miss anything, he had to set it really high, so the smaller radii circles were sampling basically the same pixels over and over and over again. Oh, and of course he didn’t cache the sin/cos pairs.
+
+Only when he hit a green pixel did he declare a neurone found, and he looped through all the neurones, testing the distance between the green pixel and the centre of the neurone to see if it was smaller than the radius of the green circles.
+
+So, he knew how to use Pythagoras to get the distance between points, but it never occurred to him the test the distances between neurones; instead he tested the distances between neurones and sample points.
+
+When he found a neighbour for a neurone, he would repaint the green circle and move onto the next one.
+
+But wait, I’m not finished. He was sampling once in the loop, with v-sync enabled. So, for a 60Hz refresh rate, he was limiting his simulation to search only 60 pixels per second, on a 3GHz, quad-core machine. He was literally waiting several hours to run a minimal simulation that should have taken a few seconds (at most) if sanely implemented.
+“Why is your programming environment so slow? Our application takes ages to execute.” the customer said.
+
+We went out to their site, to understand what they did and why their application was slow.
+
+First we asked for specifications for their application - there were none.
+
+Then we asked for documentation of their app - there were none.
+
+So they didn’t know what the application should do, or what it actually did.
+
+Well, they kinda knew what they should deliver and the code was the documentation so OK, lets dig into it. They showed us a piece of the code that took 1 week(!) to run. It looked something like this:
+
+foreach month in range(months_in_years(2005,2018)):
+	monthfile = new file(month)
+	foreach row in big_ass_file:
+		if row.month = month
+			monthfile.append(row)
+So, in other words, they wanted to separate a big file with lots of data into smaller files with data from one month each. OK, that is the outcome of this code, but it will read the whole big file once for each month.
+
+The time period had 168 months and the file was over 500GB!
+
+We adviced them on how to change the code so they just scan the file once and save the row to the appropriate month-file. It made the code run in an hour instead of a week.

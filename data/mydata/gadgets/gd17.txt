@@ -1,0 +1,175 @@
+XIAOMI REDMI Y3 REVIEW
+PROS
+Gradient designGood gaming capabilitiesAI selfies
+CONS
+Low-light sefliesAverage displayLong charging time
+VERDICT
+The Redmi Y3 has a clear-cut mission — Make selfies great again. It’s weapon of choice is a 32MP camera on the front which while preserving facial details has the tendency to blow up the highlights. The advantages of a high-res camera, however, isn’t as apparent as in the case of the Redmi Note 7 Pro’s 48MP rear camera, especially in low-light. Switch to the binned mode and it'll be apparent why the Redmi Y3 is a solid selfie shooter. Surprisingly, the Redmi Y3 seems fairly adept at handling popular mobile games as the gaming performance revealed. Frankly, the Redmi Y3 is a mixed-bag with a few trade-offs here and there. But if you’re not a nitpicker when it comes to choosing your smartphone, this is an easy smartphone to recommend if good selfies are particularly what you’re after.
+
+BUY XIAOMI REDMI Y3
+amazon-icon	Available	₹9999
+XIAOMI REDMI Y3: DETAILED REVIEW
+
+If the Redmi Note 7 Pro is focused around the rear camera, the Redmi Y3 is its polar opposite with a strong focus on the selfie camera. The two smartphones are even priced similarly making it clear that if you want a selfie phone, the Redmi Y3 is the one to go for while the Note 7 Pro is for everything else. But selfies aren’t the only thing one can do with a phone. The Redmi Y2 last year addressed this quite well with decent performance mixed with a decent cameras on both sides. Can the Redmi Y3 repeat the feat? Let’s find out.
+
+You Can Also Read
+Xiaomi Redmi Note 7 Pro Review
+
+Huawei P30 Pro 256GB Review
+
+Huawei P30 Pro 256GB Review
+
+Samsung Galaxy S10 Review
+
+Samsung Galaxy A30 Review
+
+advertisements
+
+DESIGN
+
+The Redmi Y3, at first glance looks a lot like the Redmi Note 7 Pro. It has a similar gradient colour design with a dual tone finish in both blue and red as well as a standard black finish. However, there are subtle differences in the design between the two. The Redmi Y3’s gradient dual tone has vertical stripes running down the rear panel with the shade of colour changing after each line. It’s also more curved around the edges and rounded in the corners. Furthermore, unlike the Note 7 Pro, the Redmi Y3 is made of polycarbonate which handles fingerprints quite fine, but retains smudges and sweat marks easily. The frame also seems to be made of plastic but with a smooth polish which lends a feeling of sturdiness. The buttons however feel wobbly and could be the first thing that stops functioning after prolonged use.
+
+
+
+The front fascia is layered with Gorilla Glass 5 protecting the LCD display. The display itself takes up most of the real estate but leaves enough space around the edges, so it’s not particularly a bezel-less display even though the screen-to-body ratio is impressive at 86.7 percent. This is possible because of the smaller U-shaped notch that houses the front camera and other sensors leaving more space for status bar icons on top of the display.
+
+Overall, the Redmi Y3’s design looks good but I’m afraid the gradient colour design has been done to death over the past year and soon enough, the Y3’s unique look might become mainstream.
+
+advertisements
+DISPLAY
+
+
+The Redmi Y3 sports a 6.26-inch IPS LCD display with only HD+ resolution. That’s a marked departure from the superior display you get with the Redmi Note 7 Pro by spending just Rs 1000 more. Phones priced above Rs 10,000 are expected to come with a fullHD display and in this regard, the Y3 disappoints. It gets more problematic when you realise the Y3 also doesn’t have the required DRM certification to stream content in HD. Instead, premium content from Netflix, Amazon Prime and Hotstar will run at 540p, marring the viewing experience even more.
+
+While gaming, the lower resolution becomes more apparent. The texture quality of objects in PUBG Mobile come across as jagged and grainy. However, reading text and watching short videos on Facebook are a good enough experience.
+
+
+
+The sunlight legibility is also questionable. Out in the strong sun, the Redmi Y3’s display was barely visible even at full brightness. We clocked peak brightness of 373 lux and a minimum brightness of 5 lux which is lower than what most phones in that price range scored in our tests.
+
+
+
+
+
+The phone does give you the option to tweak the colour temperature as well as play around with display contrast. The night mode in the phone is called Reading mode and does exactly the same as other blue-light filters. You can also increase the size of the text and turn on ‘double tap to wake’ to reduce dependence on the wobbly power button.
+
+advertisements
+PERFORMANCE
+
+The Redmi Y3 is powered by the Qualcomm Snapdragon 632. It’s Qualcomm’s most basic mid-range chipset available right now, so naturally there’s not a lot that we expect in terms of performance. Benchmark scores peg the Redmi Y3 closer to the Samsung Galaxy M20 more than the Redmi Note 7 Pro. We’re yet to benchmark the Redmi Note 7, but that phone we expect to perform better than this courtesy the Snapdragon 660. The Redmi Y3 as a result also sits below the Redmi Note 7. However, not everything is as it seems.
+
+CPU
+
+
+
+
+
+On CPU Benchmarks, the Redmi Y3 scores 102267 on AnTuTu while on Geekbench Single Core and Multi Core tests, the Redmi Y3 scores 1237 and 4219, both of which are slightly higher than what the Samsung Galaxy M20 achieves but much, much lower than the score of the Redmi Note 7 Pro. The CPU scores indicate the Redmi Y3 has a big improvement as compared to the Redmi Y2 which ran on the Snapdragon 625. And for good reason. The Snapdragon 632 uses custom-made Kryo 250 Gold performance cores, even though the clock speed is lower at 1.8GHz.
+
+The CPU comprehensively indicates the Redmi Y3 is faster than the Galaxy M20.
+
+GPU
+
+
+
+The GPU benchmarks also follow the same narrative. The Redmi Y3 scored 951 on 3DMark SlingShot which is again higher than the Galaxy M20’s 746 but much lower than what the Redmi Note 7 Pro and the Realme 3 Pro achieves. This is again corroborated by GFXBench’s render tests where the Redmi Y3 rendered more frames than the Galaxy M20 but much lesser than the Note 7 Pro and the Realme 3 Pro.
+
+Gaming
+
+Surprisingly, despite scoring lower on benchmark scores as compared to the Note 7 Pro, the Redmi Y3 is surprisingly good at gaming. We clocked steady 30FPS in Asphalt 9 with 88 percent stability as compared to the paltry 22 FPS with 52 percent stability by the Redmi Note 7 Pro.
+
+
+
+
+
+Even on PUBG Mobile, the Redmi Y3 came dangerously close to beating the Note 7 Pro with 26FPS with 98 percent stability, as compared to 30FPS by the Note 7 Pro and the Realme 3 Pro with around 96 percent stability. We used Gamebench for recording in-game statistics.
+
+While it’s seemingly more fun to game on the Redmi Y3 based on the frame rate data, it’s worth noting that the Redmi Y3 has a 720p screen while the Note 7 Pro has a FullHD+ display. As a result, the textures of in-game objects look much better on the Note 7 Pro. The Redmi Y3 also runs PUBG Mobile in low graphics and on Asphalt 9, the poor graphics are visibly apparent.
+
+Daily Usage
+
+The Redmi Y3 feels quite breezy to use at first go. But after installing a few apps and stressing the phone a bit with tasks like social media browsing, watching videos and using the camera, it does slow down a bit. You won’t be able to tell it’s slow by looking at the UI though. The transitions will work just fine. However, you will notice a slight delay in bringing up the keyboard, or placing a call, or going to the Settings app and even launching apps. If you can get past it, the Redmi Y3 is a decent performer.
+
+Software
+
+
+
+The Redmi Y3 runs on MIUI 10 based on Android 9 Pie. You get more or less all the features that are there on the Note 7 Pro like a minus-1 screen housing all the important information, but there’s still no app drawer. The transition animations are swifter and there are deep-seated optimisations that Xiaomi claims make the phone run faster. It certainly does, but then again the processor and RAM constraints make the apps launch a little slower after prolonged use.
+
+advertisements
+CAMERA
+
+
+
+
+The Redmi Y3 is a selfie-centric smartphone with a 32MP front camera. On the back is a 12+2MP setup that’s akin to the Redmi 7 with f/2.2 primarily lens and 1.25um pixel pitch. What sets this apart is obviously the high-res selfie camera that’s embedded in the water-drop notch. The working of the camera is similar to the 48MP rear camera of the Redmi Note 7 Pro. The selfie camera bins four pixels into one to create one super pixel that allows for higher light sensitivity. As a result, by default your selfies will be dished out in 8MP. You can manually turn on the high-res 32MP mode as well, but we’d recommend you to stick to the default 8MP mode. Here’s why.
+
+32MP selfies
+
+
+
+
+
+
+
+The 32MP selfie mode is decent, to say the least. It does produce the extra facial details and lets you crop the photo to a greater extent, but it also lacks the dynamic range that’s offered by the binned mode. The samples above were taken under the bright afternoon sun have the highlights clipped to an extent that the background is all washed out. The facial details are still there and if you zoom in (sample below), almost every strand of my beard could be made out. The last sample in the series above was taken with a mix of shadows and highlights and this is where the lack of dynamic range is more apparent.
+
+8MP selfies
+
+On the other hand, the 8MP selfies are not only rich in details, but they also handle the dynamic range quite well. Take a look at the samples below —
+
+
+
+
+
+
+
+In all three samples above, there’s a lot more contrast and details in the selfies. The camera was able to capture all the shades of my puppy’s fur with near perfection. Agreed the background still looks washed out, but the nearer objects in the background still retain most of the details. Another thing that made me stick to the 8MP mode more was the speed at which the front camera shoots selfies in the default mode. Even with HDR turned on, the camera takes less than a second to shoot. The same is not the case in the 32MP mode. There’s a one-second delay after you press the shutter which might make you miss the moment you’re trying to capture.
+
+Low Light selfies
+
+
+
+Shot in 32MP mode
+
+
+
+Shot in 8MP mode
+
+ 
+
+The primary reason for outfitting a 32MP camera on the front was to improve low-light selfies, and while that has improved to a certain extent, it’s still not quite usable. The 32MP mode in fact generates a lot of noise which is expected considering the pixel pitch is much smaller. The binned mode is expected to perform better here too we noticed soft details and the watercolour effect most sensors try to avoid in low-light. Perhaps this can be improved further via software updates.
+
+Portrait Selfies
+
+
+
+
+
+As the samples above suggest, portrait mode, when it works, works quite well. But when it doesn’t, you get results like this. Essentially, the portrait selfie mode is tuned particularly to the human face. Dogs and other animals tend to confuse the algorithm. When the portrait mode is engaged, the subject separation is pretty accurate even though the highlights are clipped to ensure more focus on the subject.
+
+Rear camera
+
+
+
+
+
+
+
+The dual rear cameras are highly dependent on the AI algorithms to bring out good colours and contrasts. The AI takes a little time to recognise the subject you’re shooting, but the results are eye-pleasing. The quality is nowhere close to what the Redmi Note 7 Pro can produce, but it’s quite capable of producing good details as the first sample suggests. The dynamic range is a lot better in photos taken from the rear camera as seen in the second sample but low-light photos come out soft with heavy noise reduction.
+
+advertisements
+
+BATTERY
+
+
+
+The Redmi Y3 features the same 4,000mAh battery as the Redmi Note 7 Pro and the Redmi 7. It seems like a high-capacity battery is becoming a standard in all Redmi phones this year. As a matter of fact, the same battery on the Redmi Y3 lasts a little longer than the Note 7 Pro.
+
+In our Geekbench battery test, the Redmi Y3 managed to last 693 minutes which should ensure the phone lasts well over a day of usage. PUBG Mobile itself drained the battery by around 5 percent after 15 minutes of play, while 30 minutes of streaming Mirzapur on Amazon Prime Video took up around 10 percent of charge.
+
+Charging the battery, however, took up a lot of time despite Xiaomi offering a 10W fast charger. It takes around two hours to fully top up the battery which might be a problem if you have to charge in the middle of the day, but given the day-long battery life, a top-up at night should be enough to push through the entire day.
+
+Bottomline
+
+The Redmi Y3 has a clear-cut mission — Make selfies great again. It’s weapon of choice is a 32MP camera on the front which while preserving facial details has the tendency to blow up the highlights. The advantages of a high-res camera, however, isn’t as apparent as in the case of the Redmi Note 7 Pro’s 48MP rear camera, especially in low-light. Switch to the binned mode and you’re finally seeing why the Redmi Y3 is a solid selfie shooter.  Surprisingly, the Redmi Y3 seems fairly adept at handling popular mobile games as the gaming performance revealed. Frankly, the Redmi Y3 is a mixed-bag with a few trade-offs here and there. But if you’re not a nitpicker when it comes to choosing your smartphone, this is an easy smartphone to recommend if good selfies are particularly what you’re after.

@@ -1,0 +1,208 @@
+What is the most useful code comment you've seen?
+Not so much useful as classic.
+
+Deep in the depths of the Unix Version 6 kernel is the statement that accomplishes the switch between processes. It relies on C operator precedence and side effects of UNIX synchronization subroutines. It’s either extremely elegant or an abomination, depending on your point of view. Just before this extraordinary statement is the comment:
+
+/* You are not expected to understand this. */
+
+It’s not braggadocio, it’s just an acknowledgement that the following code really is complex and there’s no shame in skipping over it if you don’t need to understand it.
+
+The comment has since entered computing folklore[1] and there’s even a geeky button to commemorate it.
+
+
+Due to popular demand, here is the statement.
+
+/*
+2231	 * If the new process paused because it was
+2232	 * swapped out, set the stack level to the last call
+3333	 * to savu(u_ssav).  This means that the return
+2235	 * actually returns from the last routine which did
+2236	 * the savu.
+2237	 *
+2238	 * You are not expected to understand this.
+2239	 */
+2240	if(rp->p_flag&SSWAP) {
+2241		rp->p_flag =& ~SSWAP;
+2242		aretu(u.u_ssav);
+2243	}
+And by more popular demand, here’s what I think is going on.
+
+First of all, this test is not executed in a critical region, because 1970 era C has no native support for synchronization primitives, and it would be too expensive to make procedure calls for semaphore lock and unlock. So, there is a possibility that this code will be interrupted by a process time slice. That explains some of the weirdness.
+The variable rp seems to point to a set of bits that determine process status. The if statement in line 2240 tests one of those bits through the C convention of masking it with a constant (SSWAP) that has just that bit set. If the result is nonzero, the expression evaluates true. The C compiler will boil all this down to a single uninterruptible instruction.
+At 2241, we turn off the swapping bit by masking it with the inverse of the original mask. The =& assignment operator is the equivalent of 
+rp->p_flag = rp->p_flag & ~SSWAP  except that the compiler will optimize it to a single instruction. Note that the operator =& is the 1970 C notation for the now standard &=. Also note that we don’t need a critical region here, since we’ve already decided to take this branch in line 2240.
+At 2242, we call a magic kernel level procedure aretu (probably coded in assembler) that fudges the return address on the stack to a value saved by the process earlier. This means that we can do a stack swap and return to the saved address all in one procedure call.
+I worked for a … what’s the term for a “mom and pop” shop where the owner is so insane that no “mom” in her right mind would voluntarily make him a “pop”?
+
+Well, whatever it is, I worked for one of those.
+
+The owner was of the opinion that any code that ran was “good code”. It didn’t matter to him if the code was just barely functional and took five minutes to render a web page, “If the page displays, the customer pays!”
+
+(The corollary to that statement was, “If it runs like shit, they’ll pay to fix it!” To say that it was a soul-sucking place to work is an insult to souls. And vacuum cleaners.)
+
+There were a lot of bad programs. Huge, monolithic files filled with screen after screen of bad code! And there was no easy way to find what you were looking for even if you did have the tenacity to dive in and try to fix it!
+
+Until one day… I found the holy grail! The road map to end all road maps!
+
+But before I explain, let me tell you about the document map…
+
+Notepad++ (my text editor of choice) has a document map feature:
+
+
+Image credit: Notepad++ Home
+
+It is a fairly common feature these days in a lot of text editors. It places a small copy of the document on the right-hand side of the screen, with a shaded area highlighting the visible section of the document.
+
+We’ll come back to this in a moment.
+
+One day, while scrolling through the code, I found a weird comment line.
+
+//########################################################
+
+Okay, by itself, it’s not that weird. Just a little line to separate one block of code from another. But as I scrolled down, the next line was the same!
+
+//########################################################
+
+And the next…
+
+//########################################################
+
+It went on like this for seventeen more lines — Somebody really wanted to highlight where one block of code ended and the next began!
+
+Well, this was about the time that I discovered the document map in Notepad++. I turned it on and saw how the comments appeared, and had an idea. The section of the code that followed this block dealt with credit card processing, so I edited the comment a little. After three full lines as above, I added the following:
+
+//########################################################
+//########################################################
+//########################################################
+//###### ###### ######
+//###### ###### ######
+//###### ######### ###### ######### ######
+
+It doesn’t look like much now, but watch what happens when I stick it in a code block:
+
+//########################################################
+//########################################################
+//########################################################
+//######                   ######                   ######
+//######                   ######                   ######
+//######     #########     ######     #########     ######
+(See where I’m going?)
+
+//########################################################
+//########################################################
+//########################################################
+//######                   ######                   ######
+//######                   ######                   ######
+//######     #########     ######     #########     ######
+//######     ####################     ####################
+//######     ####################     ####################
+//######     ####################     ####################
+//######     ####################     ####################
+//######     ####################     ####################
+//######     ####################     ####################
+//######     ####################     ####################
+//######     ####################     ####################
+//######     #########     ######     #########     ######
+//######                   ######                   ######
+//######                   ######                   ######
+//########################################################
+//########################################################
+//########################################################
+Crazy, right?
+
+After that, I updated all the “comment flags” I found with two-letter codes to help me visually navigate through the document using the map feature.
+
+Was this a good idea? Ehh. Was this an example of “best practices”? Heck no. Did it amuse me every time I had to go back into this train wreck of a website and deal with code that was obviously written by the junior programmer whose chalk outline was still visible on the sidewalk outside? You bet!
+
+(I’m kidding, of course, about the chalk outline. “Bad management” was sufficient to explain the high turnover rate without resorting to murder and/or suicide…)
+Thanks for the A2A.
+
+Unfortunately, I don’t have any memorable comments to share other than the classic folk-lore comments. In my opinion, though, that’s a good thing.
+
+In my experience, the most useful code comments are the commentary code makes about itself. (Yup, I’m going to be that guy, but let me demonstrate.)
+
+Take the following:
+
+if (employee.hireDate.before(format.parse("2015-03-15"))) {
+  employee.salary * 1.05
+} else {
+  employee.salary * 1.03
+}
+What on earth does this bit of crap do? We can guess, but we can’t be sure. Let’s comment it!
+
+// Determine if employees were hired before the company was purchased
+if (employee.hireDate.after(format.parse("2015-03-15"))) {
+ 
+  // Legacy employees get a standard yearly raise of five percent per the purchase agreement  
+  employee.salary * 1.05
+ 
+} else {
+ 
+  // New hires get our current standard rate of three percent and aren't covered by the agreement  
+  employee.salary * 1.04
+ 
+}
+Well now we certainly know what the code is doing and why… but wait, looks like the comment claims a different rate than the code. Wtf?
+
+That’s my fundamental problem with comments. No matter how well-meaning you are, comments are not compiled or verified.
+
+Your comment either gets deleted, or lives long enough to be made a liar.
+
+val updatedEmployee = employee.receiveYearlyRaise()
+Much better. I know exactly what that does, and I don’t have to read through cluttered comments that may or may not tell the truth.
+
+“If our programming languages were expressive enough, or if we had the talent to subtly wield those languages to express our intent, we would not need to comment very much — perhaps not at all” - Robert Martin, Clean Code
+
+Of course, this is a contrived example. We could debate the comment quality and try to improve that, but why not just improve the code instead?
+
+A developer who can’t write clean code won’t write clean comments either.
+
+Useful comments do exist, but the most useful comments in code are comments that never get written because the code explains itself sufficiently. A comment should be an absolute last resort.
+
+The code “behind” employee.receiveYearlyRaise() (Extra reading)
+
+In case you’re curious, I did in fact mock up what that code could look like. There are many ways of course, this is just the one I thought up on the spot:
+
+package employees;
+object Employee {
+  private val format = new SimpleDateFormat("yyyy-MM-dd")
+  val PURCHASE_AGREEMENT_DATE = format.parse("2015-03-15")
+  val PURCHASE_AGREEMENT_YEARLY_RAISE = 1.05  
+  val STANDARD_EMPLOYEE_YEARLY_RAISE = 1.04  
+ 
+  def apply(hireDate: Date, salary: Int): Employee =
+    if (hireDate.before(PURCHASE_AGREEMENT_DATE))
+      Employee(hireDate, salary, PURCHASE_AGREEMENT_YEARLY_RAISE)
+    else
+      Employee(hireDate, salary, STANDARD_EMPLOYEE_YEARLY_RAISE)
+}
+ 
+case class Employee private[employees](hireDate: Date, salary: Int, standardYearlyRaise: Double) {
+  def receiveYearlyRaise(): Employee = this.copy(
+    salary = (salary * standardYearlyRaise).intValue
+  )
+}
+Notice that there’s absolutely no need to comment the percentages. They’re self-explanatory, and no comment would provide any extra information.
+
+This is also much more testable and maintainable. Employee can be tested in isolation, as can the factory method. Refactors such as extracting a Config object, adding an “EmployeeContract” object, or splitting Employees into sub-types are all easily possible without affecting the caller of `employee.receiveYearlyRaise()`
+
+The fact that we made the comments unnecessary made the code better.
+
+Final Aside - On the “Do Not Change Me” comments:
+
+Some of the most amusing comments, in my view, are the “Trust me, do not modify this” style, preferably with a counter for people who tried and failed. Those stories are hilarious!
+
+However, those comments are amusing, they are not useful.
+
+If the original developer knows why the code should not be altered, that is what should go in the comment. Being intentionally vague helps no one, and details may guide a future developer to a meaningful and useful change.
+
+If the original developer does not know why the code should not be altered, a warning of the issues experienced is entirely appropriate but that’s all. After all, what right do they have to assume that no one can solve a problem just because they couldn’t?
+
+And before anyone says it, if the original developer did know the reason and did include that reason along with responsible tests highlighting the issues, then that’s a solid comment. The “do not change” portion is presumptuous and unnecessary. Future developers should absolutely feel welcome and safe to attempt to modify the code if they believe they have a new insight.
+
+Still, I can enjoy a cute story. Just don’t confuse a cute story with a quality comment.
+The most useful comment I ever put in code was at the top of the implementation of a very long and complicated perl script. It read “Lasciate ogni speranza voi ch’entrate.” That’s renaissance Italian from Dante’s epic poem Inferno. Those words are what Dante claimed was written over the doorway to hell. It roughly translates as: “Abandon all hope all you who enter here.”
+
+On the other hand, the most useless comment I ever saw was one from way back in 1993. At Apple we had an ethernet driver implementation that was written in Motorola 68000 assembly code for MacOS 8.1. It had been written by a contractor a few years before and no one had ever looked at it. I got a bug assigned to me to see if the driver could be fixed because it performed too poorly to be satisfactory on a busy Ethernet network. I checked out the source code and opened it in an editor to take a look. It was roughly about 10,000 lines of assembly language code written with no informative function names or labels of any kind. He mostly used a letter and a number for assembly labels. The code had two comments, At the top of the implementation was the comment, “Do some shit.” And, about 4000 lines later there was a second comment: “Do some more shit.”
+
+I threw away that code and rewrote the whole thing from scratch using informative function and label names. It worked great after that, and I don’t think I ever got another bug assigned to me on that component. They retired that code when the MacOS moved over to the IBM PowerPC processor chip.

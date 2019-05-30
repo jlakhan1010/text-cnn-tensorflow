@@ -1,0 +1,168 @@
+What are some good computer hacks made by students in college?
+I was a student of 2014 batch in IIIT.
+
+Even I haven't tracked how many hacks I made when I was a student. So, I will start from my First Semester.
+
+1. In my first semester I along with one of my friend cracked 23 Facebook accounts in a span of 2 days. Well, we did not use keyloggers nor did we use the "remember password" technique. 
+
+2. I fiddled around with my college ERP and discovered its vulnerability to SQL injection and XSS. Apparently that ERP is used in many universities including one of the top  IITs. I used to do SQL injection to get data of students of other colleges. But never used the data.
+
+I reported few bugs to my college, they fixed a few.
+
+3. In my second semester I hacked through my college router and changed its settings to get maximum speed.
+
+4. During that router hack I found many private IPs of my college. One of them was the access to CCTV Camera and there was no password in it. Yes, it was open with the username as admin and a blank password. Well, it was really fun. One day I called up one of my junior and asked him to perform some act. Obviously I was following him on the CCTV. (It is really cool when you can see all the activities going on in your college just by sitting in your hostel room!)
+
+5. I was on a hacking spree then and found vulnerabilities and defaced a few websites!
+
+6. I managed to hack one of the scholarship portals of my state which gives scholarship of INR 10K to eligible BTech students. I had the admin access and I could add/modify/delete any data. With admin control I used to track the status of the application forms of my friends. This was in my 5th semester.
+
+
+7. I made a script and cracked ERP access of many faculties including that of the library (I actually lost a book but managed to submit it through the ERP ;) ).
+
+8. Due to ERP access I had access to change the marks, attendance, grades and notice board! Well I helped a few friends in their attendance and obviously I enjoyed the treat afterwards :D
+
+9. I hacked through a few faculty firewall authentications and enjoyed the premium internet speed! :D
+
+10. Next, State Education Board for 10th class. I hacked through their server and had access to the exam question papers. But I never used them. I drafted it on my thesis paper.
+
+11. I also hacked the admin access of state's Bus Service website. I reported them immediately, but they were too lazy then. But now when I check it, it's fixed :)
+
+
+
+12. Okay, this is quite big. On my crush's birthday I wished her by XSSing on NASA's sub-domain. Yes! It was NASA. ;) This (Page on nasa.gov) was the sub-domain where I wished her in 2012. :D
+
+
+13. Again in 2012, one of the IITs conducted their techfest. The developer of the website is a facebook friend of mine. After they launched their website with registration and online events I managed to crack the root access. It was a simple SQL injection on the LAMP stack. Later, they came to know about this. As far as I remember, I have cracked 2 more techfest sites in regional technical colleges.
+
+14. When I learnt PHP, I had an idea of making an interactive crush finder/matcher that helps people match with their crush anonymously. If there's a match from both ends then it would reveal the profiles. But I was way too lazy to complete this and after two years I found the same idea on an Indian website Page on wizters.com. Duh! I found vulnerability in their site. But they fixed it quickly after I reported it. I hope Wizters will go a long way :)
+
+
+
+15. In my seventh semester one software company with good package came to our college for placement (This was the only company for which I was eligible to appear). I appeared for their exam on their exam portal. Well, I was disqualified in the first round itself. :P But after two days I reported to them that I found vulnerabilities in their exam portal. They appreciated my findings, but they never hired me :'(
+
+
+
+16. There is one more big hack which I will update after few weeks! 
+
+
+Now, I have obvious reasons to maintain my anonymity.
+It was my 4th semester result. I was hitting the refresh button on my college result web page. In few minutes the result came out. I scored quite well unlike other semesters. I was feeling quite energetic and hacky that day. I started to play around with that web page and looking at the website, with such an ugly design, I suspected that there must surely be a loophole in their infrastructure and may be I can hack into it. There was no organized structure to the website. I could see randomly thrown links on the website with no naming convention, poor CSS rules all around, poor compatibility with browsers.
+
+I fired my firebug plugin on firefox and started looking here and there for any loophole. The website looked vulnerable to the SQLi the most, so I started with it. I started entering few wrongly formatted roll numbers in the field that asked you for your "Roll Number". Some inverted commas here and there and everything started to break apart. After investing few more minutes, I was quite sure I could deface the whole infrastructure behind. Some wrongly formatted roll numbers would take me to a error page and it was weird that error itself was exposing internal information about the underlying SQL tables. It could tell me the names of the tables. I googled this behaviour and found out that this is a major MSSQL 2000 bug. The college was using an older version of the Microsoft SQL server which itself had a SQLi vulnerability. There were fixes released by the microsoft for this vulnerability but as I mentioned the maintainer of the result server must be careless. He was still running the website on an old, outdated version of the SQL server. After tweaking more with the wrongly formatted roll numbers, I started to get the names of the underlying SQL tables. They were like 'teachers', '4thsem', '2nd sem'. And there it goes, I tweaked few bits here and there, I started getting names of the teachers, the passwords of the teachers, the name of the students, their internal marks and I was on fire defacing the whole website. By this time the wrongly formatted roll number string had reached upto 200 or 300 characters and counting.
+
+The only problem was, that it was too cumbersome because the vulnerability was allowing me to only deface one bit of data at a time. I had to change the roll number string everytime to get the next piece of data. I could have written a script for that which I did and ran on the server. It helped me dumped usernames and passwords of all the teachers at once.
+
+I was like Holy F**k ! Am I doing something wrong ? Would they charge me for it ? 2 years in Prison or more ? I stopped this and went to my bed. I woke up after few hours. By that time I had already stopped giving shit about the consequences and the story continues.
+
+The script could have dumped all other data but I thought of doing it in a more elegant way. I found out that, apart from the vulnerability exposing the SELECT statement output data in its error message, I could also use the vulnerability for INSERT, DELETE and other administrative operations. I thought of creating a test user on their SQL server. It took few hours and finally I nailed it. At this point, I had created a 'test' user with administrative privileges on whole server and its data. Things started becoming easy from this point. I connected my SQL client to their SQL server. I had the credentials, I would put in 'test' as username, '<password>' as password and it would let me see the whole database, all tables, all teachers' usernames, its passwords, students marks, all students information, their home address, their fathers' name, the degrees to be awarded to students in the next coming convocation (You don't want some teacher of yours to get their PhD degree in the next convocation ? Ok. Remove his name and add yours). I could click on any field and change CGPA, SGPA and what not and it would directly show up in the result web page. Since, our college server was the first one to have the result data (teachers directly submit the grades on the server), changing it would mean changing the data on the printed mark sheets that the Academics block would issue to me. Hence, I was feeling quite powerful but I didn't alter any bit of it. Something from inside me stopped doing that, maybe ethics. Moreover, since I had already scored good in that semester, so the idea of increasing my grade didn't attract me much.
+
+I was really scared of what I have done by now. I didn't want to tell to everybody just because I didn't want to get incriminated for it. I told this to my friend and requested him to not tell anyone a single bit about it. He agreed but asked me to proove it. I changed his CGPA to 9 from 8 momentarily, showed him and then reverted it. I decided to not to alter any of the results and data on the server. Since it was vacations I decided to close this hack project I had started and archived the whole database safely on my PC for about a month or so.
+
+After that, college started and I decided to report the bug just because I felt I should be doing that. I went to the Head, told him that this is the case and I could change the results without you even knowing it. The head redirected me to the maintainer of the website. I told him the whole story and he fixed the bug.
+
+I kept it a secret for quite a long time (about one year) because I was afraid. Now since, I have stopped giving shit about being incriminated or whatever, I am making this public for the first time.
+
+PS: Result for my 6th semester went public last week and I failed. I wish I had not reported the bug. I could’ve changed the result and would’ve passed. ;)
+How I hacked the website of Clean and Clear Fresh Face 2015!
+
+Well, this is not really a hack. Like I didn’t access the whole database or servers or killed their website. But technically speaking I hacked it. I found a flaw which I could manipulate so that anyone I wish can win this year’s competition!
+
+So here it goes. One of my close friends in first year texted me in the morning, the same way he texted everyone else on his broadcast list, a link to his profile for this year’s Fresh Face and asked me to vote for him. I agreed.
+Since a few weeks, I was focusing on hacking and was reading about the hacks happened in the history. The phone hacks of 80’s, the crash of AT&T on Jan 15 1990, some accounts of Kevin Mitnick and the life story of Adrian Lamo (both of them being genius hackers). I watched “Citizenfour” yesternight, the story of Edward Snowden who revealed proofs of NSA spying on us.
+All this resulted in an admiration for the hacker culture and a desire to be a part of it.
+As soon as I received his message, I went to the site, voted him.
+But I was shocked to see that the site had negligible amount of security implemented. No kind of verification was required to vote someone. I got suspicious. I analysed the source code. I saw that the vote button simply triggered a javascript function which was named ‘saveVote’. I thought who the F*** named it so obvious that you can figure out what it does pretty easily. I didn’t have to go through its code to figure out what it does. It basically saved the vote.
+I started digging deeper and deeper. Now I figured out that the session should be saved in a cookie which tells whether you have voted a particular person or not. That means if the cookie is gone, the session is gone and so is the vote. I disabled cookie storage of the browser. Voila!! When I reloaded the page, I could vote again. I made a python script to automate this process and setup a proxy server using Tor so that it seems like the votes are coming from various parts of the ‘world’.
+The python script automatically opens the browser, goes to the specified URL, votes the person and closes the window. This process goes on until the loop ends. And the repetition of the loop is decided by a variable I have set. It can be 5000, it can be a Lac.
+I now have a lot of control. This is not just the issue of the Pune Fresh Face site. All the states’ sites are having the same flaw. I could basically decide who gets the highest votes.
+
+Now, I think I should not let my friend win. I don’t think it’s a good move. Anyways thanks buddy. Today was heavily productive because of you. But let’s not win like this. Let’s do something else with this knowledge.
+
+EDIT:
+The first script was really slow because it literally loads the webpage in the browser and looks for the vote button etc. So I decided to modify it by using the xmlHTTPrequest that the page sends to update the count. Hence I came up with another python script which upvotes the person w/o wringing my bandwidth. 
+
+I also decided to upload the scripts to my Git repo
+Here's the link:
+I am from a tier-3 college and practicals in our college as expected, sucked! So, I had always this urge of doing some random stuff while everyone was busy understanding the TCP/IP layer of busy Googling stuff.
+
+1. This happened during one of our Linux practicals, if I remember correctly the teacher (?) was teaching the girls about Samba server. Now, the thing is we had issues with the guy and he would almost always end up only explaining girls because if we asked him doubts he would suck to answer :P
+
+So, I was really bored about all this stupid practical and decided to have some fun. I had a bootable version of Backtrack in a pendrive with me and decided to use it! B) Now, all I did was initiated a simple flood ping on the system he was explaining the girls on (the systems are so crappy that no dedicated DOS attack script is needed! :D) ...now the system could not communicate in the network and he was like, "This kind of things happen with slow computers. Hum kisi aur machine pe karte hai" and he tried 3 machines after that and all of that yielded just the same result! :D And we guys were enjoying the scene sitting few feet away :D
+
+
+2. This was done by my friend. We had a proxy based authentication for every user in the college to access the internet. And anyone found using something malicious had his account locked and had to get his application signed by principal for re-activation of the account. So, what my friend did was, that in one of our practicals he used Cain&Abel which would reveal any proxy based credentials of the users present in the network. This yielded him the credentials of a lot of people (even saw a few girls' passwords! ;) ) and he even managed to once get the credentials of the data center manager himself! :D @nachiket kate was the guy who found this hack and let us enjoy premium bandwidth for some time :D
+
+3. This one was pretty legal as I was called by one of my professors to hack into an old shut down server which was supposed to be restarted but the credentials were lost. And trust me, I almost felt like a cyber security expert called on to a crime scene in a Hollywood movie! :D There was this server, a Windows server whose credentials were lost. The person incharge had left his job a couple of years ago and there was no way apparently to recover the server. No simple backdoor attacks etc would work since the whole OS is encrypted by default. It looked an impossible task. Until, I found this tool on the internet, it claimed to have a decryption mechanism and would then perform a backdoor attack and could grant access to any user. I thought, there's nothing to lose so let's try. And it actually worked! I could now access the admin account and change the password and the system actually worked. The teachers were happy and so was I, I still haven't quite understood though, how the hell did that thing work! :P
+
+
+4. This one was another of my tasks with my friend, Sagar Udasi. The two of us were on a site, a project of our classmate which was kind of a forum management system of some kind. My friend found some flaw in the URL somewhere and we decided to play around. We managed a database injection so bad actually that we couldn't figure out exactly what happened. We inserted some javascript code which would create a popup every time a page loaded. And the guy never ever understood about this until we told him some days later. This didn't affect his marks though (as expected) since he only demoed a local version on his laptop and not the online version :P
+
+
+Apart from this, it was like a daily routine for a lot of guys in the hostel to use proxy sites and different alterations of TOR browser to get across the filtering and access everything. The data center guy was frustrated so much that they ultimately decided to start confiscating WiFi adapters and laptops of the students (talk about security! :D) and later on they even restricted number of connections to the boys hostel network because they just couldn't seem to stop the usage of TOR :P
+A Results website to exploit students' results!
+Link: Welcome to SJCE Results
+
+You know how students are always obsessed about their friends' results? They always want to know how others have performed in the exam and want to know if their grades sucked too! :D
+It includes me as well.
+
+I have to mention that in my college's website, you could only search for a particular result if you know their USN. Also, the college website didn't give GPA, only the grades for all the subjects and left the calculation of the GPA to the students (which many still don't know how)
+
+At the end of my 3rd semester, I had learnt some of basic shell scripting. By using that, I could crawl through the webpages (results of my class) and get a list of grades obtained by my friends. I could then quickly calculate their GPA.
+At the end of 4th semester, I found out a way to insert all the obtained grades into a MySql database. I learnt that MySql will let you do wonders using this data. I knew this could go somewhere.
+
+Finally at the end of 5th semester, I wanted to do this to the entire college! I got to know that once I get GPA of students, I could release ranks of each student. That was crazy!
+So to do this, I gathered 2 of my friends and started coding day and night. It took us around 10 to 12 days to finally finish the website.
+
+Result of our work:
+
+Name wise search of all the students in the college. You can check the result of that guy you had been stalking easily now ;)
+Declare Ranks to students i.e class wise rank, department wise rank and even college rank.
+Subject Statistics to know how many got S,A...F grade. You'd be happy to know that many flunked the subject along with you, don't you :P
+Department Statistics to know which department has got good grades. Now you can know which department lecturers are lenient in giving out grades
+View Count to know how many are interested in viewing your grades. That's right, now we can know who that Mr.Popular is. :D
+Statistics:
+
+Till date the website has more than 800000 page views and on the results' day I get around 1 lakh page views.
+EDIT: As of Jun 2018 the website has more than 2 MILLION page views.
+No one will log on to the college website now. They depend on my website
+The newbies in the college think that this is the official college website :D Well, that's something!
+Even the college faculty uses the website to check the performance of the students.
+That's my computer hack :)
+In my second year of engineering at MIT, My neighbour in block 15 was this crazy CSE genius who was on a pursuit to find a loop hole in our internet access process.
+
+Here's how it worked.
+
+We all have our admission number :120xxxxxx
+
+and a password associated with it, you get redirected to the login page at the starting of a session and you can start browsing once you sign in.  The major issue for everyone was the fact that only 15GB is is allotted per month  to any ID, and once you've used it up, you need to pay the ION guys and get balance to your account.
+
+So after a few weeks of work, this guy managed to trick the system. I dont understand the technical details of the trick but I can explain the overall flow:
+
+His program would scan and find out the IPs of all the computers connected to the router (on router 6 rooms, 12 laptops  so 12 IPs at max) ,then masking that IP on top of the system's current IP, it would send a request  to the ION sign in page where it would display the balance left in the particular IP, each account opened in a new browser. Depending on the one which has the highest balance you can manually modify your IP and  start browsing!
+
+This was an extremely helpful trick which helped me and maybe few others who he decided to trust with his program.
+
+However the authorities would have managed to find something fishy going on because they introduced dynamic IP allocation next semester and that program could no longer work.
+I am not a hacker or a professional security guy and not even a pro programmer. Here are some of the things I did being in diploma.  
+Hacked into CCTV cams of my college labs..
+Hacked into the college WiFi router with actually exploiting it with publicly available exploits.
+Hacked and defaced my internship company's website they built with php(They had authentication bypass vulnerability).
+We had a networking lab and there was "Teacher"(It is used to share teacher's screen sharing) installed. I logged in to the pc with microsoft remote login and created a txt and wrote "Hacked" and shared the screen with all the pc connected in the network. (Everybody knew who did it.) :D 
+Found ELi which is Expression Language Injection in Intel's website and reported them about the issue and got a reward.. yay.. ;) Well have censored the email because I respect privacy..  
+
+Found 2 xss in Avast website but unfortunately wasn't eligible.. :(
+
+Also found open url redirection in facebook but was rejected again.(Too lazy to take a screenshot and share).
+Literally hacked into few more big sites but cannot name them.. Inbox me if you want to know more but still I won't share..
+When I was new and learned my 1st skill SQLi I hacked into my school website and defaced one of the page. Reported it to the developer and they didn't took any action as I was in 10th and explained me not to do such activity as I can punished for it but you know how obedient I am.. :D
+Created a tool which search for bad session(Which allow me to login to the admin panel and hack into 5-7 websites within 5 min including phpmyadmin {Catagory: OWASP A7}),stalk a person online, search for credit card and leaked username and password and released it in my techfest event. Was 1st runner up. :/ 
+
+
+Now I left bug bounty but yes my learning is still on. :)
+As you go more further into this you realize there is still hell lot of things to learn.
+Any question? 
+Ask me here or inbox me! :) 
+
+Happy Hacking! 
+Cheerz..

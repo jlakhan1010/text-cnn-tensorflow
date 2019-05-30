@@ -1,0 +1,61 @@
+We have had decades of experimentation and evolution in computer programming languages. Fortran, Lisp, Algol, Pascal, C, Smalltalk, C++, Java, Groovy, Scala and many more.
+
+The largest collection of widely reusable code has been created in Java. The code bases from Apache, Oracle, Standford (natural language processing) and many independent developers (Grails, Hibernate, Spring) has been used to build large scale software systems. Some posters have labeled these large systems implemented in Java as “corporate”, built by “corporate drones”. You know, corporate — like it has to work because we base our business on it.
+
+After these decades, here we are arguing about whether JavaScript, a language designed to run in a web browser, is an appropriate language for large scale software engineering. Really?
+
+JavaScript is so obviously not designed for building large scale software that we should not be having this argument.
+
+Richard Eng has a number of clearly written well reasons posts that describe why JavaScript is a poor choice for systems engineering. His words seem to be falling on deaf ears.
+
+To those of you out there who want to do large scale server side software in JavaScript — go for it. See how that works for you.
+
+I’ve discussed at length why I chose to use Grails, Groovy and Java to build nderground (see Notes from the nderground), a scalable social network built for privacy.
+
+nderground currently consists of about 15K lines of server side code. I cannot imagine building this in JavaScript. The idea sounds to me like some species of Hell. I may have been a bad boy, but hopefully not bad enough to be consigned to such Sisyphean punishment.
+
+But hey, your mileage may vary. Enjoy your wonderful JavaScript everywhere world. I’m certainly not stopping you.
+Like many women in the 1930s, Jean Jennings Bartik had studied mathematics. During and after World War II, Bartik and other women actually worked as “computers.” They calculated by hand the trajectories of military rockets and artillery shells depending on how much soldiers elevated the weapon. Each different weapon required a whole table of trajectories for the calculation, and each calculation took more than 30 hours.
+
+In 1945, Bartik heard about a new job, working with something called ENIAC. She wasn’t quite sure what the work entailed, but she took it, hoping to get in on the ground floor with a new technology.
+
+ENIAC was the first large-scale electronic computer whose operation wasn’t slowed down by mechanical parts. It could do the trajectory calculations much faster. Men designed ENIAC , but the grueling and tedious task of creating programs for it was considered “women’s work,” akin to clerical labor.
+
+“Men were interested in building the hardware,” historian Walter Isaacson told NPR. “Doing the circuits, figuring out the machinery. And women were very good mathematicians back then.” But their work was unglamorous and low paid.
+
+The night before ENIAC was to be first publicly demonstrated, it was malfunctioning. Bartik and her colleague Betty Snyder got it working. At the demonstration, ENIAC did the trajectory calculation in 20 seconds—10 seconds less than it would take the actual shell to reach its target. The audience was “absolutely ecstatic,” Bartik told the Computer History Museum. Nevertheless, Bartik and Snyder went unnamed in press pictures, and they weren’t even invited to the celebration dinner.
+
+Jean Jennings Bartik (left) operating the ENIAC’s main control panel. (Wikimedia)
+When the war was over, Bartik and her six-woman team of “ENIAC Girls” went to work with the UNIVAC, one of the first commercial computers. There they met Navy Reservist Grace Hopper.
+
+Hopper was looking for a way to make it easier to program computers with instructions. Entering reams of numbers was complicated and not very intuitive. She discovered a method of programming a computer with words instead of numbers, and in 1959 created a programming language that basically allowed operators to give the computer commands in English. It was called COBOL.
+
+COBOL is still widely used today, especially by banks and governments. It runs on virtually any platform and is very adept with numbers. As such, it’s used in almost all business transactions. Every time you swipe a credit card or sell an investment security, COBOL is involved.
+
+Between 30 and 50 percent of programmers were women in the 1950s, and it was seen as a natural career for them, as evidenced by a 1967 Cosmopolitan feature about “Computer Girls.”
+
+“It’s just like planning a dinner…You have to plan ahead and schedule everything so that it’s ready when you need it,” Dr. Hopper told the magazine. “Women are ‘naturals’ at computer programming.”
+
+But things were already changing. Programming was being recognized as intellectually strenuous, and salaries were rising significantly. More men became interested in it and sought to increase their own prestige, according to historian Nathan Ensmenger. They formed professional organizations, sought stricter requirements to enter the field, and discouraged the hiring of women.
+
+Female programmers were once the wave of the future. (Cosmopolitan)
+Employers began comparing programming less to clerical work and more to masculine activities like playing chess. Ad campaigns criticized women as gossiping, time-wasting, and error-prone. One tagline for Optical Scanning Corporation Ran, “What has sixteen legs, eight waggly tongues and costs you at least $40,000 a year?” Your team of 8 female programmers, that’s what.
+
+Hiring mangers began administering aptitude and personality profile tests that were biased toward men. The answers were circulated to fraternities and men’s clubs like the Elks.
+
+One of they key takeaways of the personality tests was the best programmers were antisocial, and that that was a male trait.
+
+By the time we entered the personal computer age in the 1980s, the stereotype of the programmer as antisocial super-nerd was set, aided by the rise of wonder boys like Steve Jobs and Bill Gates. Films like Weird Science, War Games, and Real Genius perpetuated the stereotype. And since you could play video games on early personal computers, advertisers marketed them primarily to men and boys (even though girls liked them, too).
+
+“This idea that computers are for boys became a narrative. It became the story we told ourselves about the computing revolution,” wrote Steven Henn on the Planet Money blog. “It helped define who geeks were, and it created techie culture.”
+
+Still, when Grace Hopper retired as one of the Navy’s few rear admirals in 1986, about 37% of computer science undergrads were still women. David Letterman interviewed Hopper, remarking that she was known as the “queen of software.”
+
+Even so, families were far more likely to buy computers for boys than girls, according to research by Jane Margolis at Carnegie Mellon University. And since college admissions officers expected computer science applicants to have experience with home computers, women were less likely to be accepted.
+
+Admissions also relied on the stereotype of programmer as male nerd, says Virginia Tech professor Janet Abbate. “You pick people who look like what you think a computer person is, which is probably a teenage boy that was in the computer club in high school,” instead of a girl who likes math, Abbate told NPR.
+
+By 2011, the percentage of women in computer science programs had fallen to 17%. Today, just 6.7% of women get a degree in science, technology, engineering or math (STEM), compared to 17% of men.
+
+The male-washing of the programming industry actually mirrors filmmaking in this way. In the early days of movies—in the 1910s and 20s—screenwriting and editing were women’s work. Then, the Hollywood studio system made those jobs far more lucrative, and they became men’s work.
+

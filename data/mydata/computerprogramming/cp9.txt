@@ -1,0 +1,125 @@
+Can a C program be written without main ()?
+Yes, you can write a C program without main().
+
+Here is the universally acclaimed “Hello World” program without main().
+
+#include <stdio.h>
+extern void _exit(register int);
+int _start(){
+printf(“Hello World\n”);
+_exit(0);
+}
+We are taught in almost every book that main () is the entry point of a program execution. It is not completely true. At an abstract level, it is true just from the perspective of programmer. But from systems perspective _start() is the first function that is called. _start() sets up the environment for program execution and then calls main().
+
+Here is the output of above program.
+Edit 1: Here is some more info on why I have written extern void _exit(register int);
+
+_start() and _exit() are functions which “system” calls automatically before program execution to setup the environment and do some other machine level work. _exit() is predefined and so we have used external storage class (i.e., extern) to tell the compiler that it has already been declared somewhere. If we miss out extern keyword we are trying to overload the function which is not valid in C language.
+
+_exit() works at machine level so it takes input having a data type of register storage class, hence register keyword is used. If you don’t write the extern void _exit(register int), the compiler will give you just a warning but the program will work fine :)
+
+Edit 2: I got this message today:
+
+how do you came to know that _start is called first then it calls the main()?
+
+my sole purpose of asking this question is that from where i can get these details about programming?
+
+In every book we can easily find syntax and all language constructs but these things kind of details are missing.
+
+can you please help me/ guide me from where i can learn about these minute details?
+
+Actually this is a very good question that’s why I am updating my answer, but the answer is very simple than you might think. Everything is right before us, we just need to pay more attention to minute details which we usually ignore.
+
+So to let you know how did I know about _start, I will show you this using an example. Here is a simple program I wrote which does not have main().
+
+
+Now let’s compile and run this program and see what happens.
+
+
+It says In function _start: undefined reference to main. It means there is no reference to main() in _start().
+
+That’s when I came to know about _start. Then just a little help with google I found out what this function really is and it is the function which is called first even before main(). So you see, we just have to stop ignoring the errors or warnings and should look for what they actually mean. The only teacher who can teach you things and make you learn is you yourself :)
+This is a simple example of deception. It shows how a programmer can defy the very important rule of having a main() in c program and still make the program run. This illustrates the concept on a simple program though it can be scaled to much bigger and more complex programs.
+
+#include<stdio.h>
+#define decode(s,t,u,m,p,e,d) m##s##u##t
+#define begin decode(a,n,i,m,a,t,e)
+ 
+int begin()
+ 
+{
+printf(” hello “);
+}
+This program runs without main().
+
+how??
+
+Here we are using preprocessor(a program which processes the source code before compilation.) directive #define with arguments to give an impression that the program runs without main. But in reality it runs with a hidden main function.
+
+The ‘##‘ operator is called the token pasting or token merging operator. That is we can merge two or more characters with it.
+
+In the 2nd line of the program-
+
+#define decode(s,t,u,m,p,e,d) m##s##u##t
+What is the preprocessor doing here. The macro decode(s,t,u,m,p,e,d) is being expanded as “msut” (The ## operator merges m,s,u & t into msut). The logic is when you pass (s,t,u,m,p,e,d) as argument it merges the 4th,1st,3rd & the 2nd characters(tokens)
+
+Now look at the third line of the program –
+
+#define begin decode(a,n,i,m,a,t,e)
+Here the preprocessor replaces the macro “begin” with the expansion decode(a,n,i,m,a,t,e). According to the macro definition in the previous line the argument must be expanded so that the 4th,1st,3rd & the 2nd characters must be merged. In the argument (a,n,i,m,a,t,e) 4th,1st,3rd & the 2nd characters are ‘m’,’a’,’i’ & ‘n’.
+
+So the third line “int begin” is replaced by “int main” by the preprocessor before the program is passed on for the compiler. That’s it…
+
+So actually C program can never run without a main() . We are just disguising the main() with the preprocessor, but actually there exists a hidden main function in the program.
+So all of the other answers are correct. But the ones that use _start will, probably, only work on Linux. Every operating system (or lack there of) has a different way of implementing the C Application binary interface (ABI). What you need to do is provide the linker the correct symbol that it is expecting. What the name of that symbol is depends on what system you are compiling for. It may also be that you have to put the first instruction of the program at a specific memory address, though this is more common for embedded programming (normally this is just a jump instruction to where the main function ends up). The ABI is different for different OS so writing a program without a main function will break portability.
+Yes it’s possible , but technically you should never do this. This program written can be run without main.
+
+There are many ways to do it , but everything you do must include the main(not directly) indirectly, for example:
+
+Way 1: Using Macros
+
+#include<stdio.h>
+
+#define begin main
+
+int begin() {
+
+printf("Hello");
+
+return (0);
+
+}
+
+Way 2: Using #Token merging Operators
+
+#include<stdio.h>
+
+#define begin m##a##i##n
+
+void begin() {
+
+printf("Hello");
+
+}
+
+****NOTE:-
+
+The ‘##‘ operator is called the token pasting or token merging operator.
+That is we can merge two or more characters with it.
+Way 3:Using Augmented Macro(A little Complex)
+
+#include<stdio.h>
+
+#define begin(m,a,i,n) m##a##i##n
+
+#define start begin(m,a,i,n)
+
+void start() {
+
+printf("Hello");
+
+}
+
+*****Better to avoid Augmented macro.
+
+Hope it helped :)

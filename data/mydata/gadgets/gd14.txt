@@ -1,0 +1,173 @@
+REALME 3 PRO REVIEW
+VERDICT
+The Realme 3 Pro certainly lives up to the “Pro” moniker. It’s significantly more powerful and faster than the regular Realme 3, but that’s not its competition. The Realme  3 Pro’s closest rival is the Redmi Note 7 Pro and the company CEO Madhav Seth left no stone unturned to compare the device to Xiaomi’s best-seller. To be fair, both phones are incredible close in terms of both performance and camera. The UI is vastly different and while the Redmi Note 7 Pro offers ads on the homescreen, the Realme 3 Pro has greatly improved UI aesthetics. Finally, the Realme 3 Pro is perhaps the best gaming phone under Rs 15,000, and as a result, it is the perfect alternative to the Redmi Note 7 Pro which is focused on more on the camera.
+REALME 3 PRO: DETAILED REVIEW
+
+Just a year back, Realme was announced as a sub-brand of Oppo in India, and ever since then, the now-independent brand has not looked back. In 2019, Realme announced new phones every two months or so, and the Realme 3 Pro is the latest offering. There’s already a Realme 3 in the market, so what makes this one a ‘pro?’. For one, it introduces the Snapdragon 710 in the mid-range segment. It also uses the same camera as that of the OnePlus 6T (priced over Rs 35,000), and offers a high-capacity battery with support for super-fast charging. All that combined certainly makes the Realme 3 Pro an enticing option to look out for when buying a new phone, but is it really the best mid-ranger available right now? Read on to find out.
+
+DESIGN
+
+The Realme 3 Pro stresses heavily on speed, so much so, that the rear panel is designed with an S-curve which is apparently a tribute to the S-shaped track of Le Mans, the legendary Grand Prix circuit. The pattern is evident in the blue gradient shades that the phone emanates when held against light. Personally, I felt the design comes off a little too gaudy and isn’t quite something I’d spend money on. The more demure purple and grey variant look much better though.
+
+
+
+The phone is also surprisingly slim considering it packs a 4,000mAh battery. The rear panel which seems to be made of resin, curves gently around the edges to reduce the thickness,  offering a tighter grip. The form-factor makes it just enough for my thumb to reach the other end of the display, so I wouldn’t rule out one-handed use for people with larger hands. The fingerprint sensor is fairly responsive and is mounted on the back along the center while the camera unit is arranged vertically on the top left corner. Thankfully, there’s no significant camera bump as the module is encased inside a silver-coloured enclosure.
+
+The Realme 3 Pro certainly looks good from the back. From the front however, it’s identical to its predecessor with a waterdrop notch and a nearly bezel-less display. The screen-to-body ratio is also similar to the Realme 2 Pro and so is the micro-USB for charging. There’s also a 3.5mm headphone jack for audio. There is a single speaker grill on the bottom while the earpiece is placed right above the notch.
+
+
+
+What’s worrying is that the frame of the phone is not quite robust. A single tumble from my hand was enough to leave ugly scars on the frame from  where it hit the ground and the colours chipped away. The display was saved though, thanks to the presence of Gorilla Glass 5. Realme does bundle a case in the box which will render further protection from drops.
+
+advertisements
+DISPLAY
+
+The Realme 3 Pro essentially has the same waterdrop notched IPS LCD display as its predecessor. It stretches to 6.3-inches diagonally and offers decent viewability. It’s certainly not the best display that’s on offer in the sub-15,000 range. That accolade goes to the Samsung Galaxy M30 with its Super AMOLED panel. The one on the Realme 3 Pro, however, is perfectly usable.
+
+
+
+The panel takes up most of the real-estate up front but there are distinct bezels on the bottom. The shrunken notch also helps free up space for content. Effectively, thanks to a smaller notch, the display can now fit more icons on the status bar than before.
+
+Despite a FullHD display, The Realme 3 Pro unit we received had Widevine L3 DRM rating which means you won’t be able to stream content from Netflix,  Hotstar and other streaming services in HD. Realme said the DRM rating will be upgraded via an OTA update. However, that doesn’t mean you will be able to stream DRM-protected content in full HD as the streaming services have to manually enable support for the device to let it stream in higher resolution. The Poco F1 which went through a similar OTA update for its Widevine certification still hasn’t been certified by many streaming services.
+
+
+
+
+
+While streaming content on the Realme 3 Pro is a bummer, gaming is what this phone is really made for. The expansive display is perfect for a round of PUBG Mobile as the entire panel is used up, giving a lot more space for moving your fingers. It’s also sufficiently bright at 457 lux at peak brightness. The brightness rating is slightly lower than the Realme 2 Pro, even though this seems to be the same display and we’re not quite sure why that’s the case.
+
+
+
+The display also has a slightly colder white-balance, making most content appear just a smidge bluer than normal. The phone gives the option to tweak the colour-temperature from cooler to warmer, but these are preset settings and fudges up the colour temperature even more. You do get the option to turn on Night Mode and change font sizes. The colours come out  slightly boosted and the blacks seem to look darker on the Realme 3 Pro than in the Redmi Note 7 Pro.
+
+Overall, the Realme 3 Pro has a perfectly usable display, but it’s certainly not the best in its segment.
+
+advertisements
+PERFORMANCE
+
+It’s what’s under the hood that makes Realme 3 Pro earn the ‘Pro’ moniker. The device introduces the Snapdragon 710 to the mid-range segment, which supposedly bridges the gap between mid-range and high-end chipsets. By doing so, the Realme 3 Pro certainly manages to make heads turn even while the Redmi Note 7 Pro has been topping performance charts everywhere. It certainly sounds powerful, but is it the fastest phone around in that segment?
+
+CPU Benchmarks
+
+
+
+
+
+On AnTuTu, the Realme 3 Pro scored 154810, which is significantly lesser than what the Redmi Note 7 Pro achieved. Corroborating the results, the Realme 3 Pro also scored lower on Geekbench Single Core and Multi Core as compared to the Redmi Note 7 Pro. Clearly, the Snapdragon 675 on the Redmi Note 7 Pro has a faster CPU than the Realme 3 Pro. This checks out once again in our Mobile Xprt 2015 scores where the Redmi Note 7 Pro was faster in finishing up all the tasks as compared to the Realme 3 Pro. Finally, PCMark Work 2.0 scores confirmed the Realme 3 Pro is not as fast as the Redmi Note 7 Pro.
+
+This, we believe, is because the Snapdragon 675 on the Redmi Note 7 Pro more advanced CPU custom cores based on  ARM Cortex-A76 which also powers the flagship Snapdragon 855.
+
+GPU Benchmarks
+
+
+
+On GPU benchmarks, however, the Realme 3 Pro proved to be an outright winner. On 3DMark Slingshot the Realme 3 Pro scored 2653, as opposed to 1836 by Redmi Note 7 Pro. In the GFXBench tests, the Realme 3 Pro was able to render more frames than the Redmi Note 7 Pro.
+
+The Realme 3 Pro’s superiority in GPU benchmarks is primarily due to the fact that the Snapdragon 710 has a more powerful Adreno 616 GPU as compared to the Adreno 612 on the Snapdragon 675 that powers the Redmi Note 7 Pro. This is ironic considering the Snapdragon 675 is advertised as a SoC tuned for gaming.
+
+On GPU benchmarks, however, the Realme 3 Pro proved to be an outright winner. On 3DMark Slingshot the Realme 3 Pro scored 2653, as opposed to 1836 by Redmi Note 7 Pro. In the GFXBench tests, the Realme 3 Pro was able to render more frames than the Redmi Note 7 Pro.
+
+The Realme 3 Pro’s superiority in GPU benchmarks is primarily due to the fact that the Snapdragon 710 has a more powerful Adreno 616 GPU as compared to the Adreno 612 on the Snapdragon 675 that powers the Redmi Note 7 Pro. This is ironic considering the Snapdragon 675 is advertised as a SoC tuned for gaming.
+
+Gaming
+
+
+
+The GPU benchmark results was an early indication, but on our Gamebench analysis of PUBG Mobile and Asphalt 9, it became clear that the Realme 3 Pro is a better device for gaming, if not the best at its price range. The Realme 3 Pro managed to offer 30 FPS on PUBG Mobile with High graphics and anti-aliasing on. It managed to do so with 99 percent stability. On the other hand, the Redmi Note 7 Pro also managed 30 FPS, but with 96 percent stability.
+
+On Asphalt 9, the Realme 3 Pro was more consistent with 29FPS and 88 percent frame rate stability while the Redmi Note 7 Pro’s results were quite disappointing with 18FPS and 50 percent frame-rate stability. We believe the Redmi Note 7 Pro is specifically optimised to handle PUBG Mobile better while other games like Asphalt 9 isn’t quite tuned to make the most of the performance.
+
+The Realme 3 Pro doesn’t have any such issues. It managed to run both games almost equally well with PUBG Mobile running particularly smoother. You can reduce the quality of graphics further to get frame rates up to 40 FPS on the device.
+Furthermore, when gaming on the Realme 3 Pro, you will not be distracted by incoming notifications. However, if you do have to reply to a text, there’s an option to do so without exiting the game by swiping in from the edges to bring up a quick-launch menu of frequently-used messaging apps. These apps open in a small pop-up that lets you reply without getting out of the game. Cool feature, this.  
+
+Daily Usage
+
+The Snapdragon 710 ensures the Realme 3 Pro doesn’t slow down in daily usage. The phone is offered in three variants with a minimum of 4GB RAM and 64GB storage. The unit we reviewed had 6GB RAM and 128GB storage and there’s also another 6GB RAM with 64GB storage variant. The 6GB RAM variant posted no visible lag or slowdown in our daily usage which involved writing articles, shooting photos and editing them using Snapseed and Lightroom and some gaming and social media browsing. Apps also launched without any noticeable delay and the UI animations have been optimised to run better on the device.
+
+The Realme 3 Pro is satisfying to use in daily life with a strong focus on gaming. We also did an in-depth performance comparison of the Redmi Note 7 Pro and the Realme 3 Pro and our primary takeaway was just that. While the Redmi Note 7 Pro manages to do everything well enough, the Realme 3 Pro goes that extra mile to deliver better gaming performance. The company does have a strong fan following of college students and a gaming-optimised offering might just work in Realme’s favour.
+
+Software
+
+Part of what made using the Realme 3 Pro a decent experience is the polished interface. It’s far out from the ugly UI of its predecessor. It was my biggest complaint against the Realme 2 Pro and I’m glad that the company has listened to feedback to improve the UI in a big way.
+
+
+
+Homescreen
+
+
+
+Minus-1 screen
+
+
+
+App Drawer
+
+The Realme 3 Pro runs on ColorOS 6 based on Android 9 Pie and there’s a marked change in visual aesthetics. For one, the app drawer is now a part of the UI. The icons look more polished and the system animations have been made faster. There’s also a minus-1 screen that houses essential information and it apparently adapts to your usage. But the most important thing that makes the Realme 3 Pro a viable choice is the lack of ads in the phone. Unlike Xiaomi, which has become notorious for popping ads randomly on MIUI, the Realme 3 Pro is devoid of any such thing. It does come with a few additional apps pre-installed like UC Browser, DailyHunt and ShareChat. Thankfully they can be uninstalled.
+
+advertisements
+CAMERA
+
+The Realme 3 Pro’s camera isn’t as feature-rich as that of the Redmi Note 7 Pro, but it’s perfectly usable. The phone pairs the same 16MP Sony IMX519 that’s there on the OnePlus 6T, with a 5MP depth sensor. The primary camera has an aperture of f/1.7 and is able to take fairly detailed shots in both day and night. There’s the usual AI scene recognition on this one too. We noted that the Realme 3 Pro was able to recognise scenes slightly faster than the Redmi Note 7 Pro, and the resulting effect is essentially adding more contrast and saturation to the photos. Then there’s Realme’s proprietary Chroma Boost feature that also increases the colour saturation and contrast to make them look more palatable. While both these features somewhat help enhance the photo quality, the UltraHD feature that combines four 16MP image to create a large-format 64MP photo is interesting, to say the least. It’s a way for Realme to counter the threat of 48MP camera phones without spending more or upgraded hardware. The feature is only available in pro-mode. There’s also Nightscape, that works to improve low-light photos by taking multiple photos in various exposure and merge them to create one photo.
+
+Here’s how the camera performs —
+
+Daylight
+
+Daytime images taken with the Realme 3 Pro doesn’t show any noticeable flaws. The photos come out well-exposed with good amount of detail and sharpness. The Realme 3 Pro’s images look slightly cooler though with the blues coming out more prominent. We noticed that the Realme 3 Pro’s images are brighter than the ones taken with the Redmi Note 7 Pro. We’re guessing this is because of the larger aperture.
+
+Indoors
+
+When shooting indoors, the cooler colour bias becomes more apparent. The colours look significantly cooler. The photos are also enhanced with high contrast and sharpness, and for some, they might look aesthetically better but they’re far from being closer to source.
+
+
+
+Lowlight
+
+Low-light photography has so far been a big differentiator between high-end and mid-range smartphones. The Realme 3 Pro closes the gap by offering decent low-light photos. We used the camera during a trip to Taipei where we shot a few photos in low-light and almost all of them look quite good.
+
+Even without using night mode, night scenes come out well-lit and have decent dynamic range. When using the nightmode, the colours and exposure are boosted, but it also brings in a lot more noise. The night mode is especially useful if you’re shooting a photo in low-light with backlit text in the frame.
+
+
+Portrait
+
+Thanks to a dedicated depth sensor, the Realme 3 Pro is quite capable of segregating the foreground from the background. The portrait mode on the phone works well enough to offer better consistency, but the quality of bokeh itself looks artificial. There is also the same boosted contrast effect in work here.
+
+
+
+Selfies
+
+Selfies taken with the 25MP front camera come out quite sharp and well-detailed. There’s also minimal highlight clipping. There are various AI effects that you can add to your selfies, each more controversial than the other. There are features like face thinning, reducing the size of your nose, eyes and the likes. Is Realme encouraging users to modify their facial features to feed social media frenzy?
+
+
+
+
+
+UltraHD
+
+While the Xiaomi Redmi Note 7 Pro uses an actual 48MP sensor to deliver large-format photos, the Realme 3 Pro also does something similar, albeit using software only. The Realme 3 Pro is capable of delivering 64MP photos, a good 16MP more than what Redmi offers. It does it by taking four 16MP photos in quick succession and merging the accumulated data to offer a 9216x6912 resolution image. Does it offer any significant improvement? Somewhat.
+
+
+
+If you look at the sample below, the 64MP image managed to offer more details than the 16MP image could, although the threads around the branch does look quite oversharpened. You can look at the 100 percent crops of the photos to determine.
+
+
+
+100 percent crop (64MP Ultra HD mode)
+
+
+
+100 percent crop (Default 16MP mode)
+
+BATTERY
+
+The Pro moniker is given further justice thanks to a high-capacity battery and fast charging. The Realme 3 Pro sports a 4045mAh battery that also supports VOOC 3.0 charging. It’s quite difficult to drain the battery of the phone in a day no matter how extensively you end up using it. And even if you do, VOOC fast charging essentially ensures 50 percent of the battery gets topped up in less than an hour.
+
+
+
+In our Geekbench battery test, the Realme 3 Pro took around 11 hours 51 minutes to drain the battery from full charge to two percent. That’s an impressive number and indicates that the phone has enough juice to get you through the day and then some. 30 minutes of streaming Sacred Games drained the battery by just 5 percent while a 15-minute PUBG Mobile session drained the battery from 68 percent to 65 percent. The battery performance is quite similar to what we saw on the Xiaomi Redmi Note 7 pro.
+
+However, when it comes to charging the high-capacity battery, the Realme 3 Pro is perhaps the fastest of the lot. The phone supports VOOC 3.0 charging which tops up the battery using 25W power. The same tech is used in Oppo phones like the F11 Pro and it’s nice to see a much cheaper, mid-range device pay attention to the small details. The VOOC charger is a huge brick though, same as the Warp Charger that OnePlus bundles. It took approximately 90 minutes to top up the 4045mAh battery on the phone.
+
+Bottomline
+
+The Realme 3 Pro certainly lives up to the “Pro” moniker. It’s significantly more powerful and faster than the regular Realme 3, but that’s not its competition. The Realme  3 Pro’s closest rival is the Redmi Note 7 Pro. To be fair, both phones are incredible close in terms of both performance and camera. The UI is vastly different and while the Redmi Note 7 Pro offers ads on the homescreen, the Realme 3 Pro has greatly improved UI aesthetics. Finally, the Realme 3 Pro is perhaps the best gaming phone under Rs 15,000, and as a result, it is the perfect alternative to the Redmi Note 7 Pro which is focused more on the camera.

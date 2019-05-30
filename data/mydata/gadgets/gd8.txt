@@ -1,0 +1,57 @@
+Facebook picks London to drive WhatsApp mobile payments globally
+Facebook’s new London staff will develop a payments function for WhatsApp as well as products that focus on safety and combating spam.
+Facebook Inc intends to drive a global expansion of mobile payments on WhatsApp from London, accelerating its efforts to make money off the popular messaging service.
+
+The world’s largest social media company picked the UK as the centre of that push because it routinely attracts talent from markets where WhatsApp is popular, such as India, a spokesman for Menlo Park, California-based Facebook said.
+
+
+WhatsApp dispatched engineers to Britain late last year as part of a drive to recruit about 100 people in London and Dublin to support its payments initiative, the spokesman said, confirming an earlier Financial Times report.
+
+Facebook has been seeking ways to make money from the messaging service and has been testing payments via the app since last year in India, WhatsApp’s largest market with more than 200 million users. That rollout, however, has been delayed by regulatory disputes and concerns about malicious content on the service, giving rival systems from Alphabet Inc’s Google Pay and Alibaba Group Holding Ltd-backed Paytm time to build a customer base.
+
+Also Read: WhatsApp for Android beta testing new Emoji category in Doodle Picker
+
+Facebook’s new London staff will develop a payments function for WhatsApp as well as products that focus on safety and combating spam. While the mobile service now offers end-to-end encryption, meaning content isn’t visible to anyone other than the sender or receiver, it’s proven vulnerable to abuse and misinformation.
+
+Pushing mobile payments may advance Facebook’s thrust into the broader field of financial services, a move that’s been expected since it hired former PayPal president David Marcus in 2014. In 2018, Marcus also became head of the company’s blockchain initiatives.
+WhatsApp Android beta to show Sticker preview in notifications: Report
+WhatsApp 2.19.130 Android beta update will start to show sticker preview in the notification like it does for a text message and an emoji.
+WhatsApp is bringing Sticker Notification Preview feature in the latest beta update of its Android app, claims WAbetainfo. The feature has already been enabled in the iOS beta version 2.19.50.21 and it is expected to roll out soon for Android.
+
+
+Advertising
+WhatsApp has submitted a new update through the Google Play Beta Program, which brings the version to 2.19.130. As of now, the Sticker Preview feature is under development and so it is not available in the app.
+
+Once enabled, the 2.19.130 Android beta update will start to show sticker preview in the notification like it does for a text message and an emoji. At present, WhatsApp shows the word “Sticker” in the notification when someone sends a sticker in a chat or group.
+
+Earlier, it was reported that WhatsApp will soon release Dark Mode for all Android users soon. WABetainfo reported that the WhatsApp Beta version 2.19.82 has a code for Dark Mode, which is currently disabled.
+
+With the new Dark Mode feature, WhatsApp users will be able to change the background of the app to black, similar to YouTube’s Dark Mode. The feature will make it easy for users to chat in dark environments.
+
+Also read | WhatsApp Android beta shows feature where group admins can restrict members from forwarding messages
+
+The earlier Android beta version 2.19.74 gave a glimpse of in-app browsing in the WhatsApp. It means the app could open links within itself, instead of redirecting to a web browser.
+
+WhatsApp to stop working on phones running Windows Phone by Dec 31, 2019
+WhatsApp announced to end support for the Windows Phone after December 31, 2019. From 2020, all the phones running any version of Windows OS will not be able to run WhatsApp.
+WhatsApp updated its mobile device support blog post to announce the end of support for the Windows Phone platform on December 31, 2019. In this case, the end of support is not limited to lack of future updates but it means that users on this platform will not be able to use WhatsApp anymore.
+
+
+Advertising
+This applies to all the mobile phones running any version of the Windows operating system. WhatsApp stopped working for Windows Phone 7 back in 2016, and now the Facebook-owned messaging service has announced to end the support for all the Windows phones on December 31.
+
+Phones that will not run WhatsApp
+To recall, WhatsApp ended support for the app Nokia Symbian S60 after June 30, 2017, and the BlackBerry OS and BlackBerry 10 stopped running the app after December 31, 2017. The updated list of operating systems that will not be able to run the WhatsApp include:
+
+–Nokia S40 after December 31, 2018
+
+–All Windows Phone operating systems after December 31, 2019
+
+–Android version 2.3.7 and older after February 1, 2020
+
+–iPhone iOS 7 and older after February 1, 2020
+
+The blog post says that since there are no new features added to WhatsApp on these platforms, some features may not work after a while.
+
+WhatsApp UWP
+In related news, WABetaInfo reported that WhatsApp is working on UWP (Universal Windows Platform). The UWP will allow the app to be used on the recent version of Windows Phone and Windows Desktop platforms as well. The report did not mention any detail about the app and its launch timing.

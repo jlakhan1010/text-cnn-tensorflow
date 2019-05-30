@@ -3,8 +3,9 @@ data:
   base_path: 'data/'
   raw_data_path: 'kaggle_movie_reviews/'
   processed_path: 'kaggle_processed_data'
+  train_folder_path: './data/mydata'
   testset_size: 900
-  num_classes: 5
+  num_classes: 8
   PAD_ID: 0
 
 model:

@@ -1,0 +1,310 @@
+What’s the coolest coding pattern you’ve seen?
+“Early exit” — the coolest and simplest thing.
+
+{
+  if (condition1) return false;
+  if (condition2)
+  {
+     // do something simple
+     return false;
+  }
+ 
+  // Code you don’t need to read
+  // if anything before is valid.
+  // Usually complicated stuff goes
+  // here, having survived conditions.
+  return true;
+}
+The idea is to exit the code block as soon as you can. A few bonuses arise from this pattern:
+
+Your code is likely more focused on the purpose of the block. Better at avoiding a kind of “run-on sentence” type of programming.
+Reduced nesting. The same exact code can be written where the complicated code is within a nested bracket given a condition, but this helps keep your more complicated code at the tail end instead of nested near the top of a function.
+Helpful to reinforce the fact that validation and parameter checking should be done first. You get used to it and functions start to look weird if they don’t validate input parameters.
+Much easier for others to debug your code. Most of the validation is near the top. Less mental brainpower needed because the code is a bit more readable.
+Personally, I really like how it makes my code look like block paragraphs. It makes it easy to skim and read quickly.
+
+From a distance you can see how it forms blocky paragraphs.
+Well the C for loop is just about the handiest thing ever.
+It is so versatile and yet so powerful that even if your superduper new
+language does not have for loops, they invent them for it.
+
+for ( <pre-expr> ; <cond-expr> ; < post-expr> ) { <expr> | <exit expr> }
+
+Now in C each expression can contain ANY CODE.
+
+<pre-expr> can execute any code before <cond-expr> is evaluated.
+<cond-expr> can execute any code that results in a value.
+<cond-expr> is false if zero, true for any other value.
+The body is a one-way scope, variables declared outside of it are visible inside it , but variables declared inside it are only visible in the body and in the <cond expr> and <post-expr>.
+Any code can be in the body.
+A few exit expressions will exit the loop: break ,continue, return, goto.
+Any or all of the for expressions are optional.
+for(;;){}  /* valid endless loop— does nothing */
+variable declared in the body retain their value through iterations of the loop.
+static variables declared in the body retain their value through
+surrounding function calls.
+variables with the same name declared in the body as external variables shadow the external variable without conflict.
+<pre-expr> happens first; only once; then the follow sequence repeats:
+1.<cond> → 2.{ body} → 3.<post> → repeat
+The consequences of this strict sequence are often misunderstood.
+if the <pre-expr> makes the <cond-expr> false, then the loop is never entered and the <post-expr> is never run.
+If the {body} completes or continues, the <post-expr> is run without any checking. This means a continue statement jumps straight to the <post-expr> and runs it.
+After the <post-expr> runs, the <cond-expr> is checked before
+the {body} is entered again.
+the <cond-expr> may be changed anywhere in the {body} or the 
+<post-expr>, and in the <cond-expr> before it is completely evaluated.
+A <cond-expr> can be a pointer. Only if the pointer is NULL or the pointer expression evaluates to NULL or 0 is it false.
+An unconventional example:
+
+A variable argument function that uses a for loop to get each argument
+into a calculation.
+
+#include <stdarg.h> /* variable arg header */
+ 
+long addup(long a, ...)
+{
+    va_list args;  /* variable argument list */
+     
+    long sum = 0;
+    long current = a;
+  
+    va_start(args, a); /* first arg (long)*/
+ 
+    for( ; current; current = va_arg(args, int))
+       { sum = sum + current; }
+ 
+    va_end(args);  /* done getting args -- cleanup*/
+ 
+    return sum;
+}
+ 
+/* fix because last arg has to be 0 */
+#define addup(...)  addup( __VA_ARGS__ ,0);
+ 
+ 
+long x = addup( 5 ,4 ,6 ,7, -10, 333, 14, 11, 44);
+In this case the for loop is
+
+for ( <empty> ; check current ; get_nextarg(args) ) { add current to sum} .
+
+The for loop needs no initial setup because we did that earlier.
+The condition is that current not equal zero
+the body does the adding
+the post condition gets the next argument and assumes it will be a long integer and assigns it to current. when the arguments run out it will
+set current to zero.
+condition of current is checked and the loop executes or terminates.
+Well the C for loop is just about the handiest thing ever.
+It is so versatile and yet so powerful that even if your superduper new
+language does not have for loops, they invent them for it.
+
+for ( <pre-expr> ; <cond-expr> ; < post-expr> ) { <expr> | <exit expr> }
+
+Now in C each expression can contain ANY CODE.
+
+<pre-expr> can execute any code before <cond-expr> is evaluated.
+<cond-expr> can execute any code that results in a value.
+<cond-expr> is false if zero, true for any other value.
+The body is a one-way scope, variables declared outside of it are visible inside it , but variables declared inside it are only visible in the body and in the <cond expr> and <post-expr>.
+Any code can be in the body.
+A few exit expressions will exit the loop: break ,continue, return, goto.
+Any or all of the for expressions are optional.
+for(;;){}  /* valid endless loop— does nothing */
+variable declared in the body retain their value through iterations of the loop.
+static variables declared in the body retain their value through
+surrounding function calls.
+variables with the same name declared in the body as external variables shadow the external variable without conflict.
+<pre-expr> happens first; only once; then the follow sequence repeats:
+1.<cond> → 2.{ body} → 3.<post> → repeat
+The consequences of this strict sequence are often misunderstood.
+if the <pre-expr> makes the <cond-expr> false, then the loop is never entered and the <post-expr> is never run.
+If the {body} completes or continues, the <post-expr> is run without any checking. This means a continue statement jumps straight to the <post-expr> and runs it.
+After the <post-expr> runs, the <cond-expr> is checked before
+the {body} is entered again.
+the <cond-expr> may be changed anywhere in the {body} or the 
+<post-expr>, and in the <cond-expr> before it is completely evaluated.
+A <cond-expr> can be a pointer. Only if the pointer is NULL or the pointer expression evaluates to NULL or 0 is it false.
+An unconventional example:
+
+A variable argument function that uses a for loop to get each argument
+into a calculation.
+
+#include <stdarg.h> /* variable arg header */
+ 
+long addup(long a, ...)
+{
+    va_list args;  /* variable argument list */
+     
+    long sum = 0;
+    long current = a;
+  
+    va_start(args, a); /* first arg (long)*/
+ 
+    for( ; current; current = va_arg(args, int))
+       { sum = sum + current; }
+ 
+    va_end(args);  /* done getting args -- cleanup*/
+ 
+    return sum;
+}
+ 
+/* fix because last arg has to be 0 */
+#define addup(...)  addup( __VA_ARGS__ ,0);
+ 
+ 
+long x = addup( 5 ,4 ,6 ,7, -10, 333, 14, 11, 44);
+In this case the for loop is
+
+for ( <empty> ; check current ; get_nextarg(args) ) { add current to sum} .
+
+The for loop needs no initial setup because we did that earlier.
+The condition is that current not equal zero
+the body does the adding
+the post condition gets the next argument and assumes it will be a long integer and assigns it to current. when the arguments run out it will
+set current to zero.
+condition of current is checked and the loop executes or terminates.
+For me, the most recent one is.
+
+Phantom-Type.
+
+It is a way of code to make sure that you dont pass a wrong kind of string / integer / number / anything to a function that expect another kind of string / integer / number / etc…
+
+Here is the gist.
+
+suppose you have the following tables in your SQL
+
+Users:
+id: Number | name: String | ... more table fields ...
+ 
+Videos:
+id: Number | name: String | uploaderId: Number | ... more table fields ...
+where uploaderId is the user id in Users tables.
+
+and let’s say you have a function called findByUploaderId that accept an the id of user table with a type of Number and return videos uploaded by that user, maybe, you’ll code it like:
+
+class Video extends ORMBaseSQL<Tables.VIDEO> {
+  static findByUploaderId(id: Number): Array<Video> {
+    return sql.run(`select * from videos where uploaderId = {id}`);
+  }
+}
+and you can call it like:
+
+const user = new User({ id: 1 });
+Video.findByUploaderId(user.id());
+great, no bug, all works, but… what if? somehow when you’re tired from overworked, you call it like:
+
+const user = new Video({ id: 1 });
+// here, user is a Video object
+// instead of a User object
+Video.findByUploader(user.id());
+// but here you only care about its id where both has the same type of numbers
+no error, no complain, and you think it works… except it is not.
+
+so, what is the problem here? the problem is:
+
+both `user.id()` and `video.id()` returns the same type, a Number.
+
+With phantom type, you could make them returns a different type which are, not interchangeable between one and the other.
+
+how does it works?, simple:
+
+interface ID<T> extends Number {
+  _?: T
+  // in typescript this is necessary to make sure
+  // ID<Tables.USERS> and ID<Tables.VIDEO> is different.
+}
+ 
+class Video extends ORMBaseSQL<Tables.VIDEO> {
+  static findByUploaderId(id: ID<Tables.USERS> { 
+    return sql.run(`select * from videos where uploaderId = {id}`);
+  }
+ 
+  id(): ID<Tables.VIDEO> {
+    return super.id() as ID<Tables.VIDEO>
+  }
+  ... // other code
+ 
+}
+ 
+class User extends ORMBaseSQL<Tables.USER> {
+  ... // other code
+  id(): ID<Tables.USER> {
+    return super.id() as ID<Tables.USER>
+  }
+}
+and when you call them like:
+
+const user = Video.find({ id: 1 });
+Video.findByUploaderId(user.id());
+the compiler would actually throw compile error, because the type doesn’t match, saying that Video.findByUploaderId expect a ID<Tables.USERS>, but was given ID<Tables.VIDEO> instead.
+
+in this specific example, this kind of type is also pretty neat, because there’s no need to do boxing - unboxing in the real deployed-code, unlike:
+
+class User extends ORMBaseSQL<Tables.USER> {
+   id(): ID<Tables.USER> {
+      return new ID<Tables.USER>(super.id())
+   }
+}
+in my current project, it is especially usefull because I has some value with different precisions in my polymorphic type like:
+
+const a = '1000';
+// this is actually 1, because this variable precision is 1/1000;
+const b = '100000';
+// this is also actually one, because this variable precision is 1/100000;
+ 
+function getRealValue(s: String, precision: Number){
+   return parseInt(s) / Math.pow(precision);
+}
+ 
+getRealValue(a, 5); 
+// no error.
+you could explain the type better with:
+
+enum CURRENCY {
+   XRP = 'XRP',
+   ETH = 'ETH',
+   BTC = 'BTC',
+}
+enum CURRENCY_PRECISION {
+   XRP = 6,
+   BTC = 8,
+   ETH = 18
+}
+ 
+interface StringAmount<C extends keyof typeof CURRENCY> extends String {
+  _precision?: CURRENCY_PRECISION[C];
+  _currency?: C;
+}
+ 
+function getRealValue<C extends keyof typeof CURRENCY>(s: StringAmount<C>, currency: C){
+   return parseInt(s) / Math.pow(10, CURRENCY_PRECISION[currency]);
+}
+ 
+function getXRPBalance(): StringAmount<Currency.XRP> {
+    return '100'; // we simply return a normal string here.
+}
+ 
+ 
+const amount: getXRPBalance();
+getRealValue(amount, CURRENCY.BTC);
+// compile error
+and when I put a wrong precision, having the compiler complaining that something is odds, helps me prevent doing something nasty like sending a user 100 times of what he should actually received.
+
+p.s: most code written here is in no specific language, but mostly with typescript in mind.
+
+One of the ‘coolest’ I have seen is the Python for loop :
+
+for item_list in iteratable:
+	code_suite
+item_list is one or more names (which in Python don’t have to be predefined).
+iterable is anything that can be iterated over - that is a very wide set of items and includes :
+Strings - iterate over each character
+lists - iterate over each item in the list
+tuple - iterate over each item in the tuple
+dictionary - iterate over each key defined in the dictionary
+set - iterate over each item in the set
+generator function - any function that can generate repeated values using the yield statement. Python by default has functions which :
+iterate over a range of integers
+combine multiple other iterators in a number of different ways (products, permuations, chaining/zipping)
+Repeatedly apply a function to each item in another iterable
+and so on …
+So a python for loop can loop around a set of integers, or a list of objects, or a string of objects, or a random number list - or anything else that you can imagine.

@@ -1,0 +1,183 @@
+What are the 7 deadly sins of programming?
+Assuming users are competent. Always design and write your programs as if they're going to be used by a five year old idiot. Everything should be as obvious as possible. Programming is a race between a programmer making idiot-proof programs and the world producing the idiots. The world always wins.
+
+
+Project Hopping. This is a problem with many of us programmers. We want to work on X number of projects at the same time or redo the same project using X number of frameworks or languages and technologies. Be realistic. Do one thing at a time and make sure to complete it before heading on to the next.
+
+
+Not knowing when to change tactic. Insanity is doing the same thing over and over expecting different results each time. JavaScript is just not a good language to do heavy data analytics in. C++ is just not a good choice for writing MVC frameworks in. Don't write a web app using Tensor Flow. Maybe try Django or Flask. If an application is too custom to fit within the MVC design, then by all means, it's easier to write a custom application than it is to rewrite a framework to suit the needs of that application.
+
+
+Getting side-tracked. There's something just unbearably appealing about making sure everything runs in top condition before even writing your first line of code. Lemme just get the latest version of this compiler and read the entire changelog to see what's new under the hood. Wait, now you can set Boolean as 1 or zero instead of just yes and no? I have to go in-depth to see how they made it like this. It's genius! Wait, how does this work in interpreted languages? Now I have to read on this new interpreter and see…… (Two days later)…. So this is why Dennis Ritchie is a legend. Guido Van Rossum is a god for coming up with the whole indent thing. Wait, back up!!! You only need to write some C code to get a JPEG and scan it for basic steganography.
+
+
+Bluffing. Oh! Yes. I can have that up and running in one week. It's workable. It's a bluff. And you know it. You're just trying to seem like you know what you're doing. But it's a dead giveaway. Nobody knows how long it'll take until the full design specifications are ready. And the design specifications cannot be ready unless the analysis of requirements is done. Programmers. Please. Stop this madness.
+
+
+I know they're only five. Let me read the entire Quora privacy policy so that I'm sure the other two aren't offensive to anyone.
+Using spaces instead of tabs. You should always, always use tabs, not spaces.
+Using tabs instead of spaces. You should always, always use spaces, not tabs.
+Not using auto-formatting. Forget all that tabs/spaces rubbish, what’s wrong with you — auto-format your code and then people won’t have to look at your weird ideas about brackets and spaces.
+Using IDEs, which have features such as auto-formatting and nicely-coloured buttons. All code should be written in vi or Emacs, thus ensuring the purity of the programming experience.
+Not using IDEs. No-one wants to pay for all the time it’s going to take you to type things that you could have done at the click of a button, or scroll up and down using some ridiculous key combination invoked using LISP.
+Failing to learn C and C++. It’s really important to learn the two absolute essential languages. You think Java is just as good? Fine, write me a real-time control system for racing cars in Java and I’ll believe you.
+Learning C or C++ when you could be using something modern like Java instead. Admit it — all your schedules involving C or C++ overrun by five years. And even then the software turns out to have critical flaws that Java would not even have allowed you to create.
+Overrunning the end of an array.
+The Co-dependent Can-Do Attitude: “Sure thing! I will have that for you in 10 days!”
+Muttered Martyrdom: “They better not be expecting solid code in ten lousy days”
+Time Traveling Quality Control: as soon as I’ve met my deadline I will document and test this and I’ll go through the security checklist…because Future Me always has plenty of free time
+Kamikaze Professionalism: “I used the language I am best at to build the objectively correct solution and I delivered it on time, ergo I am done. The fact that it is of absolutely no use to you is none of my business.”
+The Eidetic…Uh…Thingy: “I don’t need to use flowcharts or project planning worksheets or attend some cultish Agile circle jerk because I’ve got it all basically written in my head…as long as there are no interruptions and no one wants me to do anything else and I don’t encounter any technical roadblocks, I’ll crank this out in one sitting, ergo forgetting won’t even be possible…could you just remind me what that third requirement was that you had said was absolutely mission critical?”
+The Futuristic Spaghetti Robot: “I just have to build some snazzy little abstract interfaces or some OOPy crap like that, then I can instantiate 20 years of procedural spaghetti code like a champ. Like a boss!”
+Technical Promiscuity: “Thanks for learning Z+++ so quickly! Yeah we’re going with this new language instead though. It doesn’t have a name that you can say out loud really, it’s just a clicking noise you make with your tongue. It’s the future”
+Let’s see if I can think of a few of my own.
+
+Writing before thinking - So you got the product requirements. 
+You skim through them for a minute, run your favorite IDE and start hacking away. 
+Easy right?
+STOP! Are you SURE you understand them? I mean not just generally. I’m sure you can read. But did you think of all the corner cases? Did you think of how you’re gonna test everything? Did you jot down the algorithms you’re gonna use? Tomorrow you won’t remember!
+Reinventing the wheel - So you need to write a producer consumer pattern for your ingenious module. You know this one from university.. Easy right?
+STOP! No matter what language you are writing in, there’s some package or module or open source code somewhere that does it right. Use it. At least study it before implementing your own.
+Being afraid to touch code - So you have an assignment to add a few functions to a 20,000 line file (Why oh why??) 
+You happily start writing when you notice that some of the existing functions are dangerously written - no corner case or null pointer checks. Well.. they’re not your code - not your responsibility. Right?
+STOP! If you see unsafe code - MAKE IT SAFE. You will eat crap later on those same bugs, even if you did not write the code!
+Not understanding/caring about your company’s business - So you’re just a coder right? Coding is fun, you didn’t study marketing or sales, why should you care about the suits and what they do in your company?
+YOU SHOULD! How can you build a product when you don’t understand the business? How can you make it fit the customer’s requirements?
+You can’t! 
+Study the business, care about the problem from top down, not just bottom up. This is Important! It could also be the difference between getting promoted and .. well .. not.
+Not staying up-to-date - So you’ve been doing this for 10 years and you’re looking for a new gig. 
+Your last position was a senior C++ developer at some big company - you had a lot of responsibility and great references. You’re kind of sure you know what DevOps means but you’ve never touched any of that, and C++ 14? They only use C++98 where you’re at.. but no big deal right?
+WRONG! 
+Nobody is gonna give you “bonus points” for having experience in 15 year old technologies! 
+If you don’t learn , on your OWN spare time, what your next employer needs, you will be *unemployed*!
+Being a bad communicator - You’re a developer, you don’t need “people skills”! They pay you a whole lot to talk to computers, not other people. You just keep your head down and write the best code you can and you’re on your way to success, right?
+WRONG! 
+Not being clear, concise and to the point when talking to your superiors, is the most annoying thing your manager can deal with.
+Now obviously that’s not the only thing you’re judged on, but still - conveying information in an efficient and pleasant way will lead to people trusting and relying on you and THEN you’re on your way to success.
+Not having goals - So you like your job, you’re doing some amazing Deep Learning stuff. You’re at the forefront of technology and you’ve got amazing colleagues. You can see yourself doing this for years.
+BUT - you won’t be. Everything ends, sometimes abruptly and without notice. If you don’t set goals for yourself career-wise, you might be left behind at a role and salary you don’t think you deserve.
+So think ahead - where do you want to be in 10 years? Which roles suit you best?
+Research? Development? Product management? VP ? CTO? CEO?
+Your call, just make up your mind along the way.
+Most of these are sins of development, but are still applicable to even the solitary programmer working out of a basement:
+
+Not-invented-here. Caused by a lethal combination of arrogance and ignorance. The idea that a third-party library, especially an industry-standard one, cannot fulfill your needs is a dangerous one. Developers like to make frameworks (it’s fun!) but never consider the maintenance costs or the problems it can cause for future onboarding efforts.
+Cargo-cult programming. The most dangerous of bad habits, as it gives the appearance of understanding without any actual knowledge gain. CCP is usually combined with voodoo programming where a snippet of code is pulled off the Internet and randomly tweaked until it seemingly works. You can’t fix what you don’t understand.
+Accepting untestable requirements. Nasty, nasty problem caused by capitulation to overaggressive analysts. If a requirement has no acceptance criteria then the stakeholders can simply reject the product without justification. Anyone who suggests requirements such as “Software will not crash under any situation” should be pilloried until they break down in tears. Quietly accepting and ignoring silly requirements is just begging for conflict.
+Failure to refactor and modernize. When developing, shortcuts are often made to meet deadlines. This can result in dead code or duplicate code. Refactoring to make the code more maintainable should be the first order of business after the initial release. Once released, code should be periodically inspected and recompiled so that changes to the environment (operating system, third party libraries) do not cause the runtime to fail.
+Accepting over-constrained requirements. Leads to unnecessary effort and often the excuse for NIH. This is caused by capitulating to overaggressive (but well-meaning) nontechnical business analysts who don’t understand the cost and time implications of extra-stringent requirements. A developer should, if confronted by a requirement that seems to be unnecessary, ask for a use case exercising that requirement.
+Creeping featureitis. The phrase “Wouldn't it be cool if…” should fill a good developer with dread. Adding a new feature without including use case analysis, test planning, and documentation increases the risk of failure or schedule slippage. QA is not privy to your hallway chats so added code is not tested.
+Documentation mismatch. Documentation should be kept in sync with the code base. I think we can all agree on this and can think of several examples of unpleasant surprises when we trusted the documentation and found the code wanting.
+Lust
+
+Seeking to use the “latest and greatest” frameworks, languages, and tools before throughly weighing the costs and benefits.
+
+“I know we’ve been rewriting our React Native app with Meteor for the last couple weeks, but Google just released Flutter and it puts them both to shame!”
+
+“We’ve been using Java for over 10 years. We’ve written customized APIs that integrate with our stack. And it has a very stable and active community contributing new libraries and patches. But have you seen the concurrency syntax in Go…”
+Gluttony
+
+Adding to, but never taking away from the application; allowing it to become bloated with feature creep and an enormous binary size.
+
+“Though we originally set out to just make the world’s most user friendly Tiny URL service, now that you can also trade Bitcoins and chat with your friends, I think this product is really gonna take off!”
+
+“Some people liked using the app when there was just a single search bar and a couple buttons, but the dynamic backgrounds, interactive video ads, and sudoku puzzles are what really sets us apart from the competition, despite the 10GB download.”
+Greed
+
+Using far more system resources than is necessary or desired.
+
+“There’s a reason Java did away with the ‘delete’ operation. Who has time to worry about things like ‘memory usage’.”
+
+“What the hell is caching?”
+Sloth
+
+Doing what’s easy today at the cost of creating more problems later: taking on technical debt, not taking the time to refactor, and neglecting to build for the future.
+
+“This design no longer makes sense given the recent change in requirements, but instead of doing the hard work to fix it, let’s put in a hack that allows us to treat this as a special case.”
+
+“Let’s make everything public!”
+Wrath
+
+Haphazardly shipping untested, potentially dangerous code without taking precautions.
+
+“It’s called ‘optimistic concurrency’ because I’m optimistic it won’t result in a deadlock.”
+
+“Delete that pointer, it’s probably not used anywhere else.”
+
+sudo rm -rf /*
+Envy
+
+Deciding to use a system or tool because it solved a sexy problem an organization 100000x the size of yours once had.
+
+“We can’t use MySQL, how will it scale once our 5 users grows to 10 billion? We need NoSQL!”
+
+“We need to take these 2D points and predict a 1D output. Let’s use deep learning… on the blockchain!”
+
+“Big data? This data looks pretty big to me (100 MB).”
+Pride
+
+Not Invented Here Syndrome; choosing to reinvent the wheel and build a better mousetrap because you wish to prove yourself as an engineer, not because it’s what’s best for the business.
+
+“And so I decided to write my own distributed database.”
+Comments as a crutch. A lot of people appear to think that comments are an acceptable replacement for refactoring.
+Solving already solved problems. A lot of people appear to think that they can do so much better than other software engineers who have been in the field for decades and built this library for you to use.
+Piling on features into one module. A lot of people appear to think that it is completely acceptable for one piece of code to do five hundred different unrelated things, because it’s in one place and supposedly easier to find.
+Terrible naming. A lot of people appear to think that it is more important to save keystrokes than to make sure the program can be read and understood easily by other human beings.
+Lack of provisions for unhappy path. A lot of people appear to think that if the program works within expected circumstances, their work is done, and nothing ever could go wrong.
+Coupling. A lot of people appear to think that adding dependencies to a class/module comes for free, and these dependencies would never ever change, because what client would ever want new features, eh?
+Wrong tools for wrong jobs. A lot of people appear to think that if they know, say, Brainfuck really well, they must do everything in it, including REST APIs, physics simulations, spreadsheets, and keyboard drivers.
+Probably I will go to programmers hell because I committed all of these sins, several of them writing C++ production code while still learning its basic things:
+
+Overengineering some solutions making them highly extensible and modifiable. Though this is what we like, what we learned, and what OOP is about, in real life in some applications that are several years in production, I created several interfaces that were thought to be implemented later making easier to support new functionality. Such new functionality was never needed and almost sure it will never be. Those interfaces, several years later, have just one class implementing them.
+Rely a lot on heap instantiation (C++ new operator) instead of enjoying the benefits of RAII (sorry, I was young and educated in a Java world). Using raw pointers instead of RAII or smart pointers was also so wrong.
+Similar to point 1: Creating wrappers around some third library thinking that probably this library will be easily replaced by other one under the hood. That is not going to happen… and if it happens, the work needed to modify the wrappers and its glue is a lot.
+Using a lot of singletons or global stuff. Actually I am thinking that “a lot” means “greater than 0”.
+Trying to fit an OOP mindset (inheritance and polymorphism) to solve some problems that in C++ could be implemented in a different and better way.
+Encouraging the usage of only one exit point in functions. Actually I do not see any reason to do that in C++, Java or C# code. Java and C# rely on using (try) and finally to release resources and C++ in RAII. Actually having only one exit point in functions make the program harder to read, unnecessarily nested and if the function is not void, carrying the result value in a variable defined at the top.
+Probably I will live eternally in programmers hell because of this, but I think that having code easy to read is by far better than writing and maintaining such code documentation in comments.
+I tend to follow the unix philosophy
+
+“More of the Unix philosophy was implied not by what these elders said but by what they did and the example Unix itself set. Looking at the whole, we can abstract the following ideas:
+
+Rule of Modularity: Write simple parts connected by clean interfaces.
+Rule of Clarity: Clarity is better than cleverness.
+Rule of Composition: Design programs to be connected to other programs.
+Rule of Separation: Separate policy from mechanism; separate interfaces from engines.
+Rule of Simplicity: Design for simplicity; add complexity only where you must.
+Rule of Parsimony: Write a big program only when it is clear by demonstration that nothing else will do.
+Rule of Transparency: Design for visibility to make inspection and debugging easier.
+Rule of Robustness: Robustness is the child of transparency and simplicity.
+Rule of Representation: Fold knowledge into data so program logic can be stupid and robust.
+Rule of Least Surprise: In interface design, always do the least surprising thing.
+Rule of Silence: When a program has nothing surprising to say, it should say nothing.
+Rule of Repair: When you must fail, fail noisily and as soon as possible.
+Rule of Economy: Programmer time is expensive; conserve it in preference to machine time.
+Rule of Generation: Avoid hand-hacking; write programs to write programs when you can.
+Rule of Optimization: Prototype before polishing. Get it working before you optimize it.
+Rule of Diversity: Distrust all claims for “one true way”.
+Rule of Extensibility: Design for the future, because it will be here sooner than you think.”
+From the top of my head:
+
+Not using source code control where applicable. God gave you fingers. You can type git. Use your fingers.
+
+No Documentation. You will soon find yourself reinventing the wheel and repeating your own mistakes soon enough. You will anger your supervisors, juniors, and successors a lot.
+
+Goto. Where applicable, always use proper flow control designed for its purposes. Maybe you can use jump in assembly because there are almost no other choices, but since there are if, for, while, and other statements in many other languages of the world, you should use them. Use break and continue statements to move outside the loop, if you need to and your language supports it. Example of shit that can happen with goto: goto doesn’t respect locality or scopes. Variables can persist or unpersist in an unpredictable manner.
+
+Mixing Tabs and Spaces. [removed some controversial statements] You can set expandtab in vi, for example, if you want to use spaces. Follow the requirements of your language (some may explicitly require tabs), and respect the conventions of your team. Tabs or spaces, EITHER tabs OR spaces. Not both.
+
+Lack of convention. Yes, talking about conventions … when things depend on you, make it consistent. If your organization doesn’t have any scrap of a convention, you need to be the one deciding it. If you want to but can’t, i.e. your project lead won’t talk to you about that, either walk out (because it’s a shitty company) or keep your convention to yourself. Always have something to follow. If I have to flip through your manual every single time I need to make an API call, you fucked up. I should be able to at least make multiple similar calls and expect it to work.
+
+Language Whore. Don’t use a language (framework, engine, whatever) just because it’s a particular language or because it’s cool. Use a language best suited for your work. Where many languages (roughly) equally apply, keep a few consistent for yourself.
+
+Don’t shove your favorite language down other people’s throats because of this, either. You might feel justified, tech-savvy, and feel like an innovator, but in reality you’re just an asshole.
+
+Sadly, thanks to some fanatics, this rule will never be applicable to text editors.
+
+Magic Numbers. Everything should have proper references. If you summon a magic number out of nowhere, you must be able to explain it. 0, 1, TRUE, and FALSE are usually exempt from this rule, but if you have any special explanation you must write it down.
+
+Preferably, don’t write “it doesn’t work unless I do this.” It might be a hardcoded value in a related hardware (give the model number or something, and cite the datasheet in a doc). It might be a protocol or standard number (IANA? ITU? IEEE? DIN?).
+
+Places where numbers or values mean the same thing should point to the same variable. It is entirely possible for two constant values to coincide, and you don’t want to comment every time that this “3.14” is a pi approximation used to calculate circle stuff, while another “3.14” may be an initial value for your regression models. Use proper, specific instructions like “const float PI = 3.14” and “var float REGRESSION_FACTOR = 3.14” or something instead. (Examples are language-agnostic.)
+
+Bonus: LOCs. Line of Code is not a good measure of your diligence or how hard working you are or how much you should be paid or how likely a bug is to appear. It might be a good measure of how much typing (or copying from StackOverflow) you did, but it is another matter. Don’t use LOCs alone as any sort of metric. A trivial but extremely long function may not have any bugs at all, while a short, complex function might have a lot of bugs.

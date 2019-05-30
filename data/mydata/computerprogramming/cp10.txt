@@ -1,0 +1,157 @@
+How do you spot a beginner programmer?
+Answer Wiki
+Overview of Answers
+
+Meaningless variable names.
+Meaningless function/ method names.
+Meaningless namespace/ package names.
+Not understanding the syntax of the language they are using.
+Poorly structured code.
+Useless or Non-existent commenting.
+Not understanding scope.
+Overuse of frameworks.
+Underuse of frameworks.
+Not asking for help (Stackoverflow, colleague, Google etc).
+Acting like they are some gift to humanity because they can still use Visual Basic on a PC from 1998.
+Not making their code extensible.
+Can’t debug or debug poorly often fixing basic issues and not root causes.
+Don’t have a realistic idea how long a project should take.
+Don’t have a personal library of functions and classes.
+Inability to understand other peoples code. (If it is understandable, sometimes code is just written poorly).
+Usually only know a single language (and brag about it)
+Don’t know what any edge case could be. (obviously you can’t know them all)
+Assuming that their code is bug free because they have no warnings or errors.
+They reinvent the wheel.
+Beginner programmers say things like:
+
+What languages do you know? I know HTML and C++!
+You’re not a software developer you’re a coder, you don’t have a CS degree!
+You’re not a coder, you’re a software engineer, you have a CS degree!
+But where do I actually write the code?
+That will definitely only take a week.
+This C program is almost done, only a few more errors before it’ll compile!
+Stackoverflow is for beginners
+The end of the project is the easiest part! Home stretch!
+Experienced programmers say things like:
+
+I’m good at web development, especially using the LAMP stack! I’ve also written some firmware in C
+I’m a software developer, software engineer, computer scientist, coder, programmer, and/or computer nerd, depending on who I’m talking to, what I’m talking about, and what the purpose of the conversation is.
+I’m a software developer, software engineer, computer scientist, coder, programmer, and/or computer nerd, depending on who I’m talking to, what I’m talking about, and what the purpose of the conversation is.
+dude you can even use notepad who cares?
+I think it’ll take about a week, but who the f@#% knows, last time I said that it took 6 months!
+God damn it’s gonna be a long night, I JUST got this damn C program to finally compile an hour ago, barely dented the debugging :-(
+I’d just like to thank Stackoverflow for all of the success related to my career, YOU DA REAL MVP!!!
+The first 20% of the project takes the first 80% of the effort, the last 20% of the project takes the last 80% of effort!
+Edit: many people have suggested my math is wrong on the very last point, but I can assure you I meant to say it that way!
+
+Edit 2: wow, my answers used to be awful. I cringe looking at this, how did this become my most viewed answer??
+During interviews, ask this question, “Imagine you have been working on code for a week (40 hours) and because of system limitations you have not been able to perform any tests on the incomplete code. You feel it is done now and can proceed to test/fix. How many more hours would you expect to spend testing and fixing it before you might expect it to be high quality?”
+
+The exact answer is not important. A beginner will be stopped in their tracks or will give a nonsense answer such as one or two hours. It takes experience to realize how much time is required to achieve quality.
+
+EDIT: People ask all kinds of wacky hypothetical question in interviews such as asking candidates to hand-construct routine algorithms that can easily be picked out of a textbook. The point is often not to get a factually correct answer. The purpose of asking is to tease out an understanding of who the interviewee is and what it will be like to work with them. How the interviewee responds often tells more than the content of the answer. Pausing to think, explaining reasoning, and identifying unknown or unknowable factors is perhaps more important than giving a “right” answer.
+
+Never mind asking beginning developers. I’m starting to think this would be a good question to personality-profile experienced developers. Think of the commenters on this question as the interviewees in that imaginary scenario. Some express irritation because the scenario is unrealistic or implies an incompetent or hostile management team. Those folks have the programmer’s equivalent of Post Traumatic Stress Disorder, reacting hostilely to scenarios that remind them of past hardships. Those folks would be no fun to work with – too defensive and prickly. Some get self-righteous and recite all the ways that the rest of the programming world is incompetent. Those folk would also be no fun to work with– perhaps talented but also tedious, rigid, and pedantic. Some folks answer with a light heart,acknowledging that the scenario is artificial but entertaining it with a friendly spirit. These are the folks I would choose to work with.
+Scenario 1:
+
+Dev: I want to get some data when I click on this search button.
+
+Me: Ok, in that case you can make a HTTP GET request and fetch the data.
+
+Dev: That’s fine, but how would I actually GET the data?
+
+Me: You need some REST :)
+
+Scenario 2:
+
+Me: Do you like Frontend or Backend development?
+
+Dev: I am really good with HTML and SQL so I prefer backend development
+
+Me: wait…what?
+
+Scenario 3:
+
+Me: What is MVC?
+
+Dev: Model View Controller
+
+Me: Can you explain a bit in detail?
+
+Dev: Sure, it’s an architectural pattern which consists to 3 main components. Model - which represents the data layer, View- which represents the user interface and Controller - that defines business logic
+
+Me: But why do we use this pattern?
+
+Dev: Because it is one of the most popular patterns out there
+
+Me: ahh! I see!
+
+Scenario 4:
+
+Me: how much time this task will take to complete?
+
+Dev: It will take exactly 2 days.
+
+Me: you know that this task requires database migration
+
+Dev: don’t worry! it will be done in 2 days
+
+And it takes 2 weeks :)
+
+Scenario 5:
+
+variables and method names
+
+var d // user signup date
+instead of
+
+var userSignupDate
+I have noticed that junior developers don’t really focus on code review process. They feel their questions might make them look like a fool. They focus more on the task and moving the ticket as quickly as possible across swim lanes in JIRA.
+
+Code review is really beneficial as you learn about different coding patterns and implementations. It is like book reading :) So make sure you set aside sometime everyday and do some code review.
+
+Happy Coding!
+There are a few dead giveaways to spotting a beginner programmer. I’ll start with the most obvious and I’ll work out from there…
+
+Most obviously, a beginner programmer will straight up tell you they are a beginner programmer.
+
+I have many beginner programmers email me asking me for help and advice (which I am happy to give). And they all tell me they are beginners and usually they have no idea where they are going or how to get there.
+
+So, a beginner knows they are a beginner and they will tell you as much.
+
+The second interesting thing about beginners is they haven’t learned how to practice yet. Experienced developers at some point develop a practice routine (usually it’s their day job, but that’s another discussion).
+
+Beginners often haven’t caught on to the idea that they need to write code every day to get good at writing code every day. I know, this sounds obvious but it’s not obvious to beginners.
+
+The third interesting thing about beginners is fear.
+
+Once upon a time computers were expensive, scary, and a bit dangerous. At least that is how they were viewed. A computer used to cost $2,000-$5,000. There was no cloud, no internet backups, nothing.
+
+People used to manually save files to floppy disks and protect those floppy disks with their lives.
+
+Go back 20 years and watch movies where a floppy disk or CD-ROM contained important files. People would protect those files with their lives. (Some old movies were a bit over-dramatic I think, but anyway…)
+
+So a lot of people have this notion that they could “break something” and that’s a bad thing. There is a genuine fear of getting in trouble.
+
+Beginners will avoid writing code at all thinking that it will break and that they’ve failed somehow.
+
+The only way to write code is to write code, break things, and fix things over and over again. Eventually you stop once everything is fixed and call it working software.
+
+Beginners slow their progress with fear. They are afraid of breaking things which breaks the cycle of programming entirely.
+
+A programmer should expect to write code, break the software, and then fix the software. Heck, the entire practice of Test Driven Development is exactly this model of the world.
+
+So, fear of breaking the code and a lack of confidence in their ability to debug and fix things is another mark of being a beginner programmer.
+
+All of these things lead to all the technical issues you see on the Answer Wiki. Unfortunately, until the 3 issues I have explained above are resolved, fixing technical issues is like playing whack a mole.
+
+And if you’ve never played whack a mole, I suggest you become a programmer, it’s a great fun!
+
+-Brian
+They talk a lot about tabs vs spaces.
+They talk about unimportant specifics rather than general architecture - e.g “I’ll use a for-in loop to iterate through the…”
+“I’m very good at using hammer X” and “I know how to use many hammers”
+Bad variable naming.
+Comments when unnecessary and no comments when necessary.
+They don’t handle exceptions and validate user input. A good programmer knows that all it takes is one moron to enter their name when asked for their age and make the whole thing come crashing down. A good programmer also knows that there are plenty of morons to go around.
+They follow practices religiously rather than evaluating them on a case-by-case basis.

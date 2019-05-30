@@ -2,13 +2,14 @@ import csv
 import os
 import json
 from nltk.tokenize import word_tokenize
+from hbconfig import Config
 import string
 from nltk.corpus import stopwords
 
-
+Config('kaggle_movie_review')
 
 # Path of training data directory 
-train_path='./data/mydata'
+train_path = Config.data.train_folder_path
 # Take list of classes from train directory (name of each subfolder is name of class)
 classes = os.listdir(train_path)
 try:
@@ -43,7 +44,6 @@ for fields in classes:
         files.remove('.DS_Store')
     except:
         pass
-    k=0
     for fl in files:
         articleID = articleID +1
         filepath = os.path.join(path,fl)        # Prepare file path
@@ -78,67 +78,9 @@ for fields in classes:
             words = [w for w in words if not w in stop_words]
 
             line = ' '.join(words)
-
+            # If data presents write that data in TSV file
             phraseID = phraseID + 1
-            filewriter.writerow([phraseID , articleID, line,index])
-
-"""
-# split into words
-from nltk.tokenize import word_tokenize
-tokens = word_tokenize(text)
-# convert to lower case
-tokens = [w.lower() for w in tokens]
-# remove punctuation from each word
-import string
-table = str.maketrans('', '', string.punctuation)
-stripped = [w.translate(table) for w in tokens]
-# remove remaining tokens that are not alphabetic
-words = [word for word in stripped if word.isalpha()]
-# filter out stop words
-from nltk.corpus import stopwords
-stop_words = set(stopwords.words('english'))
-words = [w for w in words if not w in stop_words]
-"""
+            if len(words) != 0:
+                filewriter.writerow([phraseID , articleID, line,index])
 
 
-"""
-f = open('./data/mydata/books/books1.txt', mode='r')
-content = f.readlines()
-content = [x.strip() for x in content] 
-try:
-    while(content.index('')):
-        content.remove('')
-except: 
-    pass
-print(content)
-f.close()
-
-file = open('./data/kaggle_movie_reviews/train.tsv', mode='w')
-filewriter = csv.writer(file, delimiter='\t', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-filewriter.writerow(['PhraseId','SentenceId','Phrase','Sentiment'])
-
-for line in content:
-    filewriter.writerow(['90', '56', line,8])
-
-"""
-"""
-file = open('./data/kaggle_movie_reviews/train.tsv', mode='w')
-filewriter = csv.writer(file, delimiter='\t', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-
-
-    
-filewriter.writerow(['PhraseId','SentenceId','Phrase','Sentiment'])
-filewriter.writerow(['90', '56', content,8])
-    #filewriter.writerow(['Erica Meyers', 'IT', 'March'])
-    #PhraseId	SentenceId	Phrase	Sentiment
-"""
-
-"""
-PhraseId	SentenceId	Phrase	Sentiment
-1	1	A series of escapades demonstrating the adage that what is good for the goose is also good for the gander , some of which occasionally amuses but none of which amounts to much of a story .	1
-2	1	A series of escapades demonstrating the adage that what is good for the goose	2
-3	1	A series	2
-4	1	A	2
-
-
-"""

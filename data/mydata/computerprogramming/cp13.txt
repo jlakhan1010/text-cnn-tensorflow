@@ -1,0 +1,355 @@
+Some of the most useful tricks that I use are :
+
+Redefining keyboard keys for best usage:
+
+(Now the credits for this particular trick goes to my friend Ayush Seth who suggested this trick in the first place.)
+
+So what he did was download Microsoft keyboard layout creator and redefine some keys for better and faster results.
+
+The keys which he redefined were:
+
+Change the upper number row keys to type symbols[ (!@#$%^&*() ] directly they type when are pressed with shift key. So now you don’t need to press shift along with those num keys to type them. And if you press shift they type numbers instead, i.e., just the reverse of what was there earlier by default. This change of keys is useful for the ones who have numpad on right, small laptops don’t have that so you might not wanna try this with that.
+By default to type in curly brackets {} you have to press shift + square brackets keys, but in programming frequency of typing curly brackets is far more than square ones so what I did was to reverse this, so now that key types {} and when pressed with shift it types [].
+He also created a file for others to use, if anyone is lazy to do the changes himself/herself he/she can download this file directly and load into keyboard layout creator program which link has been given in the start of this trick. The file : CODER.klc
+
+Open Command prompt directly from a folder/directory to avoid long cd/changeDirectory command:
+
+For this just press shift + Right click this will open the right click menu as normal but with one extra option, which is “Open Command window here”
+
+Here is a ss of it:
+
+
+Search files/folders with particular extension or keyword
+
+This is a known trick many of you must already know it but for those who doesn’t you can do this with help of wild card characters.
+
+For example if you want to search for all the files with extension mp3, just go in search bar on the upper right hand side of file explorer and type *.mp3 there. Similarly you can search files with other extensions too!
+Problems Steps Recorder (for windows)
+
+We all have faced problems while trying to change some settings, or while doing some project. Next thing we do is pick up our mobile and call the tech boy (everyone have one tech boy whom they call whenever they face any tech problem) and he tries to explain us where we went wrong.
+
+Not many of us know (rarely anyone know) that windows has a preinstalled software which allows us to record all our problems in a MHTML file which we can mail to that techboy, and this will prevent us (and him ) from all the mobile hassle. 
+
+Here are the steps to open this software
+
+Step 1: Open run (window+ r)
+
+
+Step 2: Type "psr".
+
+Step 3: psr window will open.
+
+
+Step 4: Click "Start Record" button.
+
+Step 5: Do all the steps during which you were facing problems.
+
+Step 6: Click "Stop Record".
+
+Step 7: Save the zip file. This zip file will contain a document which will contain pictorial log of our problem.
+
+
+
+
+
+Step 7: Follow the instructions.
+
+Step 8: Upvote this answer :D
+Simple Solutions to every-day problems:
+
+1.Download Instagram pics of other users at once
+
+In chrome go to this link and install the extension https://chrome.google.com/webstore/detail/cnpniohnfphhjihaiiggeabnkjhpaldj 
+Now go to the profile you want to download pictures in Instagram suppose https://www.instagram.com/leonar...
+Now click on the extension button at the top corner and change the type to WILDCARD and in the box next to it paste https://igcdn-photos-*-*.akamaihd.net/ and increase the width to 160 px and select all the images you want to download and click on download.
+
+2.Simple bash script to test internet connectivity
+
+Go to Desktop in your computer and create a new text file and paste the following code into it
+@echo off
+ping google.com -t
+Now click "save as" from the file menu and name it "Google_Pinger.bat" and File type as All Files(*)
+
+Now goto the desktop you will find the executable file Google_Pinger now click on it(Every time you want)
+A repeated Google ping test will start and you can see how packets are transferring like this ,here time should be within 2 digits then there is no problem in internet connection but if it shows Request Time out there is a network problem in your adapter or router.
+
+
+3.Tool to scan your network using Advanced IP scanner /Angry IP scanner
+
+First open any one of the two software and select the range of ip addresses you want to scan and fill the range with any of your organisation private ip
+Private networks can use IP addresses anywhere in the following ranges:
+192.168.0.0 - 192.168.255.255 (65,536 IP addresses)
+172.16.0.0 - 172.31.255.255 (1,048,576 IP addresses)
+10.0.0.0 - 10.255.255.255 (16,777,216 IP addresses)
+
+4.Many of us are using IDM for download videos.But downoading large files particularly from Youtube.com where the link address is being refreshed frequently so our download stops with an error as below image
+
+
+Steps to solve this problem:
+
+Click on ok
+It shows the dialog box as below
+
+Dont Press the STOP WAITING**
+This works for sites like facebook.com , vime.com ,dailymotion.com but not for youtube.com
+Trick for YouTube because youtube constantly refreshes the video address if the time limit expires
+
+Open Youtube.com and go to the video you want to download.
+
+Now its url looks like  https://www.youtube.com/watch?v=...o 
+Now replace the "http://www." with "ss"  as  ssyoutube.com/watch?v=uVdV-lxRPFo  and it redirects to savefromnet.net website and looks like image shown below, now change your desired quality and IMPORTANT step while pressing download hold the ALT key on keyboard and click to download using browser not IDM.
+
+And  it will start regular download in your  browser and press ctrl + j to  go to downloads and pause the download as shown in below screen shot
+
+
+Now rignt click on the blue link and click copy.
+
+
+Now  go to IDM and click right click on the file which was stopped from  downloading and select properties and this dialog comes up
+
+
+Now replace the old address in the box shown with arrow with the newly copied address and press ok.
+
+File Resumes from there without have to download from start.
+
+Hack-5
+Guys who are having interest in hacking but not knowing where to start learning it  this answer Sai Kiran Uppu's answer to Which is the best book for understanding Kali Linux?  helps a lot and all E-Books are also available.
+
+Hack-6
+When downloading video tutorials from torrents which contain lot of chapters and each chapter has 5-6 videos.
+Problem:During download in torrents we cant play the videos because all files are downloaded like pieces as shown in image here
+
+
+Solution:
+1.Click on first file(Lesson 1 - Video 1) and press CTRL + A to select all the videos in the torrent
+2.Press Right click and click Priority by file Order and it will assign high ,normal and low priority in the order of lessons
+1st chapter == high
+2nd chapter == high(1)
+3rd chapter == normal
+4th chapter == low(1)
+
+
+Final Result:
+
+
+All the Chapter -1 videos are downloaded and can be played while remaining chapter videos are being downloaded.
+
+Hack-7
+
+Guys do you know there is a dark side of our web which our search engines don't index or simply crawl(means just ignore while showing results) 
+If you don't know then this hack tutorial helps you know about it and also use it anonymously
+Strictly speaking ILLEGAL if you open links such as banned Wikileaks,hacking,government secret files,Political Advocacy and also want to prevent google or any other search engine  keep your foot marks after you searched certain dark searches your favorite browser
+
+The above picture(google image) explains what is dark web.
+
+Steps to follow to access dark web:
+1.The easiest way is to download the Tor Browser. This is a modified version of Firefox along with a bunch of other software that connects you to the Tor network. 
+2.The next step is to install the Tor browser itself from exe file
+
+
+3.Once the browser is installed, you'll have a plain folder called Tor Browser.  Open and click "Start Tor Browser.exe". Click that  file and a new window opens asking whether you'd like to connect  directly to the Tor network or if you need to configure proxy settings  first.For most people, choosing the direct option is best, so choose Connect. 
+4.A few seconds later a version of Tor will launch and you are now  connected to the Tor network and able to browser in relative anonymity. 
+5.To make sure you're connected to Tor go to whatismyip.com , which will automatically detect your location based on your Internet Protocol address and if ur safe follow next steps ,if not restart the browser
+6. In Tor Browser in the address bar search "tor urls" and open any link and this image shows one example 
+
+
+7.Click on your desired site and you accessed the Dark Web
+
+Thanks for up votes and latest hacks will be added soon
+When your pendrive or storage drive isn't working correctly because of data corruption or another serious issue.
+
+
+Many times the Format tool may not be able to fix the problem, and this is when DiskPart can come in handy.
+
+DiskPart is a powerful command-line utility that has been part of Windows for a long time, and it allows you to manage storage devices, partitions, and volumes with features that other tools such as Format or Disk Management can't fix.
+
+How to use DiskPart to clean and format a drive
+
+Important: Using DiskPart will completely erase everything on the drive you select, making it impossible to undo any changes. It's crucial that you correctly choose the drive you want to clean and format.
+
+Use the Windows key + X keyboard shortcut to open the Power User menu and select Command Prompt (Admin).
+Connect the drive you want clean and format to your computer.
+Type the following command and press Enter:
+diskpart
+Type the following command to list all the available drives and press Enter:
+list disk
+Take your time and very carefully, on the output from the previous command, identify the drive you want to clean.
+For example, in the screenshot below, we can see that we have four different drives listed, including Disk 0, which is 30GB, and we can quickly determine that it's the primary system drive. And because we're trying to clean an 8GB drive, we can easily spot that Disk 3 is the drive we need to select.
+Use the following command to select the drive and press Enter:
+select disk 3
+ 
+Remember to change 3 in the command with the number of the drive you want to clean. If you fail to choose the correct number will erase all the data from the wrong drive.
+
+6. Type the following command to clean the drive and press Enter:
+clean
+
+7. Type the following command to double-check the drive still selected and press Enter:
+
+list disk
+If the drive still selected, you will notice an asterisk (*) next to the disk.
+8. Type the following command to create a partition and press Enter:
+create partition primary
+
+9. Type the following command to select the partition you just created and press Enter:
+select partition 1
+
+10. Type the following command to set the partition active and press Enter:
+active
+
+
+11. Type the following command to format the partition using NTFS and to set a label, and press Enter:
+
+format FS=NTFS label=WC-Drive quick
+Remember to change the WC-Drive in the command with the drive name you want to use.
+12. Type the following command to assign a drive letter and press Enter:
+
+assign letter=W
+Remember to change W in the command with a letter you want that isn't in use by another drive on This PC.
+
+13. Use the exit command to close DiskPart to complete the task.
+
+You can use the above method or if you wish for the shortcut you can follow as per the below screenshot.
+
+
+You can write NTFS instead of fat32.
+
+Keep in mind that while there are many other tools to format a drive, DiskPart is likely to be your best choice when you're dealing with data corruption, drive inaccurately showing the storage capacity, and other serious problems.
+
+Thanks for reading.
+1. Change the current Windows password without knowing the previous one!
+
+Step 1: Click on the Start Menu.
+
+Step 2: Right click on the My Computer icon.
+
+Step 3: Click on Manage.
+
+Step 4: Click on System Tools
+
+Step 5: Click on Local Users and Groups
+
+Step 6: Then click on Users. You will see all the registered users in that computer now.
+
+Step 7: Right click on any one of the accounts and click on ‘Set Password’.
+
+Step 8: Type the new password and click on OK.
+
+Your password has been changed successfully.
+
+
+2. Make your computer greet you every time you start it.
+
+Step 1: Click on the Start menu.
+
+Step 2: Open Notepad.
+
+Step 3: Copy and paste the following code:
+
+Dim speaks, speech
+speaks="Welcome to your PC, XYZ"
+Set speech=CreateObject("sapi.spvoice")
+speech.Speak speaks
+Step 4: Replace the word XYZ with your name.
+
+Step 5: Click on Save As and save the file name as Welcome.vbs
+
+Step 6: Copy the file.
+
+Step 7: Go to C:\Users\ {User-Name}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+Step 8: Paste the file.
+
+That’s it. You may restart your computer now and it will greet you when it starts.
+
+
+3. Use your Keyboard as your Mouse Pointer.
+
+Step 1: Click on the Start menu.
+
+Step 2: Go to Control Menu
+
+Step 3: Click on Ease of Access.
+
+Step 4: Then click on Ease of Access Center.
+
+Step 5: Click on ‘Make the mouse easier to use’.
+
+Step 6: Under Accessibility Options, Click on Mouse.
+
+Step 7: Tick the option which says ‘Use Mouse Keys’.
+
+That’s it. You are good to go!
+Hey!
+
+Here are few tricks which I found interesting!!
+
+Have fun with Notepad
+If you think that Notepad is just a basic text editor, then, you will be amazed by its capabilities. You can use Notepad to create everything from personalized logs to harmless viruses that are incredibly annoying.Go see this post to know just how useful Notepad is.
+Command Prompt too has some tricks up its sleeves
+If you think that the Command prompt is a boring old program that no one uses, you are making a huge mistake. It can be used for everything from watching ASCII Star Wars to making folders that you cannot delete. See this post to know about all the cool stuff you can do with the Windows Command Prompt.
+Use Keyboard Shortcuts to get work done in no time
+If you are tired of having to alternate between your mouse and keyboard to operate your Windows computer, you would love to know these really useful keyboard shortcuts which greatly increase your speed and efficiency. See this post for details.
+Make your computer speak what you type
+You can use your PC's built in features and some VBScript magic to create a simple program that will make your computer speak whatever you input to it. Enter the right words and you could imitate a real conversation. Head over to this post to talk with your PC.
+Make your computer greet you every time you start Windows
+A simple modification in the previous trick will make your computer welcome you in its own mechanical voice every time you log onto Windows. This is achieved by placing the VBS script responsible for making your computer talk in the Start up folder. Read this post to have a computer said welcome.
+Find your computer's gender
+Want to know if your PC is a male or a female? Simple. Try the previous trick to know if your computer is a 'he' or a 'she'. On a serious note, this depends upon the voice you have selected in Microsoft Text to Speech options.
+Lock Folders with password
+If you have important personal files that you do not want other people to see, you can hide them in a password protected folder to prevent unwanted users from seeing them. Go see this post to hide your personal files effectively.
+Change your Processor's name
+If you are bored of your old processor and want a new one with a staggering name, you will definitely want to see this trick which allows you to change its name to something extraordinary to make your PC special.
+Make a Keyboard Disco
+You can use some VBScript coding to create a live disco on your keyboard by making the LED lights flash alternately. See this post to know how your keyboard can turn into a disco.
+Recover permanently deleted files in Windows
+If you have ever deleted a file in Windows that you did not want to and now want to recover it, you would definitely want to know about some free tools to recover your deleted files easily.
+Use your Keyboard as Mouse.
+You know you can use your mouse as keyboard using the On-screen keyboard utility. What if I tell you that it is also possible to do the reverse? Just read this post to see how.
+Disable USB ports to prevent others from taking your data
+Ever wanted to disable your USB ports to prevent others from using their flash drives on your PC? This post explains how to do just that with a simple registry trick. Do note that disabling USB ports will also disable your USB connected peripheral devices.
+Tech Hacks You Need to Know for Your Computer:
+Your Computer Case Actually Prevents Overheating
+It's common knowledge that keeping a case on your laptop is great for protection but a hazard when it comes to overheating.
+
+WRONG.
+
+While cases protect your laptop from dents and scratches, it also helps it from getting too hot while in use. According to writer Jacob Clifton, "The case around your computer's guts is there to protect it from dirt and fuzz, which is one of the most common causes of overheating. Dust, pet hair, and all the rest of the daily grime are the biggest cause of PC temperature issues, because they interfere with the fans meant to cool your equipment down. If you've ever cracked a case open and looked at the fans inside, you won't have forgotten that grungy sight. Case closed, please."
+
+Throw Your Mouse Away
+If you have issues with your pesky mouse, we've found a solution. Throw that pain-in-the-ass away and stick to your trusty keyboard.
+
+Here's a list that shows how to use a PC without ever having to use a mouse. Imagine blowing through hundreds of emails without a single click, and leisurely browsing the Internet without getting tangled up in a mouse wire (for those of you still stuck in the 90s).
+
+10 Things You Can Do On a PC Without Ever Touching the Mouse
+
+Access Your Computer From Anywhere
+Know Your Network, Lesson 4: Access Your Home Computers from Anywhere
+
+Get Tetris
+Did you know that your computer is a goldmine full of hidden games? With a tiny bit of coding and step-by-step instructions, you can get old school games likeTetris and Pong straight onto your desktop.
+
+How to Play Tetris, Pong and Other Hidden Games on Your Mac
+
+Your Computer Can Talk
+It's true. Your computer can talk. But don't get too excited all of you Theodore Twomblys out there, computers don't have feelings—yet.
+
+If you're an Apple owner, try these simple steps to get your computer to talk.
+
+1. Go to Finder and open up your Applications
+
+2. Click Utilities and then open Terminal
+
+3. A new window should open up. Then type "say" and add any words or sentences you want and press enter.
+
+Voilà! Your computer can talk.
+
+Suck it, Siri.
+
+A Clean Desktop Means a Faster Computer
+Desktop clutter can seriously slow down your computer.
+
+Source: Tech Hacks
+
+Felt like hacks from google can help you out learning new stuff!
+
+Thanks for A2A!
